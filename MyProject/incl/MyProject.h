@@ -1,7 +1,7 @@
 #if !defined(__MyProject_hdr__)
 #define __MyProject_hdr__
 
-// do not include any headers here if possible -- this is the interface
+#include "ErrorDef.h"
 
 class CMyProject
 {
@@ -23,14 +23,14 @@ public:
         kNumVersionInts
     };
 
-    static const int  GetVersion (const Version_t eVersionIdx);
-    static const char* GetBuildDate ();
+    static const int  getVersion (const Version_t eVersionIdx);
+    static const char* getBuildDate ();
 
-    static Error_t CreateInstance (CMyProject*& pCKortIf);
-    static Error_t DestroyInstance (CMyProject*& pCKortIf);
+    static Error_t createInstance (CMyProject*& pCKortIf);
+    static Error_t destroyInstance (CMyProject*& pCKortIf);
     
-    Error_t InitInstance (/*enter parameters here*/);
-    Error_t ResetInstance ();
+    Error_t initInstance (/*enter parameters here*/);
+    Error_t resetInstance ();
     
     //Error_t Process (float **ppfInputBuffer, int iNumberOfFrames) = 0;
 

@@ -3,14 +3,12 @@ set (APP ${LIB}CL)
 
 # get all source files
 file(GLOB ${APP}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/${APP} *.c;*.cpp;*.txt)
-file(GLOB ${APP}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${APP} *.h;*.hpp;../incl/*.h;../incl/*.hpp)
+file(GLOB ${APP}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${APP} *.h;../incl/*.h;../../../incl/SharedSources/incl/*.h)
 
 ## add include directories
-foreach(PATH ${PROJECT_INCLUDES})
-    include_directories(${PATH})
-endforeach(PATH) 
+add_includes ()
 
 add_executable(${APP} ${${APP}_SOURCES} ${${APP}_HEADERS})
 
 # link the libraries
-target_link_libraries(${APP} ${LIB} ${OS_LIBS})
+target_link_libraries(${APP} ${LIB} AudioFileIO ${OS_LIBS})

@@ -12,16 +12,16 @@ static const char*  kCMyProjectBuildDate             = __DATE__;
 CMyProject::CMyProject ()
 {
     // this never hurts
-    this->ResetInstance ();
+    this->resetInstance ();
 }
 
 
 CMyProject::~CMyProject ()
 {
-    this->ResetInstance ();
+    this->resetInstance ();
 }
 
-const int  CMyProject::GetVersion (const Version_t eVersionIdx)
+const int  CMyProject::getVersion (const Version_t eVersionIdx)
 {
     int iVersion = 0;
 
@@ -40,12 +40,12 @@ const int  CMyProject::GetVersion (const Version_t eVersionIdx)
 
     return iVersion;
 }
-const char*  CMyProject::GetBuildDate ()
+const char*  CMyProject::getBuildDate ()
 {
     return kCMyProjectBuildDate;
 }
 
-CMyProject::Error_t CMyProject::CreateInstance (CMyProject*& pCMyProject)
+CMyProject::Error_t CMyProject::createInstance (CMyProject*& pCMyProject)
 {
     pCMyProject = new CMyProject ();
 
@@ -56,12 +56,12 @@ CMyProject::Error_t CMyProject::CreateInstance (CMyProject*& pCMyProject)
     return kNoError;
 }
 
-CMyProject::Error_t CMyProject::DestroyInstance (CMyProject*& pCMyProject)
+CMyProject::Error_t CMyProject::destroyInstance (CMyProject*& pCMyProject)
 {
     if (!pCMyProject)
         return kUnknownError;
     
-    pCMyProject->ResetInstance ();
+    pCMyProject->resetInstance ();
     
     delete pCMyProject;
     pCMyProject = 0;
@@ -70,7 +70,7 @@ CMyProject::Error_t CMyProject::DestroyInstance (CMyProject*& pCMyProject)
 
 }
 
-CMyProject::Error_t CMyProject::InitInstance()
+CMyProject::Error_t CMyProject::initInstance()
 {
     // allocate memory
 
@@ -79,7 +79,7 @@ CMyProject::Error_t CMyProject::InitInstance()
     return kNoError;
 }
 
-CMyProject::Error_t CMyProject::ResetInstance ()
+CMyProject::Error_t CMyProject::resetInstance ()
 {
     // reset buffers and variables to default values
 

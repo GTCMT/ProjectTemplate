@@ -2,21 +2,21 @@
 #define __MyProject_config_hdr__
 
 // set platform defines
-#ifndef GTMCT_LINUX32
-#cmakedefine GTMCT_LINUX32
-#endif // GTMCT_LINUX32
-#ifndef GTMCT_LINUX64
-#cmakedefine GTMCT_LINUX64
-#endif // GTMCT_LINUX64
-#ifndef GTMCT_MACOSX
-#cmakedefine GTMCT_MACOSX
-#endif // GTMCT_MACOSX
-#ifndef GTMCT_WIN32
-#cmakedefine GTMCT_WIN32
-#endif // GTMCT_WIN32
-#ifndef GTMCT_WIN64
-#cmakedefine GTMCT_WIN64
-#endif // GTMCT_WIN64
+#ifndef GTCMT_LINUX32
+#cmakedefine GTCMT_LINUX32
+#endif // GTCMT_LINUX32
+#ifndef GTCMT_LINUX64
+#cmakedefine GTCMT_LINUX64
+#endif // GTCMT_LINUX64
+#ifndef GTCMT_MACOSX
+#cmakedefine GTCMT_MACOSX
+#endif // GTCMT_MACOSX
+#ifndef GTCMT_WIN32
+#cmakedefine GTCMT_WIN32
+#endif // GTCMT_WIN32
+#ifndef GTCMT_WIN64
+#cmakedefine GTCMT_WIN64
+#endif // GTCMT_WIN64
 
 // set module switches
 #ifndef WITH_SNDLIB
