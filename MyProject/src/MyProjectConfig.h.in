@@ -23,6 +23,10 @@
 #cmakedefine WITH_SNDLIB
 #endif // WITH_SNDLIB
 
+#ifndef WITH_TESTS
+#cmakedefine WITH_TESTS
+#endif // WITH_TESTS
+
 // set the version number
 #define MyProject_VERSION_MAJOR ${MyProject_VERSION_MAJOR}
 #define MyProject_VERSION_MINOR ${MyProject_VERSION_MINOR}

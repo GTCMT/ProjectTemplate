@@ -51,13 +51,15 @@ public:
 
     Error_t setClippingEnabled (bool bIsEnabled = true);
 
-    Error_t getPosition (long long &iFrame) const;
-    Error_t getPosition (double &dTimeInS) const;
-    Error_t getLength (long long &iLengthInFrames);
-    Error_t getLength (double &dLengthInSeconds);
+    Error_t getPosition (long long &iFrame);
+    Error_t getPosition (double &dTimeInS);
+    Error_t getLength (long long &iLengthInFrames) ;
+    Error_t getLength (double &dLengthInSeconds) ;
 
     Error_t readData (float **ppfAudioData, int &iNumFrames);
     Error_t writeData (float **ppfAudioData, int iNumFrames);
+
+    bool isEof ();
 
     Error_t resetInstance (bool bFreeMemory = false);
 
@@ -68,7 +70,8 @@ private:
 
     int readDataRaw (float **ppfAudioData, int &iNumFrames);
     int writeDataRaw (float **ppfAudioData, int iNumFrames);
-    int getLengthRaw();
+    long long getLengthRaw() ;
+    long long getPositionRaw();
     Error_t setPositionRaw( long long iFrame );
 
 
@@ -82,7 +85,9 @@ private:
 
     bool            m_bWithClipping;
 
-    long long       m_iFileLengthInFrames;
+    //long long       m_iFileLengthInFrames;
+    static const int    iNumOfBytesPerSample    = 2;
+
 };
 
 #endif // #if !defined(__AudioFileIf_hdr__)

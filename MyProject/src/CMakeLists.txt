@@ -38,6 +38,7 @@ list (APPEND PROJECT_INCLUDES ${CMAKE_BINARY_DIR}/incl)
 # set dependencies
 list (APPEND PROJECT_DIRECTORIES ${CMAKE_SOURCE_DIR}/../../SharedSources/AudioFileIO)       
 list (APPEND PROJECT_INCLUDES ${CMAKE_SOURCE_DIR}/../../SharedSources/incl)       
+list (APPEND PROJECT_DIRECTORIES ${CMAKE_SOURCE_DIR}/../../SharedSources/TestCL)       
 
 # add directories
 add_directories ()

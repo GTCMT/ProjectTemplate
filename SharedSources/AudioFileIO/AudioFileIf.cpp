@@ -18,8 +18,7 @@ const int CAudioFileIf::m_kiDefBlockLength = 1024;
 
 CAudioFileIf::CAudioFileIf() : 
     m_piTmpBuff(0),
-    m_bWithClipping(true),
-    m_iFileLengthInFrames(-1)
+    m_bWithClipping(true)
 {
     resetInstance (true);
 }
@@ -78,8 +77,6 @@ Error_t CAudioFileIf::initDefaults()
     m_sCurrFileSpec.eFormat         = kFileFormatRaw;
     m_sCurrFileSpec.fSampleRate     = 48000;
     m_sCurrFileSpec.iNumChannels    = -1;
-
-    m_iFileLengthInFrames           = -1;
 
     setClippingEnabled ();
 
@@ -151,6 +148,8 @@ Error_t CAudioFileIf::readData( float **ppfAudioData, int &iLength )
 
     // update iLength to the number of frames actually read
     iLength = readDataRaw (ppfAudioData, iLength);
+    if (iLength < 0)
+        return kFileAccessError;
 
     return kNoError;
 }
@@ -170,7 +169,10 @@ Error_t CAudioFileIf::writeData( float **ppfAudioData, int iLength )
     if (m_sCurrFileSpec.iNumChannels <= 0)
         return kNotInitializedError;
 
-    writeDataRaw (ppfAudioData, iLength);
+    // update iLength
+    iLength = writeDataRaw (ppfAudioData, iLength);
+    if (iLength < 0)
+        return kFileAccessError;
 
     return kNoError;
 }
@@ -186,12 +188,12 @@ int CAudioFileIf::readDataRaw( float **ppfAudioData, int &iLength )
     int iNumFrames2Read = min (iLength, m_kiDefBlockLength/m_sCurrFileSpec.iNumChannels);
     int iNumFrames      = 0;
 
-    // very ugly hack
+    // ugly hack
     // a) only for 16 bit input
     // b) only for little endian
     while (iNumFrames2Read > 0)
     {
-        static const int    iNumOfBytesPerSample    = 2;
+        //static const int    iNumOfBytesPerSample    = 2;
         static const float  fScale                  = 32768.F;
 
         int iCurrFrames = iNumFrames2Read;
@@ -201,7 +203,7 @@ int CAudioFileIf::readDataRaw( float **ppfAudioData, int &iLength )
 
         if (!m_File)
         {
-            iCurrFrames     = (m_File.gcount ()/iNumOfBytesPerSample)/m_sCurrFileSpec.iNumChannels;
+            iCurrFrames     = (static_cast<int>(m_File.gcount ())/iNumOfBytesPerSample)/m_sCurrFileSpec.iNumChannels;
             iNumFrames2Read = 0;
         }
 
@@ -235,7 +237,7 @@ int CAudioFileIf::writeDataRaw( float **ppfAudioData, int iLength )
     // b) disregarded endianess
     while (iIdx < iLength)
     {
-        static const int    iNumOfBytesPerSample    = 2;
+        //static const int    iNumOfBytesPerSample    = 2;
         static const float  fScale                  = 32768.F;
 
         int iNumFrames2Write = min (iLength-iIdx, m_kiDefBlockLength/m_sCurrFileSpec.iNumChannels);
@@ -278,7 +280,7 @@ Error_t CAudioFileIf::setPosition( long long iFrame /*= 0*/ )
     if (m_sCurrFileSpec.iNumChannels <= 0)
         return kNotInitializedError;
 
-    if (iFrame <= 0 || iFrame >= m_iFileLengthInFrames)
+    if (iFrame <= 0 || iFrame >= getLengthRaw())
         return kFunctionInvalidArgsError;
 
     return setPositionRaw(iFrame);
@@ -287,12 +289,12 @@ Error_t CAudioFileIf::setPosition( long long iFrame /*= 0*/ )
 
 Error_t CAudioFileIf::setPosition( double dTimeInS /*= .0*/ )
 {
-    long long iPosInFrames = CUtil::float2int<long long>(dTimeInS * m_sCurrFileSpec.fSampleRate);
+    long long iPosInFrames = CUtil::double2int<long long>(dTimeInS * m_sCurrFileSpec.fSampleRate);
 
     return setPosition (iPosInFrames);
 }
 
-Error_t CAudioFileIf::getLength( long long &iLengthInFrames )
+Error_t CAudioFileIf::getLength( long long &iLengthInFrames ) 
 {
     iLengthInFrames = -1;
 
@@ -304,17 +306,12 @@ Error_t CAudioFileIf::getLength( long long &iLengthInFrames )
     if (m_sCurrFileSpec.iNumChannels <= 0)
         return kNotInitializedError;
 
-    if (m_iFileLengthInFrames < 0)
-    {
-        m_iFileLengthInFrames   = getLengthRaw();
-    }
-
-    iLengthInFrames = m_iFileLengthInFrames;
+    iLengthInFrames = getLengthRaw ();
 
     return kNoError;
 }
 
-Error_t CAudioFileIf::getLength( double &dLengthInSeconds )
+Error_t CAudioFileIf::getLength( double &dLengthInSeconds ) 
 {
     long long iLengthInFrames;
     dLengthInSeconds = -1.;
@@ -327,27 +324,54 @@ Error_t CAudioFileIf::getLength( double &dLengthInSeconds )
     return kNoError;
 }
 
-int CAudioFileIf::getLengthRaw()
+long long CAudioFileIf::getLengthRaw() 
 {
     assert(m_File);
 
-    static const int    iNumOfBytesPerSample = 2;
-    int iCurrPos    = m_File.tellg();
-    int iLength     = 0;
+    //static const int    iNumOfBytesPerSample = 2;
+    long long iCurrPos  = getPositionRaw();
+    long long iLength   = 0;
 
     m_File.seekg (0, m_File.end);
     
-    iLength = m_File.tellg()/iNumOfBytesPerSample/m_sCurrFileSpec.iNumChannels;
+    iLength = static_cast<long long>(m_File.tellg())/iNumOfBytesPerSample/m_sCurrFileSpec.iNumChannels;
 
-    m_File.seekg (iCurrPos);
+    setPositionRaw(iCurrPos);
+    //m_File.seekg (iCurrPos);
 
     return iLength;
+}
+
+long long CAudioFileIf::getPositionRaw()
+{
+    //assert(m_File);
+    return static_cast<long long>(m_File.tellg())/iNumOfBytesPerSample/m_sCurrFileSpec.iNumChannels;
+}
+
+Error_t CAudioFileIf::getPosition( long long &iFrame )
+{
+    iFrame = getPositionRaw();
+
+    return kNoError;
+}
+
+Error_t CAudioFileIf::getPosition( double &dTimeInS )
+{
+    long long iFrame;
+    dTimeInS = -1.;
+    Error_t iErr = getPosition(iFrame);
+
+    if (iErr != kNoError)
+        return iErr;
+
+    dTimeInS = iFrame * (1./m_sCurrFileSpec.fSampleRate);
+    return kNoError;
 }
 
 Error_t CAudioFileIf::setPositionRaw( long long iFrame )
 {
     // convert frame to bytes
-    static const int iNumOfBytesPerSample = 2;
+    //static const int iNumOfBytesPerSample = 2;
     
     iFrame  *= iNumOfBytesPerSample * m_sCurrFileSpec.iNumChannels;
     m_File.seekg (iFrame, m_File.beg);
@@ -360,4 +384,12 @@ Error_t CAudioFileIf::setPositionRaw( long long iFrame )
     {
         return kNoError;
     }
+}
+
+bool CAudioFileIf::isEof()
+{
+    long long iPosition,
+        iLength;
+
+    return m_File.eof();
 }

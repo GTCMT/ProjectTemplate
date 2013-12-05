@@ -7,7 +7,9 @@ set (${CurrLib}_VERSION_PATCH "1" CACHE INTERNAL "")
 
 # get all source files
 file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.c;*.cpp;*.txt)
-file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.h;*.hpp;../incl/*.h;../incl/*.hpp;../../incl/*.h;../../incl/*.hpp)
+file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.h;*.hpp;../incl/*.h;../incl/*.hpp)
+#file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.h;*.hpp;../incl/*.h;../incl/*.hpp;../../incl/*.h;../../incl/*.hpp)
+
 
 ## add include directories
 add_includes ()
@@ -22,6 +24,7 @@ set_target_properties(${CurrLib} PROPERTIES PREFIX "lib")
 
 # copy platform config file
 configure_file(${CMAKE_SOURCE_DIR}/../../${CurrLib}/src/${CurrLib}Config.h.in ${CMAKE_BINARY_DIR}/incl/${CurrLib}Config.h)
+
 
 # cppcheck target in the IDE
 if (CPPCHECK_FOUND)

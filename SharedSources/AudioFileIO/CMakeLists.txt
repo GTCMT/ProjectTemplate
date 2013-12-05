@@ -14,9 +14,6 @@ file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.h;../incl
 # get library source files
 if(WITH_SNDLIB)
 	add_subdirectory(${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/sndlib "${CMAKE_CURRENT_BINARY_DIR}/sndlib")
-
-#file(GLOB ${CurrLib}_SOURCES RELATIVE ${AUDIOLIBRARYPATH} *.c;*.cpp;*.txt)
-#file(GLOB ${CurrLib}_HEADERS RELATIVE ${AUDIOLIBRARYPATH} *.h;*.hpp;)
 endif(WITH_SNDLIB)
 
 
@@ -38,11 +35,3 @@ if(WITH_SNDLIB)
 		set_target_properties(${CurrLib} PROPERTIES COMPILE_FLAGS "/W1 /DMUS_WINDOZE")
 	endif(MSVC)
 endif(WITH_SNDLIB)
-
-# cppcheck target in the IDE
-if (CPPCHECK_FOUND)
-    include (GenerateCppcheck)
-    GENERATE_CPPCHECK(SOURCES ${${CurrLib}_SOURCES}
-                        TARGET_NAME "CppCheck_${CurrLib}"
-                      INCLUDES ${ZPL_INCLUDE_LIST})
-endif(CPPCHECK_FOUND)
