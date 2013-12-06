@@ -75,17 +75,22 @@ private:
     Error_t setPositionRaw( long long iFrame );
 
 
-    FileSpec_t      m_sCurrFileSpec;
+    FileSpec_t      m_sCurrFileSpec;            //!< current file specifications
 
-    short           *m_piTmpBuff;
-
-    std::fstream    m_File;
-
-    bool            m_bWithClipping;
-    bool            m_bIsInitialized;
+    bool            m_bWithClipping;            //!< true if abs(values ) > 1 should be clipped
+    bool            m_bIsInitialized;           //!< true if initialized
 
     static const int    m_kiDefBlockLength;     //!< buffer length for read and write operations
+
+/**
+ * \defgroup WOsndlib member variables for raw audio IO without sndlib
+ * @{
+ */
+    std::fstream        m_File;                 //!< raw pcm file handle
     static const int    m_iNumOfBytesPerSample; //!< number of bytes per sample for the raw pcm IO option without sndlib
+    short               *m_piTmpBuff;           //!< temporary buffer for 16 bit integer values
+
+/**@}*/
 
 };
 
