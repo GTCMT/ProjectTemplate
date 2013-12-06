@@ -54,5 +54,8 @@ message(STATUS "")
 enable_testing()
 
 # add tests here
-#add_test()
-add_cppcheck_test ()
+if (WITH_TESTS)
+	add_test(AudioIo ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Test AudioIo "${CMAKE_SOURCE_DIR}/../testdata/")
+	add_cppcheck_test ()
+endif (WITH_TESTS)
+

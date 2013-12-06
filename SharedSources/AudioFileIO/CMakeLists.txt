@@ -14,6 +14,7 @@ file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.h;../incl
 # get library source files
 if(WITH_SNDLIB)
 	add_subdirectory(${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/sndlib "${CMAKE_CURRENT_BINARY_DIR}/sndlib")
+	list (APPEND PROJECT_INCLUDES ${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/sndlib)    
 endif(WITH_SNDLIB)
 
 

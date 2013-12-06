@@ -27,9 +27,9 @@ configure_file(${CMAKE_SOURCE_DIR}/../../${CurrLib}/src/${CurrLib}Config.h.in ${
 
 
 # cppcheck target in the IDE
-if (CPPCHECK_FOUND)
-    include (GenerateCppcheck)
-    GENERATE_CPPCHECK(SOURCES ${${CurrLib}_SOURCES}
-                        TARGET_NAME "CppCheck_${CurrLib}"
-                      INCLUDES ${ZPL_INCLUDE_LIST})
-endif(CPPCHECK_FOUND)
+file(GLOB to_remove RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.txt)
+list(REMOVE_ITEM ${CurrLib}_SOURCES ${to_remove})
+include (GenerateCppcheck)
+GENERATE_CPPCHECK(SOURCES ${${CurrLib}_SOURCES}
+					TARGET_NAME "CppCheck_${CurrLib}"
+				  INCLUDES ${PROJECT_INCLUDES})

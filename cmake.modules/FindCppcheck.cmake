@@ -58,11 +58,11 @@ NO_DEFAULT_PATH)
 endif()
 
 find_program(CPPCHECK_EXECUTABLE NAMES cppcheck)
-if (GTMCT_WIN32 OR GTMCT_WIN64)
+if (GTCMT_WIN32 OR GTCMT_WIN64)
     find_program(CPPCHECK_EXECUTABLE 
         NAMES cppcheck
         PATHS "$ENV{ProgramFiles}/Cppcheck")
-endif (GTMCT_WIN32 OR GTMCT_WIN64)
+endif (GTCMT_WIN32 OR GTCMT_WIN64)
 
 # Restore original setting for appbundle finding
 set(CMAKE_FIND_APPBUNDLE ${_oldappbundlesetting})

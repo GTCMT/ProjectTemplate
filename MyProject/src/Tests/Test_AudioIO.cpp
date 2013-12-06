@@ -17,11 +17,11 @@
 
 extern std::string cTestDataDir;
 
-SUITE(AudioIO)
+SUITE(AudioIo)
 {
-    struct AudioIOData
+    struct AudioIoData
     {
-        AudioIOData() 
+        AudioIoData() 
         {
             float fPhase    = 0;
 
@@ -45,7 +45,7 @@ SUITE(AudioIO)
 
         }
         
-        ~AudioIOData() 
+        ~AudioIoData() 
         {
             assert (m_ppfAudioData != 0);
             for (int i = 0; i < m_iNumChannels; i++)
@@ -65,8 +65,12 @@ SUITE(AudioIO)
     };
 
 
-    TEST_FIXTURE(AudioIOData, FileReadRaw)
+    TEST_FIXTURE(AudioIoData, FileReadRaw)
     {
+        if (cTestDataDir.empty())
+        {
+            CHECK(false);
+        }
         int iReadIdx = 0;
         float **ppfReadData  = new float*[m_iNumChannels];
         for (int i = 0; i < m_iNumChannels; i++)
@@ -94,8 +98,13 @@ SUITE(AudioIO)
         delete [] ppfReadData;
     }
 
-    TEST_FIXTURE(AudioIOData, FileReadRawOffset)
+    TEST_FIXTURE(AudioIoData, FileReadRawOffset)
     {
+        if (cTestDataDir.empty())
+        {
+            CHECK(false);
+            return;
+        }
         const long long iOffset = 327;
         int iReadIdx = 0;
         float **ppfReadData  = new float*[m_iNumChannels];
@@ -127,9 +136,14 @@ SUITE(AudioIO)
 
     }
 
-    TEST_FIXTURE(AudioIOData, FileReadAllAtOnce)
+    TEST_FIXTURE(AudioIoData, FileReadAllAtOnce)
     {
-        //note that the file length is longer than the internal read block size
+        if (cTestDataDir.empty())
+        {
+            CHECK(false);
+            return;
+        }
+       //note that the file length is longer than the internal read block size
         long long   iFileLength = 0;
         int         iNumRead    = 0;
         float **ppfReadData     = new float*[m_iNumChannels];
@@ -154,8 +168,13 @@ SUITE(AudioIO)
         delete [] ppfReadData;
     }
 
-    TEST_FIXTURE(AudioIOData, FileWriteReadRaw)
+    TEST_FIXTURE(AudioIoData, FileWriteReadRaw)
     {
+        if (cTestDataDir.empty())
+        {
+            CHECK(false);
+            return;
+        }
         int iNumRemainingFrames = m_iBuffLength;
         Error_t err = kUnknownError;
         

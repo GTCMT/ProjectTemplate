@@ -18,12 +18,13 @@
 #cmakedefine GTCMT_WIN64
 #endif // GTCMT_WIN64
 
+//////////////////////////////////////////////////////////
 // set module switches
-#ifndef WITH_SNDLIB
+#ifndef WITH_SNDLIB //!< sndlib should be used for audio IO
 #cmakedefine WITH_SNDLIB
 #endif // WITH_SNDLIB
 
-#ifndef WITH_TESTS
+#ifndef WITH_TESTS //!< UnitTest++ should be used for for testing
 #cmakedefine WITH_TESTS
 #endif // WITH_TESTS
 

@@ -44,7 +44,7 @@ public:
     Error_t openFile (std::string cAudioFileName, FileIoType_t eIoType, FileSpec_t const *psFileSpec = 0);
     Error_t closeFile ();
 
-    Error_t getFileSpecs (FileSpec_t &sFileSpec);
+    Error_t getFileSpec (FileSpec_t &sFileSpec);
 
     Error_t setPosition (long long iFrame = 0);
     Error_t setPosition (double dTimeInS = .0);
@@ -79,14 +79,13 @@ private:
 
     short           *m_piTmpBuff;
 
-    static const int   m_kiDefBlockLength;
-
     std::fstream    m_File;
 
     bool            m_bWithClipping;
+    bool            m_bIsInitialized;
 
-    //long long       m_iFileLengthInFrames;
-    static const int    iNumOfBytesPerSample    = 2;
+    static const int    m_kiDefBlockLength;     //!< buffer length for read and write operations
+    static const int    m_iNumOfBytesPerSample; //!< number of bytes per sample for the raw pcm IO option without sndlib
 
 };
 
