@@ -10,11 +10,6 @@
 
 #include "AudioFileIf.h"
 
-//TEST(Fail)
-//{
-//    CHECK(false);
-//}
-
 extern std::string cTestDataDir;
 
 SUITE(AudioIo)
@@ -27,7 +22,7 @@ SUITE(AudioIo)
 
             stFileSpec.eBitStreamType  = CAudioFileIf::kFileBitStreamInt16;
             stFileSpec.eFormat         = CAudioFileIf::kFileFormatRaw;
-            stFileSpec.fSampleRate     = 44100.F;
+            stFileSpec.fSampleRateInHz = 44100.F;
             stFileSpec.iNumChannels    = m_iNumChannels;
 
             CAudioFileIf::createInstance(m_pCAudioFile);
@@ -40,7 +35,7 @@ SUITE(AudioIo)
 
             for (int i = 0; i < m_iNumChannels; i++)
             {
-                CSignalGen::generateSine(m_ppfAudioData[i], 441.F, stFileSpec.fSampleRate, m_iBuffLength, .6F, fPhase);
+                CSignalGen::generateSine(m_ppfAudioData[i], 441.F, stFileSpec.fSampleRateInHz, m_iBuffLength, .6F, fPhase);
                 fPhase  += static_cast<float>(M_PI_2);
             }
 

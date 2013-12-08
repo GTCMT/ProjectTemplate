@@ -88,7 +88,7 @@ Error_t CAudioFileIf::initDefaults()
 {
     m_sCurrFileSpec.eBitStreamType  = kFileBitStreamInt16;
     m_sCurrFileSpec.eFormat         = kFileFormatRaw;
-    m_sCurrFileSpec.fSampleRate     = 48000;
+    m_sCurrFileSpec.fSampleRateInHz = 48000;
     m_sCurrFileSpec.iNumChannels    = 2;
 
     setIoType(kFileRead);
@@ -186,7 +186,7 @@ Error_t CAudioFileIf::setPosition( long long iFrame /*= 0*/ )
 
 Error_t CAudioFileIf::setPosition( double dTimeInS /*= .0*/ )
 {
-    long long iPosInFrames = CUtil::double2int<long long>(dTimeInS * m_sCurrFileSpec.fSampleRate);
+    long long iPosInFrames = CUtil::double2int<long long>(dTimeInS * m_sCurrFileSpec.fSampleRateInHz);
 
     return setPosition (iPosInFrames);
 }
@@ -241,7 +241,7 @@ Error_t CAudioFileIf::getPosition( double &dTimeInS )
     if (iErr != kNoError)
         return iErr;
 
-    dTimeInS = iFrame * (1./m_sCurrFileSpec.fSampleRate);
+    dTimeInS = iFrame * (1./m_sCurrFileSpec.fSampleRateInHz);
     return kNoError;
 }
 
@@ -254,7 +254,7 @@ Error_t CAudioFileIf::getLength( double &dLengthInSeconds )
     if (iErr != kNoError)
         return iErr;
 
-    dLengthInSeconds = iLengthInFrames * (1./m_sCurrFileSpec.fSampleRate);
+    dLengthInSeconds = iLengthInFrames * (1./m_sCurrFileSpec.fSampleRateInHz);
     return kNoError;
 }
 
@@ -573,7 +573,7 @@ Error_t CAudioFileSndLib::openFile( std::string cAudioFileName, FileIoType_t eIo
     {
         setFileSpec(psFileSpec);
         mus_sound_set_chans(cAudioFileName.c_str(), psFileSpec->iNumChannels);
-        mus_sound_set_srate(cAudioFileName.c_str(), CUtil::float2int<int>(psFileSpec->fSampleRate));
+        mus_sound_set_srate(cAudioFileName.c_str(), CUtil::float2int<int>(psFileSpec->fSampleRateInHz));
         mus_sound_set_header_type(cAudioFileName.c_str(),  iSndLibFileFormat);
         mus_sound_set_data_format(cAudioFileName.c_str(), (psFileSpec->eBitStreamType == kFileBitStreamInt16)?MUS_LSHORT:MUS_LFLOAT);
         setInitialized(true);
@@ -586,7 +586,7 @@ Error_t CAudioFileSndLib::openFile( std::string cAudioFileName, FileIoType_t eIo
     else
     {
         m_FileHandle = mus_sound_open_output(cAudioFileName.c_str(), 
-            CUtil::float2int<int>(psFileSpec->fSampleRate),
+            CUtil::float2int<int>(psFileSpec->fSampleRateInHz),
             psFileSpec->iNumChannels,
             (psFileSpec->eBitStreamType == kFileBitStreamInt16)?MUS_LSHORT:MUS_LFLOAT,
             iSndLibFileFormat,
@@ -606,7 +606,7 @@ Error_t CAudioFileSndLib::openFile( std::string cAudioFileName, FileIoType_t eIo
         {
             FileSpec_t  sFileSpec;
             int iTmp = -1;
-            sFileSpec.fSampleRate     = static_cast<float>(mus_sound_srate(cAudioFileName.c_str()));
+            sFileSpec.fSampleRateInHz = static_cast<float>(mus_sound_srate(cAudioFileName.c_str()));
             sFileSpec.iNumChannels    = mus_sound_chans(cAudioFileName.c_str());
             iTmp    = mus_sound_header_type(cAudioFileName.c_str());
             switch (iTmp)
@@ -641,12 +641,12 @@ Error_t CAudioFileSndLib::openFile( std::string cAudioFileName, FileIoType_t eIo
         else
         {
             mus_sound_set_chans(cAudioFileName.c_str(), psFileSpec->iNumChannels);
-            mus_sound_set_srate(cAudioFileName.c_str(), CUtil::float2int<int>(psFileSpec->fSampleRate));
+            mus_sound_set_srate(cAudioFileName.c_str(), CUtil::float2int<int>(psFileSpec->fSampleRateInHz));
             mus_sound_set_header_type(cAudioFileName.c_str(), MUS_RAW);
             mus_sound_set_data_format(cAudioFileName.c_str(), (psFileSpec->eBitStreamType == kFileBitStreamInt16)?MUS_LSHORT:MUS_LFLOAT);
         }
     }
-    m_lFileLength = convBytes2Frames(mus_sound_length(cAudioFileName.c_str()));
+    m_lFileLength = mus_sound_frames(cAudioFileName.c_str());
 
     // allocate internal memory
     return allocMemory ();
@@ -664,8 +664,8 @@ Error_t CAudioFileSndLib::closeFile()
         mus_sound_close_input(m_FileHandle);
     }
     else
-    {
-        mus_sound_close_output(m_FileHandle, m_lFrameCnt);
+    {        
+        mus_sound_close_output(m_FileHandle, convFrames2Bytes(m_lFrameCnt));
     }
 
     m_lFrameCnt     = 0;
