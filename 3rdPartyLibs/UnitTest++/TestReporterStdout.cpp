@@ -19,7 +19,7 @@ void TestReporterStdout::ReportFailure(TestDetails const& details, char const* f
 #endif
     
 	using namespace std;
-    fprintf(stderr, errorFormat, details.filename, details.lineNumber, 1, details.testName, failure);
+    fprintf(stderr, errorFormat, details.filename, details.lineNumber, details.testName, failure);
 }
 
 void TestReporterStdout::ReportTestStart(TestDetails const& /*test*/)
