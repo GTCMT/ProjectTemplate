@@ -93,7 +93,7 @@ SUITE(AudioIo)
 
         // check identity
         for (int i = 0; i < m_iNumChannels; i++)
-            CHECK_ARRAY_CLOSE(m_ppfAudioData[i], ppfReadData[i], m_iBlockLength, 1e-3); // succeeds
+            CHECK_ARRAY_CLOSE(m_ppfAudioData[i], ppfReadData[i], m_iBuffLength, 1e-3); // succeeds
 
         // free allocated memory
         for (int i = 0; i < m_iNumChannels; i++)
@@ -130,7 +130,7 @@ SUITE(AudioIo)
 
         // check identity
         for (int i = 0; i < m_iNumChannels; i++)
-            CHECK_ARRAY_CLOSE(&m_ppfAudioData[i][iOffset], ppfReadData[i], m_iBlockLength, 1e-3); // succeeds
+            CHECK_ARRAY_CLOSE(&m_ppfAudioData[i][iOffset], ppfReadData[i], m_iBuffLength-iOffset, 1e-3); // succeeds
 
         // free allocated memory
         for (int i = 0; i < m_iNumChannels; i++)
@@ -163,7 +163,7 @@ SUITE(AudioIo)
         // check identity
         CHECK(iNumRead == iFileLength);
         for (int i = 0; i < m_iNumChannels; i++)
-            CHECK_ARRAY_CLOSE(m_ppfAudioData[i], ppfReadData[i], m_iBlockLength, 1e-3); // succeeds
+            CHECK_ARRAY_CLOSE(m_ppfAudioData[i], ppfReadData[i], m_iBuffLength, 1e-3); // succeeds
 
         // free allocated memory
         for (int i = 0; i < m_iNumChannels; i++)
@@ -219,7 +219,7 @@ SUITE(AudioIo)
 
         // check identity
         for (int i = 0; i < m_iNumChannels; i++)
-            CHECK_ARRAY_CLOSE(m_ppfAudioData[i], ppfReadData[i], m_iBlockLength, 1e-3); // succeeds
+            CHECK_ARRAY_CLOSE(m_ppfAudioData[i], ppfReadData[i], m_iBuffLength, 1e-3); // succeeds
 
         // free allocated memory
         for (int i = 0; i < m_iNumChannels; i++)
@@ -231,6 +231,71 @@ SUITE(AudioIo)
         remove ((cTestDataDir+"/test.pcm").c_str());
         
     }
+#ifdef WITH_SNDLIB
+    TEST_FIXTURE(AudioIoData, FileWriteReadWav)
+    {
+        if (cTestDataDir.empty())
+        {
+            CHECK(false);
+            return;
+        }
+        const std::string cExt(".wav");
+        int iNumRemainingFrames = m_iBuffLength;
+        Error_t err = kUnknownError;
+
+        stFileSpec.eFormat         = CAudioFileIf::kFileFormatWav;
+
+        err = m_pCAudioFile->openFile (cTestDataDir+"/test"+cExt, CAudioFileIf::kFileWrite, &stFileSpec);
+        CHECK (err == kNoError);
+
+        // put data
+        while (iNumRemainingFrames > 0)
+        {
+            for (int i = 0; i < m_iNumChannels; i++)
+                m_ppfTmp[i] = &m_ppfAudioData[i][m_iBuffLength - iNumRemainingFrames];
+            int iPutFrames = std::min(m_iBlockLength, iNumRemainingFrames);
+
+            m_pCAudioFile->writeData (m_ppfTmp, iPutFrames);
+
+            iNumRemainingFrames -= iPutFrames;
+        }
+        m_pCAudioFile->closeFile ();
+        m_pCAudioFile->resetInstance ();
+
+        // read the file and compare
+        int iReadIdx = 0;
+        float **ppfReadData  = new float*[m_iNumChannels];
+        for (int i = 0; i < m_iNumChannels; i++)
+            ppfReadData[i]   = new float[m_iBuffLength];
+
+        err = m_pCAudioFile->openFile (cTestDataDir+"/test"+cExt, CAudioFileIf::kFileRead, &stFileSpec);
+        CHECK (err == kNoError);
+
+        while (!m_pCAudioFile->isEof ())
+        {
+            int iNumRead = m_iBlockLength;
+            for (int i = 0; i < m_iNumChannels; i++)
+                m_ppfTmp[i] = &ppfReadData[i][iReadIdx];
+
+            m_pCAudioFile->readData (m_ppfTmp, iNumRead);
+            iReadIdx   += iNumRead;
+        }
+
+        // check identity
+        for (int i = 0; i < m_iNumChannels; i++)
+            CHECK_ARRAY_CLOSE(m_ppfAudioData[i], ppfReadData[i], m_iBuffLength, 1e-3); // succeeds
+
+        // free allocated memory
+        for (int i = 0; i < m_iNumChannels; i++)
+            delete [] ppfReadData[i];
+        delete [] ppfReadData;
+
+
+        // cleanup: delete file from disk -- permissions problem under win
+        remove ((cTestDataDir+"/test"+cExt).c_str());
+
+    }
+#endif // WITH_SNDLIB
 }
 
 #endif //WITH_TESTS
