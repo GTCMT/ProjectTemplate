@@ -1,15 +1,18 @@
 set (APP Test)
 
 set (LIB MyProject)
-set (TestLIB UnitTest++)
 set (AudioLIB AudioFileIO)
-set (SndLIB sndlib)
+if (WITH_SNDLIB)
+	set (SndLIB sndlib)
+endif (WITH_SNDLIB)
 
 # with tests or not
 option (WITH_TESTS "Use UnitTest++ for testing" ON)
 
 # get library source files
 if(WITH_TESTS)
+	set (TestLIB UnitTest++)
+	
 	add_subdirectory(${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/UnitTest++ "${CMAKE_CURRENT_BINARY_DIR}/UnitTest++")
 	list (APPEND PROJECT_INCLUDES ${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/UnitTest++)       
 
