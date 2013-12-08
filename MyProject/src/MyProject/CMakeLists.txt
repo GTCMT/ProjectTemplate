@@ -26,10 +26,13 @@ set_target_properties(${CurrLib} PROPERTIES PREFIX "lib")
 configure_file(${CMAKE_SOURCE_DIR}/../../${CurrLib}/src/${CurrLib}Config.h.in ${CMAKE_BINARY_DIR}/incl/${CurrLib}Config.h)
 
 
-# cppcheck target in the IDE
-file(GLOB to_remove RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.txt)
-list(REMOVE_ITEM ${CurrLib}_SOURCES ${to_remove})
-include (GenerateCppcheck)
-GENERATE_CPPCHECK(SOURCES ${${CurrLib}_SOURCES}
-					TARGET_NAME "CppCheck_${CurrLib}"
-				  INCLUDES ${PROJECT_INCLUDES})
+option (WITH_CPPCHECKTARGET "Add target for cppcheck testing" ON)
+if (WITH_CPPCHECKTARGET)
+	# cppcheck target in the IDE
+	file(GLOB to_remove RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.txt)
+	list(REMOVE_ITEM ${CurrLib}_SOURCES ${to_remove})
+	include (GenerateCppcheck)
+	GENERATE_CPPCHECK(SOURCES ${${CurrLib}_SOURCES}
+						TARGET_NAME "CppCheck_${CurrLib}"
+					  INCLUDES ${PROJECT_INCLUDES})
+endif(WITH_CPPCHECKTARGET)

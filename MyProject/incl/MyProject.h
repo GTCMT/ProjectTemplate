@@ -6,13 +6,6 @@
 class CMyProject
 {
 public:
-    /*! error codes */
-    enum Error_t
-    {
-        kNoError,                       //!< no error occurred
-        kUnknownError                   //!< unknown error occurred
-    };
-
     /*! version number */
     enum Version_t
     {

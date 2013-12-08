@@ -16,9 +16,9 @@ public:
     static T double2int (double fInput)
     {
         if (fInput >= 0)
-            return static_cast<T>(fInput + .5F);
+            return static_cast<T>(fInput + .5);
         else
-            return static_cast<T>(fInput - .5F);
+            return static_cast<T>(fInput - .5);
     }
 };
 #endif // __Util_hdr__
