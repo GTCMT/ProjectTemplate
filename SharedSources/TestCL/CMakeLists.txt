@@ -22,8 +22,8 @@ if(WITH_TESTS)
 	file(GLOB ${APP}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} *.h;../incl/*.h)
 
 	# these are the individual tests
-	file(GLOB ${APP}_SOURCES_TEST RELATIVE ${CMAKE_SOURCE_DIR} MyProject/src/Tests/*.c;MyProject/src/Tests/*.cpp;)
-	file(GLOB ${APP}_HEADERS_TEST RELATIVE ${CMAKE_SOURCE_DIR} MyProject/src/Tests/*.h;*.hpp)
+	file(GLOB ${APP}_SOURCES_TEST RELATIVE ${CMAKE_SOURCE_DIR} Tests/*.c;Tests/*.cpp;)
+	file(GLOB ${APP}_HEADERS_TEST RELATIVE ${CMAKE_SOURCE_DIR} Tests/*.h;*.hpp)
 	source_group (Tests FILES ${APP}_SOURCES_TEST ${APP}_HEADERS_TEST)
 	
 	## add include directories
