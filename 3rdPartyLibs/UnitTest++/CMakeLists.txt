@@ -1,16 +1,16 @@
 set(CurrLib UnitTest++)
 
 # get sndlib source and header files
-file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR} *.c;*.cpp;*.txt)
-file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR} *.h)
+file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/3rdPartyLibs/${CurrLib} *.c;*.cpp;*.txt)
+file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/3rdPartyLibs/${CurrLib} *.h)
 
 if(GTCMT_WIN32 OR GTCMT_WIN64)
     set(PlatformDir Win32)
 else(GTCMT_WIN32 OR GTCMT_WIN64)
     set(PlatformDir Posix)
 endif(GTCMT_WIN32 OR GTCMT_WIN64)
-file(GLOB ${CurrLib}_SOURCES_2 RELATIVE ${CMAKE_SOURCE_DIR} ${PlatformDir}/*.cpp)
-file(GLOB ${CurrLib}_HEADERS_2 RELATIVE ${CMAKE_SOURCE_DIR} ${PlatformDir}/*.h)
+file(GLOB ${CurrLib}_SOURCES_2 RELATIVE ${CMAKE_SOURCE_DIR}/3rdPartyLibs/${CurrLib} ${PlatformDir}/*.cpp)
+file(GLOB ${CurrLib}_HEADERS_2 RELATIVE ${CMAKE_SOURCE_DIR}/3rdPartyLibs/${CurrLib} ${PlatformDir}/*.h)
 
 ## add include directories
 foreach(PATH ${PROJECT_INCLUDES})

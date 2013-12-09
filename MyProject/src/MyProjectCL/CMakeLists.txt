@@ -2,8 +2,8 @@ set (LIB MyProject)
 set (APP ${LIB}CL)
 
 # get all source files
-file(GLOB ${APP}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/${APP} *.c;*.cpp;*.txt)
-file(GLOB ${APP}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${APP} *.h;../incl/*.h;../../../incl/SharedSources/incl/*.h)
+file(GLOB ${APP}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/${LIB}/src/${APP} *.c;*.cpp;*.txt)
+file(GLOB ${APP}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${LIB}/src/${APP} *.h;../incl/*.h;../../../incl/SharedSources/incl/*.h)
 
 ## add include directories
 add_includes ()

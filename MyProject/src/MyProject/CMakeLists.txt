@@ -6,10 +6,8 @@ set (${CurrLib}_VERSION_MINOR "0" CACHE INTERNAL "")
 set (${CurrLib}_VERSION_PATCH "1" CACHE INTERNAL "")
 
 # get all source files
-file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.c;*.cpp;*.txt)
-file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.h;*.hpp;../incl/*.h;../incl/*.hpp)
-#file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.h;*.hpp;../incl/*.h;../incl/*.hpp;../../incl/*.h;../../incl/*.hpp)
-
+file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib} *.cpp;*.txt)
+file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib} *.h;../incl/*.h)
 
 ## add include directories
 add_includes ()
@@ -23,7 +21,7 @@ set_target_properties(${CurrLib} PROPERTIES OUTPUT_NAME "${CurrLib}")
 set_target_properties(${CurrLib} PROPERTIES PREFIX "lib")
 
 # copy platform config file
-configure_file(${CMAKE_SOURCE_DIR}/../../${CurrLib}/src/${CurrLib}Config.h.in ${CMAKE_BINARY_DIR}/incl/${CurrLib}Config.h)
+configure_file(${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib}Config.h.in ${CMAKE_BINARY_DIR}/incl/${CurrLib}Config.h)
 
 
 option (WITH_CPPCHECKTARGET "Add target for cppcheck testing" ON)

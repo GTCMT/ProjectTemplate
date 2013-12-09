@@ -1,4 +1,4 @@
-set (APP Test)
+set (APP TestCL)
 
 set (LIB MyProject)
 set (AudioLIB AudioFileIO)
@@ -13,17 +13,17 @@ option (WITH_TESTS "Use UnitTest++ for testing" ON)
 if(WITH_TESTS)
 	set (TestLIB UnitTest++)
 	
-	add_subdirectory(${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/UnitTest++ "${CMAKE_CURRENT_BINARY_DIR}/UnitTest++")
-	list (APPEND PROJECT_INCLUDES ${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/UnitTest++)       
+	add_subdirectory(${CMAKE_SOURCE_DIR}/3rdPartyLibs/UnitTest++ "${CMAKE_CURRENT_BINARY_DIR}/UnitTest++")
+	list (APPEND PROJECT_INCLUDES ${CMAKE_SOURCE_DIR}/3rdPartyLibs/UnitTest++)       
 
 	## get all source files
 	# this is the global main
-	file(GLOB ${APP}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR} Test.cpp)
-	file(GLOB ${APP}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR} *.h;../incl/*.h;../../../incl/SharedSources/incl/*.h)
+	file(GLOB ${APP}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} Test.cpp)
+	file(GLOB ${APP}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} *.h;../incl/*.h)
 
 	# these are the individual tests
-	file(GLOB ${APP}_SOURCES_TEST RELATIVE ${CMAKE_SOURCE_DIR} ../../MyProject/src/Tests/*.c;../../MyProject/src/Tests/*.cpp;)
-	file(GLOB ${APP}_HEADERS_TEST RELATIVE ${CMAKE_SOURCE_DIR} ../../MyProject/src/Tests/*.h;*.hpp)
+	file(GLOB ${APP}_SOURCES_TEST RELATIVE ${CMAKE_SOURCE_DIR} MyProject/src/Tests/*.c;MyProject/src/Tests/*.cpp;)
+	file(GLOB ${APP}_HEADERS_TEST RELATIVE ${CMAKE_SOURCE_DIR} MyProject/src/Tests/*.h;*.hpp)
 	source_group (Tests FILES ${APP}_SOURCES_TEST ${APP}_HEADERS_TEST)
 	
 	## add include directories

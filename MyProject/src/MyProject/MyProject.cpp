@@ -4,6 +4,8 @@
 // project headers
 #include "MyProjectConfig.h"
 
+#include "ErrorDef.h"
+
 #include "MyProject.h"
 
 static const char*  kCMyProjectBuildDate             = __DATE__;
@@ -45,7 +47,7 @@ const char*  CMyProject::getBuildDate ()
     return kCMyProjectBuildDate;
 }
 
-CMyProject::Error_t CMyProject::createInstance (CMyProject*& pCMyProject)
+Error_t CMyProject::createInstance (CMyProject*& pCMyProject)
 {
     pCMyProject = new CMyProject ();
 
@@ -56,7 +58,7 @@ CMyProject::Error_t CMyProject::createInstance (CMyProject*& pCMyProject)
     return kNoError;
 }
 
-CMyProject::Error_t CMyProject::destroyInstance (CMyProject*& pCMyProject)
+Error_t CMyProject::destroyInstance (CMyProject*& pCMyProject)
 {
     if (!pCMyProject)
         return kUnknownError;
@@ -70,7 +72,7 @@ CMyProject::Error_t CMyProject::destroyInstance (CMyProject*& pCMyProject)
 
 }
 
-CMyProject::Error_t CMyProject::initInstance()
+Error_t CMyProject::initInstance()
 {
     // allocate memory
 
@@ -79,7 +81,7 @@ CMyProject::Error_t CMyProject::initInstance()
     return kNoError;
 }
 
-CMyProject::Error_t CMyProject::resetInstance ()
+Error_t CMyProject::resetInstance ()
 {
     // reset buffers and variables to default values
 

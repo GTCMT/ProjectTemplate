@@ -1,15 +1,15 @@
 set(CurrLib sndlib)
 
 # get sndlib source and header files
-file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR} *.c;*.cpp;*.txt)
-file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR} *.h;../incl/*.h)
+file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/3rdPartyLibs/${CurrLib} *.c;*.cpp;*.txt)
+file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/3rdPartyLibs/${CurrLib} *.h;../incl/*.h)
 
 # remove the files with main functions
-file(GLOB to_remove RELATIVE ${CMAKE_SOURCE_DIR} *sndplay.c;*sndinfo.c)
+file(GLOB to_remove RELATIVE ${CMAKE_SOURCE_DIR}/3rdPartyLibs/${CurrLib} *sndplay.c;*sndinfo.c)
 list(REMOVE_ITEM ${CurrLib}_SOURCES ${to_remove})
 
 # set include path
-include_directories(${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/${CurrLib})
+include_directories(${CMAKE_SOURCE_DIR}/3rdPartyLibs/${CurrLib})
 
 # build a static library
 add_library(${CurrLib} STATIC ${${CurrLib}_SOURCES} ${${CurrLib}_HEADERS})

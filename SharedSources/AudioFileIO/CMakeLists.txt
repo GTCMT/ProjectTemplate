@@ -8,13 +8,13 @@ set (${CurrLib}_VERSION_PATCH "1" CACHE INTERNAL "")
 option (WITH_SNDLIB "Use sndlib for audiofile IO" ON)
 
 # get wrapper source files
-file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.c;*.cpp;*.txt)
-file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.h;../incl/*.h)
+file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${CurrLib} *.c;*.cpp;*.txt)
+file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${CurrLib} *.h;../incl/*.h)
 
 # get library source files
 if(WITH_SNDLIB)
-	add_subdirectory(${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/sndlib "${CMAKE_CURRENT_BINARY_DIR}/sndlib")
-	list (APPEND PROJECT_INCLUDES ${CMAKE_SOURCE_DIR}/../../3rdPartyLibs/sndlib)    
+	add_subdirectory(${CMAKE_SOURCE_DIR}/3rdPartyLibs/sndlib "${CMAKE_CURRENT_BINARY_DIR}/sndlib")
+	list (APPEND PROJECT_INCLUDES ${CMAKE_SOURCE_DIR}/3rdPartyLibs/sndlib)    
 endif(WITH_SNDLIB)
 
 
