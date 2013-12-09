@@ -28,7 +28,7 @@ public:
     static Error_t createInstance (CFft*& pCFft);
     static Error_t destroyInstance (CFft*& pCFft);
     
-    Error_t initInstance (int iBlockLength, int iZeroPadFactor, WindowFunction_t eWindow = kWindowHann, Windowing_t eWindowing = kPreWindow);
+    Error_t initInstance (int iBlockLength, int iZeroPadFactor = 1, WindowFunction_t eWindow = kWindowHann, Windowing_t eWindowing = kPreWindow);
     Error_t resetInstance ();
  
     Error_t overrideWindow (const float *pfNewWindow);

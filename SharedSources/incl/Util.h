@@ -29,13 +29,15 @@ public:
         return !(n & (n-1));
     }
 
+
     template<typename T>
     static void setZero (T *pInput, int iLength)
     {
         assert (iLength >= 0);
         assert (pInput);
 
-        memset (pInput, 0, sizeof(T)*iLength);
+        if (iLength > 0)
+            memset (pInput, 0, sizeof(T)*iLength);
     }
     template<typename T>
     static void copyBuff (T *pDest, const T *pSource, int iLength)

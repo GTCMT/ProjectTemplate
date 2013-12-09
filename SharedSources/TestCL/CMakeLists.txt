@@ -2,6 +2,7 @@ set (APP TestCL)
 
 set (LIB MyProject)
 set (AudioLIB AudioFileIO)
+set (DspLIB Dsp)
 if (WITH_SNDLIB)
 	set (SndLIB sndlib)
 endif (WITH_SNDLIB)
@@ -22,8 +23,8 @@ if(WITH_TESTS)
 	file(GLOB ${APP}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} *.h;../incl/*.h)
 
 	# these are the individual tests
-	file(GLOB ${APP}_SOURCES_TEST RELATIVE ${CMAKE_SOURCE_DIR} Tests/*.c;Tests/*.cpp;)
-	file(GLOB ${APP}_HEADERS_TEST RELATIVE ${CMAKE_SOURCE_DIR} Tests/*.h;*.hpp)
+	file(GLOB ${APP}_SOURCES_TEST RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} ../../Tests/*.cpp;)
+	file(GLOB ${APP}_HEADERS_TEST RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} ../../Tests/*.h)
 	source_group (Tests FILES ${APP}_SOURCES_TEST ${APP}_HEADERS_TEST)
 	
 	## add include directories
@@ -32,5 +33,5 @@ if(WITH_TESTS)
 	add_executable(${APP} ${${APP}_SOURCES} ${${APP}_HEADERS} ${${APP}_SOURCES_TEST} ${${APP}_HEADERS_TEST})
 
 	# link the libraries
-	target_link_libraries(${APP} ${LIB} ${TestLIB} ${AudioLIB} ${SndLIB} ${OS_LIBS})
+	target_link_libraries(${APP} ${LIB} ${TestLIB} ${DspLIB} ${AudioLIB} ${SndLIB} ${OS_LIBS})
 endif(WITH_TESTS)
