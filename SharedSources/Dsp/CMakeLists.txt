@@ -21,8 +21,6 @@ set_target_properties(${CurrLib} PROPERTIES PREFIX "lib")
 if (WITH_CPPCHECKTARGET)
 	# cppcheck target in the IDE
 	file(GLOB to_remove RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/Dsp *.txt;../../3rdPartyLibs/Fft/rvfft.cpp)
-	message(STATUS ${${CurrLib}_SOURCES})
-	message(STATUS ${to_remove})
 	list(REMOVE_ITEM ${CurrLib}_SOURCES ${to_remove})
 	include (GenerateCppcheck)
 	GENERATE_CPPCHECK(SOURCES ${${CurrLib}_SOURCES}
