@@ -42,6 +42,17 @@ public:
     Error_t splitRealImag(float *pfReal, float *pfImag, const complex_t *pfSpectrum) const;
     Error_t mergeRealImag(complex_t *pfSpectrum, const float *pfReal, const float *pfImag) const;
 
+    enum Length_t
+    {
+        kLengthFft,
+        kLengthData,
+        kLengthMagnitude,
+        kLengthPhase,
+
+        kNumLengths
+    };
+    int getLength(Length_t eLengthIdx);
+
     float freq2bin (float fFreqInHz, float fSampleRateInHz) const;
     float bin2freq (int iBinIdx, float fSampleRateInHz) const;
 

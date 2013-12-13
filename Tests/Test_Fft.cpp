@@ -8,6 +8,7 @@
 
 #include "SignalGen.h"
 
+#include "Util.h"
 #include "Dsp.h"
 
 SUITE(Fft)
@@ -136,7 +137,66 @@ SUITE(Fft)
         CHECK_ARRAY_CLOSE(m_pfTime, m_pfTmp, m_iFftLength, 1e-3);
     }
 
- 
+    TEST_FIXTURE(FftData, Hann)
+    {
+        const int iDataLength = m_iFftLength>>3;
+
+        m_pCFftInstance->resetInstance();
+        m_pCFftInstance->initInstance(iDataLength, 8, CFft::kWindowHann, CFft::kPreWindow);
+        CSignalGen::generateDc(m_pfTime, iDataLength, 1.F);
+
+        m_pCFftInstance->doFft(m_pfFreq, m_pfTime);
+
+        //reuse real-value buffer
+        m_pCFftInstance->getMagnitude(m_pfReal, m_pfFreq);
+
+        CHECK_CLOSE(64.F/m_iFftLength, m_pfReal[0], 1e-3); 
+        CHECK_CLOSE(0, m_pfReal[16], 1e-3); 
+        CHECK_CLOSE(1.7077F/m_iFftLength, m_pfReal[19], 1e-4); 
+    }
+    TEST_FIXTURE(FftData, Hamming)
+    {
+        const int iDataLength = m_iFftLength>>3;
+
+        m_pCFftInstance->resetInstance();
+        m_pCFftInstance->initInstance(iDataLength, 8, CFft::kWindowHamming, CFft::kPreWindow);
+        CSignalGen::generateDc(m_pfTime, iDataLength, 1.F);
+
+        m_pCFftInstance->doFft(m_pfFreq, m_pfTime);
+
+        //m_pCFftInstance->getWindow(m_pfReal);
+
+        //reuse real-value buffer
+        m_pCFftInstance->getMagnitude(m_pfReal, m_pfFreq);
+
+        CHECK_CLOSE(69.12F/m_iFftLength, m_pfReal[0], 1e-3); 
+        CHECK_CLOSE(0, m_pfReal[16], 1e-3); 
+        CHECK_CLOSE(0.5113/m_iFftLength, m_pfReal[36], 1e-4); 
+    }
+
+    TEST_FIXTURE(FftData, Inplace)
+    {
+        CSignalGen::generateNoise(m_pfTime, m_iFftLength, 1.F);
+
+        // compute fft inplace and compare
+        m_pCFftInstance->doFft(m_pfFreq, m_pfTime);
+        CUtil::copyBuff(m_pfTmp, m_pfTime, m_iFftLength);
+        m_pCFftInstance->doFft(m_pfTmp, m_pfTmp);
+        CHECK_ARRAY_CLOSE(m_pfFreq, m_pfTmp, m_iFftLength, 1e-3);
+
+        // get magnitude in-place and compare
+        m_pCFftInstance->getMagnitude(m_pfReal, m_pfFreq);
+        CUtil::copyBuff(m_pfTmp, reinterpret_cast<float*>(m_pfFreq), m_iFftLength);
+        m_pCFftInstance->getMagnitude(m_pfTmp, m_pfTmp);
+        CHECK_ARRAY_CLOSE(m_pfReal, m_pfTmp, m_pCFftInstance->getLength(CFft::kLengthMagnitude), 1e-3);
+
+        // get phase in-place and compare
+        m_pCFftInstance->getPhase(m_pfReal, m_pfFreq);
+        CUtil::copyBuff(m_pfTmp, reinterpret_cast<float*>(m_pfFreq), m_iFftLength);
+        m_pCFftInstance->getPhase(m_pfTmp, m_pfTmp);
+        CHECK_ARRAY_CLOSE(m_pfReal, m_pfTmp, m_pCFftInstance->getLength(CFft::kLengthPhase), 1e-3);
+    }
+
 }
 
 #endif //WITH_TESTS

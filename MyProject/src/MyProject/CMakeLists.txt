@@ -27,7 +27,7 @@ configure_file(${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib}Config.h.in ${CMAKE_
 option (WITH_CPPCHECKTARGET "Add target for cppcheck testing" ON)
 if (WITH_CPPCHECKTARGET)
 	# cppcheck target in the IDE
-	file(GLOB to_remove RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib} *.txt)
+	file(GLOB to_remove RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib} *.txt)
 	list(REMOVE_ITEM ${CurrLib}_SOURCES ${to_remove})
 	include (GenerateCppcheck)
 	GENERATE_CPPCHECK(SOURCES ${${CurrLib}_SOURCES}

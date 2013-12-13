@@ -289,11 +289,26 @@ Error_t CFft::computeWindow( WindowFunction_t eWindow )
         {
             for (i = 0; i < m_iDataLength; i++)
             {
-                m_pfWindowBuff[i]   = .54F * - .46F * cosf((i * 2.F*m_Pi) / (m_iDataLength+1));
+                m_pfWindowBuff[i]   = .54F - .46F * cosf((i * 2.F*m_Pi) / (m_iDataLength+1));
             }
             break;
         }
     }
 
     return kNoError;
+}
+
+int CFft::getLength( Length_t eLengthIdx )
+{
+    switch (eLengthIdx)
+    {
+    case kLengthFft:
+        return m_iFftLength;
+    case kLengthData:
+        return m_iDataLength;
+    case kLengthMagnitude:
+    case kLengthPhase:
+        return m_iFftLength/2+1;
+    }
+    return 0;
 }

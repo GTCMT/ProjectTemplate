@@ -546,14 +546,25 @@ CAudioFileSndLib::~CAudioFileSndLib()
 
 Error_t CAudioFileSndLib::openFile( std::string cAudioFileName, FileIoType_t eIoType, FileSpec_t const *psFileSpec /*= 0*/ )
 {
+    FileSpec_t  sSpec; 
+    int iSndLibFileFormat = MUS_RIFF;
+
     if (cAudioFileName.empty())
         return kFileOpenError;
 
     resetInstance (true);
     setIoType(eIoType);
 
-    int iSndLibFileFormat = -1;
-    switch (psFileSpec->eFormat)
+    if (!psFileSpec)
+    {
+        getFileSpec(sSpec);
+    }
+    else
+    {
+        CUtil::copyBuff(&sSpec, psFileSpec, 1);
+    }
+
+    switch (sSpec.eFormat)
     {
     case kFileFormatWav:
         iSndLibFileFormat = MUS_RIFF;
@@ -569,26 +580,23 @@ Error_t CAudioFileSndLib::openFile( std::string cAudioFileName, FileIoType_t eIo
     }
 
     // set file spec (required for raw streams)
-    if (psFileSpec)
-    {
-        setFileSpec(psFileSpec);
-        mus_sound_set_chans(cAudioFileName.c_str(), psFileSpec->iNumChannels);
-        mus_sound_set_srate(cAudioFileName.c_str(), CUtil::float2int<int>(psFileSpec->fSampleRateInHz));
-        mus_sound_set_header_type(cAudioFileName.c_str(),  iSndLibFileFormat);
-        mus_sound_set_data_format(cAudioFileName.c_str(), (psFileSpec->eBitStreamType == kFileBitStreamInt16)?MUS_LSHORT:MUS_LFLOAT);
-        setInitialized(true);
-    }
+    setFileSpec(&sSpec);
 
-    if (getIoType()==kFileRead)
+    if (getIoType() == kFileRead)
     {
+        mus_sound_set_chans(cAudioFileName.c_str(), sSpec.iNumChannels);
+        mus_sound_set_srate(cAudioFileName.c_str(), CUtil::float2int<int>(sSpec.fSampleRateInHz));
+        mus_sound_set_header_type(cAudioFileName.c_str(),  iSndLibFileFormat);
+        mus_sound_set_data_format(cAudioFileName.c_str(), (sSpec.eBitStreamType == kFileBitStreamInt16)?MUS_LSHORT:MUS_LFLOAT);
+
         m_FileHandle = mus_sound_open_input(cAudioFileName.c_str());
     }
     else
     {
         m_FileHandle = mus_sound_open_output(cAudioFileName.c_str(), 
-            CUtil::float2int<int>(psFileSpec->fSampleRateInHz),
-            psFileSpec->iNumChannels,
-            (psFileSpec->eBitStreamType == kFileBitStreamInt16)?MUS_LSHORT:MUS_LFLOAT,
+            CUtil::float2int<int>(sSpec.fSampleRateInHz),
+            sSpec.iNumChannels,
+            (sSpec.eBitStreamType == kFileBitStreamInt16)?MUS_LSHORT:MUS_LFLOAT,
             iSndLibFileFormat,
             0);
     }
@@ -640,13 +648,14 @@ Error_t CAudioFileSndLib::openFile( std::string cAudioFileName, FileIoType_t eIo
         }
         else
         {
-            mus_sound_set_chans(cAudioFileName.c_str(), psFileSpec->iNumChannels);
-            mus_sound_set_srate(cAudioFileName.c_str(), CUtil::float2int<int>(psFileSpec->fSampleRateInHz));
+            mus_sound_set_chans(cAudioFileName.c_str(), sSpec.iNumChannels);
+            mus_sound_set_srate(cAudioFileName.c_str(), CUtil::float2int<int>(sSpec.fSampleRateInHz));
             mus_sound_set_header_type(cAudioFileName.c_str(), MUS_RAW);
-            mus_sound_set_data_format(cAudioFileName.c_str(), (psFileSpec->eBitStreamType == kFileBitStreamInt16)?MUS_LSHORT:MUS_LFLOAT);
+            mus_sound_set_data_format(cAudioFileName.c_str(), (sSpec.eBitStreamType == kFileBitStreamInt16)?MUS_LSHORT:MUS_LFLOAT);
         }
     }
     m_lFileLength = mus_sound_frames(cAudioFileName.c_str());
+    setInitialized(true);
 
     // allocate internal memory
     return allocMemory ();
