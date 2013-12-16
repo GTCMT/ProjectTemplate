@@ -25,35 +25,109 @@ public:
         kPostWindow = 0x02L     //!< apply window function after IFFT
     };
 
+    /*! creates a new FFT instance
+    \param CFft * & pCFft: pointer to the new instance
+    \return Error_t
+    */
     static Error_t createInstance (CFft*& pCFft);
+    
+    /*! destroys and FFT instance
+    \param CFft * & pCFft: pointer to the instance to be destroyed
+    \return Error_t
+    */
     static Error_t destroyInstance (CFft*& pCFft);
     
+    /*! initializes an FFT instance
+    \param int iBlockLength: input data block length in Frames
+    \param int iZeroPadFactor: fft length (zeropadded)
+    \param WindowFunction_t eWindow: window type
+    \param Windowing_t eWindowing: apply window before FFT, after IFFT, or both
+    \return Error_t
+    */
     Error_t initInstance (int iBlockLength, int iZeroPadFactor = 1, WindowFunction_t eWindow = kWindowHann, Windowing_t eWindowing = kPreWindow);
+    
+    /*! resets an FFT instance
+    \return Error_t
+    */
     Error_t resetInstance ();
  
+    /*! use a customized window
+    \param const float * pfNewWindow: window data of length iBlockLength (\sa initInstance)
+    \return Error_t
+    */
     Error_t overrideWindow (const float *pfNewWindow);
+    /*! retrieve current window
+    \param float * pfWindow: window data of length iBlockLength (\sa initInstance)
+    \return Error_t
+    */
     Error_t getWindow (float *pfWindow) const;
 
+    /*! perform the FFT
+    \param complex_t * pfSpectrum: output result of length iBlockLength * iZeroPadFactor (\sa initInstance)
+    \param const float * pfInput: input data of length iBlockLength (\sa initInstance)
+    \return Error_t
+    */
     Error_t doFft (complex_t *pfSpectrum, const float *pfInput);
+    /*! perform IFFT
+    \param float * pfOutput: time domain output signal of length iBlockLength * iZeroPadFactor (\sa initInstance)
+    \param const complex_t * pfSpectrum: input spectrum of length iBlockLength * iZeroPadFactor (\sa initInstance)
+    \return Error_t
+    */
     Error_t doInvFft (float *pfOutput, const complex_t *pfSpectrum);
 
+    /*! extract magnitude spectrum from complex values
+    \param float * pfMag: resulting magnitude spectrum of length (iBlockLength * iZeroPadFactor)/2+1 (\sa initInstance)
+    \param const complex_t * pfSpectrum: input spectrum of length iBlockLength * iZeroPadFactor (\sa initInstance)
+    \return Error_t
+    */
     Error_t getMagnitude (float *pfMag, const complex_t *pfSpectrum) const;
+    /*! extract phase spectrum from complex values
+    \param float * pfPhase: resulting phase spectrum of length (iBlockLength * iZeroPadFactor)/2+1 (\sa initInstance)
+    \param const complex_t * pfSpectrum: input spectrum of length iBlockLength * iZeroPadFactor (\sa initInstance)
+    \return Error_t
+    */
     Error_t getPhase(float *pfPhase, const complex_t *pfSpectrum) const;
+    /*! get real and imaginary part from complex spectrum
+    \param float * pfReal: resulting real part of length (iBlockLength * iZeroPadFactor)/2+1 (\sa initInstance) 
+    \param float * pfImag: resulting imaginary part of length (iBlockLength * iZeroPadFactor)/2 (\sa initInstance)
+    \param const complex_t * pfSpectrum: input spectrum of length iBlockLength * iZeroPadFactor (\sa initInstance)
+    \return Error_t
+    */
     Error_t splitRealImag(float *pfReal, float *pfImag, const complex_t *pfSpectrum) const;
+    /*! merge real and imaginary parts into complex spectrum
+    \param complex_t * pfSpectrum: resulting spectrum of length iBlockLength * iZeroPadFactor (\sa initInstance)
+    \param const float * pfReal: input real part of length (iBlockLength * iZeroPadFactor)/2+1 (\sa initInstance) 
+    \param const float * pfImag: input imaginary part of length (iBlockLength * iZeroPadFactor)/2 (\sa initInstance)
+    \return Error_t
+    */
     Error_t mergeRealImag(complex_t *pfSpectrum, const float *pfReal, const float *pfImag) const;
 
     enum Length_t
     {
-        kLengthFft,
-        kLengthData,
-        kLengthMagnitude,
-        kLengthPhase,
+        kLengthFft,             //!< length of the FFT
+        kLengthData,            //!< length of the input data
+        kLengthMagnitude,       //!< length of the magnitude spectrum
+        kLengthPhase,           //!< length of the phase spectrum
 
         kNumLengths
     };
+    /*! return length of spectrum
+    \param Length_t eLengthIdx spectrum type
+    \return int
+    */
     int getLength(Length_t eLengthIdx);
 
+    /*! convert frequency to bin value
+    \param float fFreqInHz: frequency to convert
+    \param float fSampleRateInHz: sample rate of the audio signal
+    \return float: index (not quantized to integer)
+    */
     float freq2bin (float fFreqInHz, float fSampleRateInHz) const;
+    /*! convert bin to frequency
+    \param int iBinIdx: index of the FFT bin
+    \param float fSampleRateInHz: sample rate of the audio signal
+    \return float: frequency in Hz
+    */
     float bin2freq (int iBinIdx, float fSampleRateInHz) const;
 
 protected:

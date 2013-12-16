@@ -160,13 +160,14 @@ Error_t CFft::getMagnitude( float *pfMag, const complex_t *pfSpectrum ) const
     // re(0),re(1),re(2),...,re(size/2),im(size/2-1),...,im(1)
     int iNyq        = m_iFftLength>>1;
 
+    // no imaginary part at these bins
     pfMag[0]        = abs(pfSpectrum[0]);
     pfMag[iNyq]     = abs(pfSpectrum[iNyq]);
 
     for (int i = 1; i < iNyq; i++)
     {
         int iImagIdx    = m_iFftLength - i;
-        pfMag[i]    = sqrtf(pfSpectrum[i]*pfSpectrum[i] + pfSpectrum[iImagIdx]*pfSpectrum[iImagIdx]);
+        pfMag[i]        = sqrtf(pfSpectrum[i]*pfSpectrum[i] + pfSpectrum[iImagIdx]*pfSpectrum[iImagIdx]);
     }
     return kNoError;
 }
@@ -181,6 +182,7 @@ Error_t CFft::getPhase( float *pfPhase, const complex_t *pfSpectrum ) const
 
     pfPhase[0]      = m_Pi;
     pfPhase[iNyq]   = m_Pi;
+    
     for (int i = 1; i < iNyq; i++)
     {
         int iImagIdx    = m_iFftLength - i;
@@ -197,6 +199,7 @@ Error_t CFft::splitRealImag( float *pfReal, float *pfImag, const complex_t *pfSp
     if (!m_bIsInitialized)
         return kNotInitializedError;
 
+    // re(0),re(1),re(2),...,re(size/2),im(size/2-1),...,im(1)
     int iNyq        = m_iFftLength>>1;
 
     CUtil::copyBuff(pfReal, pfSpectrum, iNyq+1);
@@ -215,6 +218,7 @@ Error_t CFft::mergeRealImag( complex_t *pfSpectrum, const float *pfReal, const f
     if (!m_bIsInitialized)
         return kNotInitializedError;
 
+    // re(0),re(1),re(2),...,re(size/2),im(size/2-1),...,im(1)
     int iNyq        = m_iFftLength>>1;
 
     CUtil::copyBuff(pfSpectrum, pfReal, iNyq+1);
