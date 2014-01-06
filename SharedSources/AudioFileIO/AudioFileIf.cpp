@@ -41,9 +41,9 @@ Error_t CAudioFileIf::destroyInstance( CAudioFileIf*& pCInstance )
 }
 
 CAudioFileIf::CAudioFileIf() : 
+    m_eIoType(kFileRead),
     m_bWithClipping(true),
     m_bIsInitialized(false),
-    m_eIoType(kFileRead),
     m_iNumBytesPerSample(2)
 {
 }
@@ -357,7 +357,7 @@ Error_t CAudioFileRaw::openFile( std::string cAudioFileName, FileIoType_t eIoTyp
         setInitialized(true);
     }
     // open file
-    m_File.open (cAudioFileName, ios::binary | ((eIoType & kFileRead)? ios::in : 0) | ((eIoType & kFileWrite)? ios::out : 0));
+    m_File.open (cAudioFileName.c_str(), ios::binary | ((eIoType & kFileRead)? ios::in : ios::out));
 
     if (!isOpen())
     {
