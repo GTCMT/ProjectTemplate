@@ -57,11 +57,14 @@ SUITE(AudioIo)
         CAudioFileIf    *m_pCAudioFile;
         CAudioFileIf::FileSpec_t stFileSpec;
 
-        static const int m_iBuffLength  = 1027;
-        static const int m_iBlockLength = 17;
-        static const int m_iNumChannels = 2;
+        static const int m_iBuffLength;
+        static const int m_iBlockLength;
+        static const int m_iNumChannels;
     };
 
+    const int AudioIoData::m_iBuffLength  = 1027;
+    const int AudioIoData::m_iBlockLength = 17;
+    const int AudioIoData::m_iNumChannels = 2;
 
     TEST_FIXTURE(AudioIoData, FileReadRaw)
     {
