@@ -22,3 +22,7 @@ set_target_properties(${CurrLib} PROPERTIES PREFIX "lib")
 if(MSVC)
 	set_target_properties(${CurrLib} PROPERTIES COMPILE_FLAGS "/W0 /DMUS_WINDOZE")
 endif(MSVC)
+
+if (APPLE)
+	set_target_properties(${CurrLib} PROPERTIES COMPILE_FLAGS "-w")
+endif(APPLE)
