@@ -1,0 +1,35 @@
+TRUN_TESTS
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ PostBuild\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/RUN_TESTS.build/Script-63BAF9A4687B4C39BAE87110.sh
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/RUN_TESTS.build/Script-63BAF9A4687B4C39BAE87110.sh
+c0000000052CB2AA300000000000000A6
+t1389046435
+s166
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies147b7823627bb841^596e7923627bb841^---0#1#1#--18"Check dependencies36"E60FDFCD-C27A-4807-BB6A-0F6530D2A266-
+
+CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/RUN_TESTS.build/Script-63BAF9A4687B4C39BAE87110.sh
+s410739235.476887
+e410739235.538655
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/RUN_TESTS.build/Script-63BAF9A4687B4C39BAE87110.sh
+o/Applications/CMake\ 2.8-12.app/Contents/bin/ctest --force-new-ctest-process -C Debug
+oTest project /Users/alexanderlerch/ProjectTemplate/bld
+o    Start 1: AudioIo
+o1/2 Test #1: AudioIo ..........................   Passed    0.01 sec
+o    Start 2: Fft
+o2/2 Test #2: Fft ..............................   Passed    0.01 sec
+o
+o100% tests passed, 0 tests failed out of 2
+o
+oTotal Test time (real) =   0.02 sec
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'121"PhaseScriptExecution CMake\ PostBuild\ Rules bld/MyProject.build/Debug/RUN_TESTS.build/Script-63BAF9A4687B4C39BAE87110.shdb857a23627bb841^cde68923627bb841^-398"/Applications/CMake\ 2.8-12.app/Contents/bin/ctest --force-new-ctest-process -C DebugTest project /Users/alexanderlerch/ProjectTemplate/bld    Start 1: AudioIo1/2 Test #1: AudioIo ..........................   Passed    0.01 sec    Start 2: Fft2/2 Test #2: Fft ..............................   Passed    0.01 sec100% tests passed, 0 tests failed out of 2Total Test time (real) =   0.02 sec8(21%IDEActivityLogMessage2@86"/Applications/CMake\ 2.8-12.app/Contents/bin/ctest --force-new-ctest-process -C Debug-410739235#0#86#-0#-----2@55"Test project /Users/alexanderlerch/ProjectTemplate/bld-410739235#86#55#-0#-----2@21"    Start 1: AudioIo-410739235#141#21#-0#-----2@69"1/2 Test #1: AudioIo ..........................   Passed    0.01 sec-410739235#162#69#-0#-----2@17"    Start 2: Fft-410739235#231#17#-0#-----2@69"2/2 Test #2: Fft ..............................   Passed    0.01 sec-410739235#248#69#-0#-----2@43"100% tests passed, 0 tests failed out of 2-410739235#318#43#-0#-----2@36"Total Test time (real) =   0.02 sec-410739235#362#36#-0#-----0#0#1#--297"PhaseScriptExecution CMake\ PostBuild\ Rules bld/MyProject.build/Debug/RUN_TESTS.build/Script-63BAF9A4687B4C39BAE87110.sh    cd /Users/alexanderlerch/ProjectTemplate    /bin/sh -c /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/RUN_TESTS.build/Script-63BAF9A4687B4C39BAE87110.sh36"A95640EB-3AC4-4331-AF8F-0C83D715D884-
+b48DCDDEA-8A9B-4B7A-BD41-835B03B0BE80
+

@@ -1,6 +1,6 @@
 
 #define _USE_MATH_DEFINES
-#include <math.h>
+#include <cmath>
 
 #include "Util.h"
 #include "Fft.h"
@@ -161,8 +161,8 @@ Error_t CFft::getMagnitude( float *pfMag, const complex_t *pfSpectrum ) const
     int iNyq        = m_iFftLength>>1;
 
     // no imaginary part at these bins
-    pfMag[0]        = abs(pfSpectrum[0]);
-    pfMag[iNyq]     = abs(pfSpectrum[iNyq]);
+    pfMag[0]        = std::abs(pfSpectrum[0]);
+    pfMag[iNyq]     = std::abs(pfSpectrum[iNyq]);
 
     for (int i = 1; i < iNyq; i++)
     {

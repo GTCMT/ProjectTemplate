@@ -1,0 +1,37 @@
+Start testing: Jan 06 17:13 EST
+----------------------------------------------------------
+1/2 Testing: AudioIo
+1/2 Test: AudioIo
+Command: "/Users/alexanderlerch/ProjectTemplate/bin/Debug/TestCL" "AudioIo" "/Users/alexanderlerch/ProjectTemplate/Tests/testdata/"
+Directory: /Users/alexanderlerch/ProjectTemplate/bld
+"AudioIo" start time: Jan 06 17:13 EST
+Output:
+----------------------------------------------------------
+Success: 10 tests passed.
+Test time: 0.01 seconds.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"AudioIo" end time: Jan 06 17:13 EST
+"AudioIo" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: Fft
+2/2 Test: Fft
+Command: "/Users/alexanderlerch/ProjectTemplate/bin/Debug/TestCL" "Fft"
+Directory: /Users/alexanderlerch/ProjectTemplate/bld
+"Fft" start time: Jan 06 17:13 EST
+Output:
+----------------------------------------------------------
+Success: 5 tests passed.
+Test time: 0.00 seconds.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Fft" end time: Jan 06 17:13 EST
+"Fft" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 06 17:13 EST
