@@ -39,17 +39,8 @@ int main(int argc, char* argv[])
 {
     std::string             sInputFilePath,
                             sOutputFilePath;
-    CAudioFileIf::FileSpec_t stFileSpec;
 
-    float                   **ppfAudioData;
-    static const int        kBlockSize = 17;
-    int                     iBlockSize = kBlockSize;
-    Error_t                 iErr;
-
-    CAudioFileIf            *phInputFile,
-                            *phOutputFile;
-    CMyProject              *phMyProject    = 0;
-
+    // detect memory leaks in win32
 #if (defined(WITH_MEMORYCHECK) && !defined(NDEBUG) && defined (GTCMT_WIN32))
     // set memory checking flags
     int iDbgFlag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
@@ -58,6 +49,7 @@ int main(int argc, char* argv[])
     _CrtSetDbgFlag( iDbgFlag );
 #endif
 
+    // enable floating point exceptions in win32
 #if (defined(WITH_FLOATEXCEPTIONS) && !defined(NDEBUG) && defined (GTCMT_WIN32))
     // enable check for exceptions (don't forget to enable stop in MSVC!)
     _controlfp(~(_EM_INVALID | _EM_ZERODIVIDE | _EM_OVERFLOW | _EM_UNDERFLOW | _EM_DENORMAL), _MCW_EM) ;
@@ -67,75 +59,6 @@ int main(int argc, char* argv[])
 
     // parse command line arguments
     getClArgs (sInputFilePath, sOutputFilePath, argc, argv);
-
-    //// open files
-    //stFileSpec.eBitStreamType   = CAudioFileIf::kFileBitStreamInt16;
-    //stFileSpec.eFormat          = CAudioFileIf::kFileFormatRaw;
-    //stFileSpec.fSampleRate      = 44100;
-    //stFileSpec.iNumChannels     = 2;
-
-    //iErr = phInputFile->openFile (sInputFilePath, 
-    //    CAudioFileIf::kFileRead,
-    //    &stFileSpec);
-    //if (iErr != kNoError)
-    //{
-    //    cout << "Input file open error!" << endl << endl;
-    //    return -1;
-    //}
-    //iErr = phOutputFile->openFile (sOutputFilePath, 
-    //    CAudioFileIf::kFileWrite,
-    //    &stFileSpec);
-    //if (iErr != kNoError)
-    //{
-    //    cout << "Input file open error!" << endl << endl;
-    //    return -1;
-    //}
-
-    ////allocate memory 
-    //ppfAudioData = new float* [stFileSpec.iNumChannels];
-    //for (int c=0; c<stFileSpec.iNumChannels; c++)
-    //{
-    //    ppfAudioData[c] = new float [iBlockSize];
-    //}
-
-    //int i = 1;
-    //while (iBlockSize == kBlockSize)
-    //{
-    //    // read and write data
-    //    phInputFile->readData (ppfAudioData, iBlockSize);
-    //    phOutputFile->writeData (ppfAudioData, iBlockSize);
-    //    if (i==1)
-    //    {
-    //        phInputFile->setPosition (.5);
-    //        i =0;
-    //    }
-    //}
-
-    //// free memory
-    //for (int c=0; c<stFileSpec.iNumChannels; c++)
-    //{
-    //    delete [] ppfAudioData[c];
-    //    ppfAudioData[c] = 0;
-    //}
-    //delete [] ppfAudioData;
-    //ppfAudioData    = 0;
-
-    //phInputFile->closeFile ();
-    //phOutputFile->closeFile ();
-    //delete phInputFile;
-    //delete phOutputFile;
-
-    // create class instance
-    CMyProject::createInstance (phMyProject);
-
-    // process
- 
-    // write results
-
-    // free memory    
-
-    // delete instance
-    CMyProject::destroyInstance (phMyProject);
     
     return 0;
     
