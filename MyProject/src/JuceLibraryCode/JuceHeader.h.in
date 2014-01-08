@@ -1,0 +1,57 @@
+#ifndef __JuceHeader_hdr__
+#define __JuceHeader_hdr__
+
+
+#cmakedefine JUCE_MODULE_juce_core 
+#cmakedefine JUCE_MODULE_juce_data_structures
+#cmakedefine JUCE_MODULE_juce_events 
+#cmakedefine JUCE_MODULE_juce_graphics 
+#cmakedefine JUCE_MODULE_juce_gui_basics 
+#cmakedefine JUCE_MODULE_juce_gui_extra 
+#cmakedefine JUCE_MODULE_juce_audio_basics 
+#cmakedefine JUCE_MODULE_juce_audio_devices 
+#cmakedefine JUCE_MODULE_juce_audio_formats 
+#cmakedefine JUCE_MODULE_juce_audio_plugin_client 
+#cmakedefine JUCE_MODULE_juce_audio_processors 
+#cmakedefine JUCE_MODULE_juce_audio_utils 
+
+#include "AppConfig.h"
+
+#ifdef JUCE_MODULE_juce_core
+#include "${JUCE_ROOT_DIR}/modules/juce_core/juce_core.h"
+#endif
+#ifdef JUCE_MODULE_juce_data_structures
+#include "${JUCE_ROOT_DIR}/modules/juce_data_structures/juce_data_structures.h"
+#endif
+#ifdef JUCE_MODULE_juce_events
+#include "${JUCE_ROOT_DIR}/modules/juce_events/juce_events.h"
+#endif
+#ifdef JUCE_MODULE_juce_graphics
+#include "${JUCE_ROOT_DIR}/modules/juce_graphics/juce_graphics.h"
+#endif
+#ifdef JUCE_MODULE_juce_gui_basics
+#include "${JUCE_ROOT_DIR}/modules/juce_gui_basics/juce_gui_basics.h"
+#endif
+#ifdef JUCE_MODULE_juce_gui_extra
+#include "${JUCE_ROOT_DIR}/modules/juce_gui_extra/juce_gui_extra.h"
+#endif
+#ifdef JUCE_MODULE_juce_audio_basics
+#include "${JUCE_ROOT_DIR}/modules/juce_gui_extra/juce_audio_basics.h"
+#endif
+#ifdef JUCE_MODULE_juce_audio_devices
+#include "${JUCE_ROOT_DIR}/modules/juce_gui_extra/juce_audio_devices.h"
+#endif
+#ifdef JUCE_MODULE_juce_audio_formats
+#include "${JUCE_ROOT_DIR}/modules/juce_gui_extra/juce_audio_formats.h"
+#endif
+#ifdef JUCE_MODULE_juce_audio_plugin_client
+#include "${JUCE_ROOT_DIR}/modules/juce_gui_extra/juce_audio_plugin_client.h"
+#endif
+#ifdef JUCE_MODULE_juce_audio_processors
+#include "${JUCE_ROOT_DIR}/modules/juce_gui_extra/juce_audio_processors.h"
+#endif
+#ifdef JUCE_MODULE_juce_audio_utils
+#include "${JUCE_ROOT_DIR}/modules/juce_gui_extra/juce_audio_utils.h"
+#endif
+
+#endif   // __JuceHeader_hdr__
