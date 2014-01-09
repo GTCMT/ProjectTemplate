@@ -67,8 +67,6 @@ int main(int argc, char* argv[])
     // parse command line arguments
     getClArgs (sInputFilePath, sOutputFilePath, argc, argv);
 
-    _CrtSetBreakAlloc(247);
-
     // open the input wave file
     CAudioFileIf::createInstance(phInputFile);
     phInputFile->openFile(sInputFilePath, CAudioFileIf::kFileRead);
