@@ -1,42 +1,18 @@
 #ifndef __AppHeader_hdr__
 #define __AppHeader_hdr__
 
-#ifdef JUCE_MODULE_juce_core
-#define JUCE_MODULE_AVAILABLE_juce_core                 1
-#endif
-#ifdef JUCE_MODULE_juce_data_structures
-#define JUCE_MODULE_AVAILABLE_juce_data_structures      1
-#endif
-#ifdef JUCE_MODULE_juce_events
-#define JUCE_MODULE_AVAILABLE_juce_events               1
-#endif
-#ifdef JUCE_MODULE_juce_graphics
-#define JUCE_MODULE_AVAILABLE_juce_graphics             1
-#endif
-#ifdef JUCE_MODULE_juce_gui_basics
-#define JUCE_MODULE_AVAILABLE_juce_gui_basics           1
-#endif
-#ifdef JUCE_MODULE_juce_gui_extra
-#define JUCE_MODULE_AVAILABLE_juce_gui_extra            1
-#endif
-#ifdef JUCE_MODULE_juce_audio_basics
-#define JUCE_MODULE_AVAILABLE_juce_audio_basics         1
-#endif
-#ifdef JUCE_MODULE_juce_audio_devices
-#define JUCE_MODULE_AVAILABLE_jjuce_audio_devices       1
-#endif
-#ifdef JUCE_MODULE_juce_audio_formats
-#define JUCE_MODULE_AVAILABLE_juce_audio_formats        1
-#endif
-#ifdef JUCE_MODULE_juce_audio_plugin_client
-#define JUCE_MODULE_AVAILABLE_juce_audio_plugin_client  1
-#endif
-#ifdef JUCE_MODULE_juce_audio_processors
-#define JUCE_MODULE_AVAILABLE_juce_juce_audio_processors 1
-#endif
-#ifdef JUCE_MODULE_juce_audio_utils
-#define JUCE_MODULE_AVAILABLE_juce_audio_utils          1
-#endif
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_core                 1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_data_structures      1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_events               1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_graphics             1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_gui_basics           1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_gui_extra            1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_audio_basics         1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_audio_devices        1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_audio_formats        1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_audio_plugin_client  1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_audio_processors     1
+#cmakedefine JUCE_MODULE_AVAILABLE_juce_audio_utils          1
 
 
 //==============================================================================
