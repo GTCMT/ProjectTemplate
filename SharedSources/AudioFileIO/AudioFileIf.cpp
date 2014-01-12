@@ -21,9 +21,9 @@ const int CAudioFileIf::m_kiDefBlockLength      = 1024;
 Error_t CAudioFileIf::createInstance( CAudioFileIf*& pCInstance )
 {
 #ifdef WITH_SNDLIB
-    pCInstance   = reinterpret_cast<CAudioFileIf*>(new CAudioFileSndLib ());
+    pCInstance   = new CAudioFileSndLib ();
 #else
-    pCInstance   = reinterpret_cast<CAudioFileIf*>(new CAudioFileRaw ());
+    pCInstance   = new CAudioFileRaw ();
 #endif
 
     if (!pCInstance)
