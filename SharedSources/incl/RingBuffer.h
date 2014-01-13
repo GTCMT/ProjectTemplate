@@ -38,7 +38,7 @@ public:
     /*! return the value of the current read index and increment the read pointer
     \return float the value from the read index
     */
-    float getValuePostInc ()
+    T getValuePostInc ()
     {
         int iCurrIdx    = m_iReadIdx;
         incIdx(m_iReadIdx);
