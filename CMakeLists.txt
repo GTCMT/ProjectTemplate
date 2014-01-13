@@ -60,6 +60,7 @@ if (WITH_TESTS)
 	# add tests here
 	add_test(AudioIo ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/TestCL AudioIo "${CMAKE_SOURCE_DIR}/Tests/testdata/")
 	add_test(Fft ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/TestCL Fft)
+	add_test(RingBuff ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/TestCL RingBuff)
 	add_cppcheck_test ()
 endif (WITH_TESTS)
 
