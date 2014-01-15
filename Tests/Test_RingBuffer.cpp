@@ -88,10 +88,13 @@ SUITE(RingBuff)
         m_pCRingBuffer->resetInstance ();
         CHECK_EQUAL(0, m_pCRingBuffer->getNumValuesInBuffer());
 
-        float fValue = m_pCRingBuffer->getPostInc ();
-        CHECK_EQUAL (0.F, fValue);
+        for (int i = 0; i < m_iRingBuffLength; i++)
+        {
+            float fValue = m_pCRingBuffer->getPostInc ();
+            CHECK_EQUAL (0.F, fValue);
 
-        CHECK_EQUAL(m_iRingBuffLength-1, m_pCRingBuffer->getNumValuesInBuffer());
+            CHECK_EQUAL(m_iRingBuffLength-(i+1), m_pCRingBuffer->getNumValuesInBuffer());
+        }
     }
 }
 

@@ -58,7 +58,7 @@ public:
     /*! returns the number of values currently buffered (note: 0 could also mean the buffer is full!)
     \return int
     */
-    int getNumValuesInBuffer ()
+    int getNumValuesInBuffer () const
     {
         return (m_iWriteIdx - m_iReadIdx + m_iBuffLength)%m_iBuffLength;
     }
