@@ -25,12 +25,15 @@ if(WITH_TESTS)
 	# these are the individual tests
 	file(GLOB ${APP}_SOURCES_TEST RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} ../../Tests/*.cpp;)
 	file(GLOB ${APP}_HEADERS_TEST RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} ../../Tests/*.h)
-	source_group (Tests FILES ${APP}_SOURCES_TEST ${APP}_HEADERS_TEST)
+	source_group (SharedTests FILES ${APP}_SOURCES_TEST ${APP}_HEADERS_TEST)
+	file(GLOB ${LIB}_SOURCES_TEST RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} ../../${LIB}/Tests/*.cpp;)
+	file(GLOB ${LIB}_HEADERS_TEST RELATIVE ${CMAKE_SOURCE_DIR}/SharedSources/${APP} ../../${LIB}/Tests/*.h)
+	source_group (MyProjectTests FILES ${LIB}_SOURCES_TEST ${LIB}_HEADERS_TEST)
 	
 	## add include directories
 	add_includes ()
 
-	add_executable(${APP} ${${APP}_SOURCES} ${${APP}_HEADERS} ${${APP}_SOURCES_TEST} ${${APP}_HEADERS_TEST})
+	add_executable(${APP} ${${APP}_SOURCES} ${${APP}_HEADERS} ${${APP}_SOURCES_TEST} ${${APP}_HEADERS_TEST} ${${LIB}_SOURCES_TEST} ${${LIB}_HEADERS_TEST})
 
 	# link the libraries
 	target_link_libraries(${APP} ${LIB} ${TestLIB} ${DspLIB} ${AudioLIB} ${SndLIB} ${OS_LIBS})
