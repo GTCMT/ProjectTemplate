@@ -29,7 +29,7 @@ public:
     \param T tNewValue the new value
     \return void
     */
-    void putValuePostInc (T tNewValue)
+    void putPostInc (T tNewValue)
     {
         m_ptBuff[m_iWriteIdx]   = tNewValue;
         incIdx(m_iWriteIdx);
@@ -38,7 +38,7 @@ public:
     /*! return the value of the current read index and increment the read pointer
     \return float the value from the read index
     */
-    T getValuePostInc ()
+    T getPostInc ()
     {
         int iCurrIdx    = m_iReadIdx;
         incIdx(m_iReadIdx);
@@ -63,15 +63,20 @@ public:
         return (m_iWriteIdx - m_iReadIdx + m_iBuffLength)%m_iBuffLength;
     }
 private:
-    void incIdx (int &iIdx)
+    void incIdx (int &iIdx, int iOffset = 1)
     {
-        iIdx    = (iIdx + 1) % m_iBuffLength;
+        while ((iIdx + iOffset) < 0)
+        {
+            // avoid negative buffer indices
+            iOffset += m_iBuffLength;   
+        }
+        iIdx    = (iIdx + iOffset) % m_iBuffLength;
     };
 
-    int     m_iBuffLength,          //!< length of the internal buffer
+    int m_iBuffLength,              //!< length of the internal buffer
         m_iReadIdx,                 //!< current read index
         m_iWriteIdx;                //!< current write index
 
-    T       *m_ptBuff;              //!< data buffer
+    T   *m_ptBuff;                  //!< data buffer
 };
 #endif // __RingBuffer_hdr__

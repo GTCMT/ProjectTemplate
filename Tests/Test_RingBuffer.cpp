@@ -21,7 +21,7 @@ SUITE(RingBuff)
 
             m_pCRingBuffer  = new CRingBuffer<float> (m_iRingBuffLength);
             m_pfData        = new float [m_iDataLength];
-            CSignalGen::generateSine(m_pfData, 20.F, fSampleFreq, m_iRingBuffLength, .7F, M_PI_2);
+            CSignalGen::generateSine(m_pfData, 20.F, fSampleFreq, m_iRingBuffLength, .7F, static_cast<float>(M_PI_2));
         }
 
         ~RingBuffer() 
@@ -49,14 +49,14 @@ SUITE(RingBuff)
         // put initial values into ring buffer
         for (int i = 0; i < m_iDelay; i++)
         {
-            m_pCRingBuffer->putValuePostInc (m_pfData[i]);
+            m_pCRingBuffer->putPostInc (m_pfData[i]);
         }
 
         for (int i = m_iDelay; i < m_iDataLength; i++)
         {
             CHECK_EQUAL(m_iDelay, m_pCRingBuffer->getNumValuesInBuffer());
-            m_pCRingBuffer->getValuePostInc (); // just to increment - ignore the value
-            m_pCRingBuffer->putValuePostInc (m_pfData[i]);
+            m_pCRingBuffer->getPostInc (); // just to increment - ignore the value
+            m_pCRingBuffer->putPostInc (m_pfData[i]);
         }
     }
 
@@ -67,14 +67,14 @@ SUITE(RingBuff)
         // put initial values into ring buffer
         for (int i = 0; i < m_iDelay; i++)
         {
-            m_pCRingBuffer->putValuePostInc (m_pfData[i]);
+            m_pCRingBuffer->putPostInc (m_pfData[i]);
         }
 
         for (int i = m_iDelay; i < m_iDataLength; i++, iDataBuffIdx++)
         {
-            float fValue = m_pCRingBuffer->getValuePostInc ();
+            float fValue = m_pCRingBuffer->getPostInc ();
             CHECK_CLOSE(fValue, m_pfData[iDataBuffIdx], 1e-3F);
-            m_pCRingBuffer->putValuePostInc (m_pfData[i]);
+            m_pCRingBuffer->putPostInc (m_pfData[i]);
         }
     }
 
@@ -83,12 +83,12 @@ SUITE(RingBuff)
         // put initial values into ring buffer
         for (int i = 0; i < m_iDelay; i++)
         {
-            m_pCRingBuffer->putValuePostInc (m_pfData[i]);
+            m_pCRingBuffer->putPostInc (m_pfData[i]);
         }
         m_pCRingBuffer->resetInstance ();
         CHECK_EQUAL(0, m_pCRingBuffer->getNumValuesInBuffer());
 
-        float fValue = m_pCRingBuffer->getValuePostInc ();
+        float fValue = m_pCRingBuffer->getPostInc ();
         CHECK_EQUAL (0.F, fValue);
 
         CHECK_EQUAL(m_iRingBuffLength-1, m_pCRingBuffer->getNumValuesInBuffer());
