@@ -26,7 +26,12 @@ int main(int argc, char* argv[])
         while( p )
         {
             if( strcmp( p->m_details.suiteName, argv[ 1 ] ) == 0 )
-                    selectedTests.Add( p );
+            {
+                UnitTest::Test* pTest2Add   = p;
+                pTest2Add->m_nextTest       = 0;
+                
+                selectedTests.Add( pTest2Add );
+            }
             p = p->m_nextTest;
         }
 

@@ -10,18 +10,18 @@
 
 SUITE(MyProject)
 {
-    struct MyProject
+    struct MyProjectData
     {
-        MyProject() 
+        MyProjectData() 
         {
         }
 
-        ~MyProject() 
+        ~MyProjectData() 
         {
         }
     };
 
-    TEST_FIXTURE(MyProject, NoTest)
+    TEST_FIXTURE(MyProjectData, NoTest)
     {
         CHECK_EQUAL (0 ,0);
     }
