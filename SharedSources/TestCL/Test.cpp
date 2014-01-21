@@ -27,11 +27,10 @@ int main(int argc, char* argv[])
         {
             if( strcmp( p->m_details.suiteName, argv[ 1 ] ) == 0 )
             {
-                UnitTest::Test* pNextTest   = p->m_nextTest;
-                p->m_nextTest               = 0;
+                UnitTest::Test* pTestCopy   = new UnitTest::Test (p->m_details.testName, p->m_details.suiteName, p->m_details.filename, p->m_details.lineNumber);
+                pTestCopy->m_nextTest       = 0;
                 
-                selectedTests.Add( p );
-                p->m_nextTest               = pNextTest;
+                selectedTests.Add( pTestCopy );
             }
             p = p->m_nextTest;
         }
