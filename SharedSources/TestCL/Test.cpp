@@ -27,10 +27,11 @@ int main(int argc, char* argv[])
         {
             if( strcmp( p->m_details.suiteName, argv[ 1 ] ) == 0 )
             {
-                UnitTest::Test* pTest2Add   = p;
-                pTest2Add->m_nextTest       = 0;
+                UnitTest::Test* pNextTest   = p->m_nextTest;
+                p->m_nextTest               = 0;
                 
-                selectedTests.Add( pTest2Add );
+                selectedTests.Add( p );
+                p->m_nextTest               = pNextTest;
             }
             p = p->m_nextTest;
         }
