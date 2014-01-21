@@ -13,7 +13,7 @@ namespace UnitTest {
 void TestReporterStdout::ReportFailure(TestDetails const& details, char const* failure)
 {
 #if defined(__APPLE__) || defined(__GNUG__)
-    char const* const errorFormat = "%s:%d:%d: error: Failure in %s: %s\n";
+    char const* const errorFormat = "%s:%d: error: Failure in %s: %s\n";
 #else
     char const* const errorFormat = "%s(%d): error: Failure in %s: %s\n";
 #endif
