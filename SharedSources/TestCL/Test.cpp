@@ -27,13 +27,11 @@ int main(int argc, char* argv[])
         {
             if( strcmp( p->m_details.suiteName, argv[ 1 ] ) == 0 )
             {
-                UnitTest::Test* pTestCopy   = new UnitTest::Test (p->m_details.testName, p->m_details.suiteName, p->m_details.filename, p->m_details.lineNumber);
-                pTestCopy->m_nextTest       = 0;
-                
-                selectedTests.Add( pTestCopy );
+                selectedTests.Add( p );
             }
             p = p->m_nextTest;
         }
+        selectedTests.Add(0);
 
         //run selected test(s) only
         UnitTest::TestReporterStdout reporter;
