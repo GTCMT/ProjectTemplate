@@ -38,6 +38,9 @@ const int  CMyProject::getVersion (const Version_t eVersionIdx)
     case kPatch:
         iVersion    = MyProject_VERSION_PATCH; 
         break;
+    case kNumVersionInts:
+        iVersion    = -1;
+        break;
     }
 
     return iVersion;

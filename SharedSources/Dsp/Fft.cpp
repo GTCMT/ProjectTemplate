@@ -297,6 +297,11 @@ Error_t CFft::computeWindow( WindowFunction_t eWindow )
             }
             break;
         }
+    case kNumWindows:
+        {
+            CUtil::setZero(m_pfWindowBuff, m_iDataLength);
+            return kFunctionInvalidArgsError;
+        }
     }
 
     return kNoError;

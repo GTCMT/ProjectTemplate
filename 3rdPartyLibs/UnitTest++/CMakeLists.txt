@@ -25,6 +25,11 @@ set_target_properties(${CurrLib} PROPERTIES CLEAN_DIRECT_OUTPUT 1)
 set_target_properties(${CurrLib} PROPERTIES OUTPUT_NAME "${CurrLib}")
 set_target_properties(${CurrLib} PROPERTIES PREFIX "lib")
 
+# remove warnings
 if(MSVC)
 	set_target_properties(${CurrLib} PROPERTIES COMPILE_FLAGS "/W1")
 endif(MSVC)
+
+if (APPLE)
+	set_target_properties(${CurrLib} PROPERTIES COMPILE_FLAGS "-w")
+endif(APPLE)
