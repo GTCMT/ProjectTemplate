@@ -197,6 +197,25 @@ SUITE(Fft)
         CHECK_ARRAY_CLOSE(m_pfReal, m_pfTmp, m_pCFftInstance->getLength(CFft::kLengthPhase), 1e-3);
     }
 
+    TEST_FIXTURE(FftData, Freq2Bin2Freq)
+    {
+        const float fSampleRate = 44100.F;
+        const int aiBin[4]      = {0, 256, 512, 1024};
+        const float afFreq[4]   = {0, fSampleRate*.25F, fSampleRate*.5F, fSampleRate};
+        
+        // test invertibility
+        for (int i = 0; i < m_iFftLength/2+1; i++)
+        {
+            float fFreq = m_pCFftInstance->bin2freq(i, fSampleRate);
+            float fBin  = m_pCFftInstance->freq2bin(fFreq, fSampleRate);
+            CHECK_CLOSE(static_cast<float>(i), fBin, 1e-5); 
+        }
+
+        // test absolute values
+        for (int i = 0; i < 4; i++)
+            CHECK_CLOSE(afFreq[i], m_pCFftInstance->bin2freq(aiBin[i], fSampleRate), 1e-3);
+
+    }
 }
 
 #endif //WITH_TESTS
