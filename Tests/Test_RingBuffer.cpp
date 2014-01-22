@@ -96,6 +96,105 @@ SUITE(RingBuff)
             CHECK_EQUAL(m_iRingBuffLength-(i+1), m_pCRingBuffer->getNumValuesInBuffer());
         }
     }
+
+    //===========================================
+    //===========================================
+    //===========================================
+    TEST_FIXTURE(RingBuffer, RbPutGetRandom)
+    {
+        // generate random new index (can go negative)
+        int newIdx = rand() - (RAND_MAX)/2;
+
+        // generate random new sample value (-1.0 to 1.0)
+        float newValue = static_cast <float>(rand()) / static_cast <float>(RAND_MAX) * 2.F - 1.F;
+
+        // set write index and put new value
+        m_pCRingBuffer->setWriteIdx(newIdx);
+        m_pCRingBuffer->put(newValue);
+
+        // test reading it
+        m_pCRingBuffer->setReadIdx(newIdx);
+        CHECK_EQUAL(newValue, m_pCRingBuffer->get());;
+
+        // extra checking for the both index getters
+        CHECK_EQUAL(m_pCRingBuffer->getWriteIdx(), m_pCRingBuffer->getReadIdx());
+    }
+
+    TEST_FIXTURE(RingBuffer, RbAccessors)
+    {
+        m_pCRingBuffer->setReadIdx(rand()%20);
+        m_pCRingBuffer->setWriteIdx(m_pCRingBuffer->getReadIdx());
+        CHECK_EQUAL(0, m_pCRingBuffer->getNumValuesInBuffer());
+
+    }
+
+    TEST_FIXTURE(RingBuffer, RbSetReadIdx)
+    {
+        // put initial values into ring buffer
+        int i= 0;
+        for (i = 0; i < m_iDelay; i++)
+        {
+            m_pCRingBuffer->putPostInc (m_pfData[i]);
+        }
+        m_pCRingBuffer->setReadIdx(i-1);
+        CHECK_EQUAL(m_pfData[i-1] , m_pCRingBuffer->get());
+    }
+
+    //TEST_FIXTURE(RingBuffer, RbPut)
+    //{
+    //    for(int i=0; i<m_iRingBuffLength; i++)
+    //    {
+    //        m_pCRingBuffer->put(m_pfData[i]); // 0 2 4 6 8 10 12 14 0 2
+    //        m_pCRingBuffer->setWriteIdx(2*(i+1)); //
+    //    }
+    //    CHECK_EQUAL(2*i%m_iRingBuffLength, m_pCRingBuffer->getNumValuesInBuffer());  // what does this mean. is this retruning the number of values between read and write pointers or the total number of non-zero entries in the totalBuffer of length 16?
+    //}
+
+    TEST_FIXTURE(RingBuffer, RbGetSetIdx)
+    {
+        int test_Value = 10;
+
+        m_pCRingBuffer->setReadIdx(test_Value);
+        m_pCRingBuffer->setWriteIdx(test_Value);
+
+        CHECK_EQUAL(test_Value, m_pCRingBuffer->getReadIdx());
+        CHECK_EQUAL(test_Value, m_pCRingBuffer->getWriteIdx());
+
+        m_pCRingBuffer->put(static_cast<float>(test_Value));
+        m_pCRingBuffer->putPostInc(static_cast<float>(test_Value));
+
+        CHECK_EQUAL(static_cast<float>(test_Value), m_pCRingBuffer->get());
+        CHECK_EQUAL(static_cast<float>(test_Value), m_pCRingBuffer->getPostInc());
+
+        //        Edge Cases
+        m_pCRingBuffer->setReadIdx(RingBuffer::m_iRingBuffLength);
+        m_pCRingBuffer->setWriteIdx(RingBuffer::m_iRingBuffLength);
+
+        CHECK_EQUAL(0, m_pCRingBuffer->getReadIdx());
+        CHECK_EQUAL(0, m_pCRingBuffer->getWriteIdx());
+
+        m_pCRingBuffer->put(static_cast<float>(std::numeric_limits<int>::max()));
+        m_pCRingBuffer->putPostInc(static_cast<float>(std::numeric_limits<int>::max()));
+
+        CHECK_EQUAL(static_cast<float>(std::numeric_limits<int>::max()), m_pCRingBuffer->get());
+        CHECK_EQUAL(static_cast<float>(std::numeric_limits<int>::max()), m_pCRingBuffer->getPostInc());        
+    }
+
+    // Simple test to check for overflow
+    TEST_FIXTURE(RingBuffer, overflowTest)
+    {
+
+        for (int i = 0; i < 2*m_iRingBuffLength; i++)
+        {
+            m_pCRingBuffer->putPostInc (static_cast<float>(i));
+        }
+
+        for (int i=0;i< m_iRingBuffLength; i++)
+        {
+            CHECK_EQUAL(i + m_iRingBuffLength,m_pCRingBuffer->getPostInc());
+        }
+    }
+
 }
 
 #endif //WITH_TESTS
