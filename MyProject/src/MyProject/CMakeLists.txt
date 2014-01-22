@@ -7,7 +7,7 @@ set (${CurrLib}_VERSION_PATCH "1" CACHE INTERNAL "")
 
 # get all source files
 file(GLOB ${CurrLib}_SOURCES RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib} *.cpp;*.txt)
-file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib} *.h;../incl/*.h)
+file(GLOB ${CurrLib}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib} *.h;../../incl/*.h)
 
 ## add include directories
 add_includes ()
