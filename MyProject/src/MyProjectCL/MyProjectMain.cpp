@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
     float                   **ppfAudioData  = 0;
     static const int        kBlockSize      = 1024;
 
-    CAudioFileIf            *phInputFile;
+    CAudioFileIf            *phInputFile    = 0;
     std::fstream            hOutputFile;
     CAudioFileIf::FileSpec_t stFileSpec;
 

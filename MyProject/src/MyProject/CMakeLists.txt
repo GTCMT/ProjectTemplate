@@ -1,5 +1,7 @@
 set(CurrLib MyProject)
 
+set (DspLIB Dsp)
+
 ## set version number
 set (${CurrLib}_VERSION_MAJOR "0" CACHE INTERNAL "")
 set (${CurrLib}_VERSION_MINOR "0" CACHE INTERNAL "")
@@ -22,7 +24,7 @@ set_target_properties(${CurrLib} PROPERTIES PREFIX "lib")
 
 # copy platform config file
 configure_file(${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib}Config.h.in ${CMAKE_BINARY_DIR}/incl/${CurrLib}Config.h)
-
+target_link_libraries(${CurrLib} ${DspLIB})
 
 option (WITH_CPPCHECKTARGET "Add target for cppcheck testing" ON)
 if (WITH_CPPCHECKTARGET)

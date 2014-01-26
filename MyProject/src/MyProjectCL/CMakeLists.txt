@@ -2,7 +2,6 @@ set (LIB MyProject)
 set (APP ${LIB}CL)
 
 set (AudioLIB AudioFileIO)
-set (DspLIB Dsp)
 if (WITH_SNDLIB)
 	set (SndLIB sndlib)
 endif (WITH_SNDLIB)
@@ -17,4 +16,4 @@ add_includes ()
 add_executable(${APP} ${${APP}_SOURCES} ${${APP}_HEADERS})
 
 # link the libraries
-target_link_libraries(${APP} ${LIB} ${TestLIB} ${DspLIB} ${AudioLIB} ${SndLIB} ${OS_LIBS})
+target_link_libraries(${APP} ${LIB} ${TestLIB} ${AudioLIB} ${SndLIB} ${OS_LIBS})
