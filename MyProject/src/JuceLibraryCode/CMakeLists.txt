@@ -41,6 +41,7 @@ if (WITH_JUCE)
 		# copy platform config file
 		configure_file(${CMAKE_SOURCE_DIR}/MyProject/src/JuceLibraryCode/AppConfig.h.in ${CMAKE_BINARY_DIR}/incl/AppConfig.h)
 		configure_file(${CMAKE_SOURCE_DIR}/MyProject/src/JuceLibraryCode/JuceHeader.h.in ${CMAKE_BINARY_DIR}/incl/JuceHeader.h)
+		configure_file(${CMAKE_SOURCE_DIR}/MyProject/src/JuceLibraryCode/Info.plist.in ${CMAKE_BINARY_DIR}/res/Info.plist)
 		include_directories(${CMAKE_BINARY_DIR}/incl)
 	endif (JUCE_FOUND)
 endif (WITH_JUCE)

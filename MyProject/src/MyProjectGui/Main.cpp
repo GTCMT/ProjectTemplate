@@ -61,7 +61,7 @@ public:
     JUCEHelloWorldApplication() {}
 
     //==============================================================================
-    void initialise (const String& commandLine)
+    void initialise (const String& /*commandLine*/)
     {
         // For this demo, we'll just create the main window...
         helloWorldWindow = new HelloWorldWindow();
@@ -102,7 +102,7 @@ public:
         return true;
     }
 
-    void anotherInstanceStarted (const String& commandLine)
+    void anotherInstanceStarted (const String& /*commandLine*/)
     {
     }
 
