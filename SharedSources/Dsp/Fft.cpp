@@ -318,6 +318,8 @@ int CFft::getLength( Length_t eLengthIdx )
     case kLengthMagnitude:
     case kLengthPhase:
         return m_iFftLength/2+1;
+    case kNumLengths:
+        return -1;
     }
     return 0;
 }

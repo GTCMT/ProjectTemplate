@@ -27,8 +27,7 @@ if (WITH_JUCE)
 	# set output name
 	set_target_properties(${APP} PROPERTIES OUTPUT_NAME "${APP}")
 
-	target_link_libraries(${APP} JuceLibraryCode)
-	target_link_libraries(${APP} MyProject)
+	target_link_libraries(${APP} JuceLibraryCode MyProject ${OS_LIBS})
 
 	option (WITH_CPPCHECKTARGET "Add target for cppcheck testing" ON)
 	if (WITH_CPPCHECKTARGET)
