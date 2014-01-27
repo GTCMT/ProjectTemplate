@@ -1,0 +1,29 @@
+TZERO_CHECK
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh
+c0000000052E589F700000000000000AD
+t1390774775
+s173
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb64b2b77c195b841^19ff2e77c195b841^---0#1#1#--18"Check dependencies36"6067A019-AFAD-4596-9657-24D8A676729B-
+
+CPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh
+s412467575.189452
+e412467575.416669
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh
+oecho ""
+o
+omake -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.make
+omake[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'111"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.shb0013177c195b841^bbd26a77c195b841^-185"echo ""make -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.makemake[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-412467575#0#8#-0#-----2@79"make -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.make-412467575#9#79#-0#-----2@97"make[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.-412467575#88#97#-0#-----0#0#1#--288"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh    cd /Users/alexanderlerch/ProjectTemplate    /bin/sh -c /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh36"384D4B68-5221-4246-80B6-960659F91460-
+b20EE1931-D374-4593-A771-7E09FE679D1D
+

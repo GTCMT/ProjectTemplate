@@ -1,0 +1,136 @@
+TMyProject
+v6
+r1
+cCheck dependencies
+cCompileC bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.o /Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.o /Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/libMyProject.a normal i386
+cLibtool /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/libMyProject.a normal x86_64
+cCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a normal i386\ x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/SDKSettings.plist
+c00000000525C192300000000000004B3
+t1381767459
+s1203
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000525C192300000000000001DE
+t1381767459
+s478
+
+N/Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp
+c0000000052DEDA7E00000000000005F0
+t1390336638
+s1520
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.LinkFileList
+c0000000052E58A2C000000000000007A
+t1390774828
+s122
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.o
+t1390774833
+s8896
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/libMyProject.a
+t1390774833
+s9568
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.LinkFileList
+c0000000052E58A2C000000000000007C
+t1390774828
+s124
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.o
+t1390774833
+s9564
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/libMyProject.a
+t1390774833
+s10240
+
+N/Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a
+t2
+s0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2a368eacc195b841^54fd8eacc195b841^---0#1#1#--18"Check dependencies36"3AB3DBB2-52D8-4FA3-B43C-68BB01803BD1-
+
+CCompileC bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.o /Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467633.214832
+e412467633.246856
+r1
+xCompileC
+xbld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.o
+x/Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+d/Users/alexanderlerch/ProjectTemplate/MyProject/incl/MyProject.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp190"CompileC bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.o MyProject/src/MyProject/MyProject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compileref1b37b1c195b841^c2313fb1c195b841^---0#0#1#-19%DVTDocumentLocation2@91"file://localhost/Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp0000000000000000^2382"CompileC bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.o MyProject/src/MyProject/MyProject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.dia -c /Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.o36"C1E39F98-927A-4F7E-9549-677DC1729CFF-
+bB337C120-1AEA-4C9C-9666-3EE8D87117D5
+
+CCompileC bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.o /Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467633.248372
+e412467633.280361
+r1
+xCompileC
+xbld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.o
+x/Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+d/Users/alexanderlerch/ProjectTemplate/MyProject/incl/MyProject.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp194"CompileC bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.o MyProject/src/MyProject/MyProject.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler63b33fb1c195b841^dfc547b1c195b841^---0#0#1#-19%DVTDocumentLocation2@91"file://localhost/Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp0000000000000000^2396"CompileC bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.o MyProject/src/MyProject/MyProject.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.dia -c /Users/alexanderlerch/ProjectTemplate/MyProject/src/MyProject/MyProject.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.o36"0CD918BE-C125-4942-9CE8-D8680A79FA8F-
+bB337C120-1AEA-4C9C-9666-3EE8D87117D5
+
+CCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a normal i386\ x86_64
+s412467633.319510
+e412467633.331002
+r1
+xCreateUniversalBinary
+x/Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a
+xnormal
+xi386 x86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Create universal binary /Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a66"CreateUniversalBinary lib/debug/libMyProject.a normal i386\ x86_64fcdf51b1c195b841^f1bc54b1c195b841^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a00388c64dcffdf42^450"CreateUniversalBinary lib/debug/libMyProject.a normal i386\ x86_64    cd /Users/alexanderlerch/ProjectTemplate    libtool -static /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/libMyProject.a /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/libMyProject.a -o /Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a36"BD095A76-0DF1-4C43-A656-26D101AF825B-
+bB337C120-1AEA-4C9C-9666-3EE8D87117D5
+
+CLibtool /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/libMyProject.a normal i386
+s412467633.289055
+e412467633.299652
+r1
+xLibtool
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/libMyProject.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Libtool bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/libMyProject.a normal i386106"Libtool bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/libMyProject.a normal i386f5134ab1c195b841^52b64cb1c195b841^---0#0#1#--748"Libtool bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/libMyProject.a normal i386    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/lib/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/MyProject.LinkFileList -o /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/i386/libMyProject.a36"BABBC6D5-8F50-4E9C-8C54-4BF84C6281FC-
+bB337C120-1AEA-4C9C-9666-3EE8D87117D5
+
+CLibtool /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/libMyProject.a normal x86_64
+s412467633.301187
+e412467633.311146
+r1
+xLibtool
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/libMyProject.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Libtool bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/libMyProject.a normal x86_64110"Libtool bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/libMyProject.a normal x86_6416304db1c195b841^b9a74fb1c195b841^---0#0#1#--758"Libtool bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/libMyProject.a normal x86_64    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/lib/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/MyProject.LinkFileList -o /Users/alexanderlerch/ProjectTemplate/bld/MyProject/MyProject.build/Debug/MyProject.build/Objects-normal/x86_64/libMyProject.a36"3711017B-87E8-41E9-8328-86B921146D62-
+bB337C120-1AEA-4C9C-9666-3EE8D87117D5
+

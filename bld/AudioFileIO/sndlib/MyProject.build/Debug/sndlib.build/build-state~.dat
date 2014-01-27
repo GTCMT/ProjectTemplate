@@ -1,0 +1,702 @@
+Tsndlib
+v6
+r1
+cCheck dependencies
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/audio.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm2xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/headers.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/io.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/s7.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib2xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sound.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/vct.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/audio.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm2xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/headers.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/io.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/s7.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib2xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sound.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/vct.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/libsndlib.a normal i386
+cLibtool /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/libsndlib.a normal x86_64
+cCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a normal i386\ x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/SDKSettings.plist
+c00000000525C192300000000000004B3
+t1381767459
+s1203
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000525C192300000000000001DE
+t1381767459
+s478
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c
+c0000000052CAFA2F000000000002879C
+t1389034031
+s165788
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c
+c0000000052CAFA2F0000000000060A9F
+t1389034031
+s395935
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c
+c0000000052CAFA2F00000000000A5834
+t1389034031
+s677940
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c
+c0000000052CAFA2F000000000003CF2F
+t1389034031
+s249647
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c
+c0000000052CAFA2F00000000000172BC
+t1389034031
+s94908
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c
+c0000000052CAFA2F00000000001EE736
+t1389034031
+s2025270
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c
+c0000000052CAFA2F000000000001CFBB
+t1389034031
+s118715
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c
+c0000000052CAFA2F0000000000008F6F
+t1389034031
+s36719
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c
+c0000000052CAFA2F0000000000010E86
+t1389034031
+s69254
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c
+c0000000052CAFA2F000000000000C437
+t1389034031
+s50231
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/audio.o
+t1390774833
+s4896
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm.o
+t1390774834
+s542408
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm2xen.o
+t1390774834
+s118604
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/headers.o
+t1390774835
+s269036
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/io.o
+t1390774835
+s92376
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/libsndlib.a
+t1390774845
+s3399312
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/s7.o
+t1390774839
+s2212628
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib.LinkFileList
+c0000000052E58A3100000000000004D5
+t1390774833
+s1237
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib2xen.o
+t1390774836
+s42500
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sound.o
+t1390774836
+s60240
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/vct.o
+t1390774836
+s20424
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/xen.o
+t1390774839
+s6832
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/audio.o
+t1390774839
+s6164
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm.o
+t1390774840
+s618844
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm2xen.o
+t1390774840
+s148040
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/headers.o
+t1390774841
+s232392
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/io.o
+t1390774841
+s99248
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/libsndlib.a
+t1390774845
+s3654416
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/s7.o
+t1390774845
+s2366804
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib.LinkFileList
+c0000000052E58A3100000000000004E9
+t1390774833
+s1257
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib2xen.o
+t1390774841
+s52540
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sound.o
+t1390774841
+s68668
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/vct.o
+t1390774841
+s24316
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/xen.o
+t1390774842
+s8020
+
+N/Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a
+t2
+s0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies50fd57b1c195b841^b08d58b1c195b841^---0#1#1#--18"Check dependencies36"8EDF3A8D-8AC7-42DC-82DC-4F3A24E69068-
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/audio.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467633.347833
+e412467633.694008
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/audio.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c180"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/audio.o 3rdPartyLibs/sndlib/audio.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler672959b1c195b841^36b0b1b1c195b841^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c0000000000000000^2144"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/audio.o 3rdPartyLibs/sndlib/audio.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/audio.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/audio.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/audio.o36"7B1417FA-1BDC-48BD-B204-E5BBCCCD8238-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467633.695361
+e412467634.789553
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c176"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm.o 3rdPartyLibs/sndlib/clm.c normal i386 c com.apple.compilers.llvm.clang.1_0.compileraf23b2b1c195b841^c13acab2c195b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c0000000000000000^2132"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm.o 3rdPartyLibs/sndlib/clm.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm.o36"B60E2D89-4968-4F52-992F-D8A4DCE3B645-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm2xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467634.416181
+e412467634.667767
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm2xen.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c184"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm2xen.o 3rdPartyLibs/sndlib/clm2xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compilere8a16ab2c195b841^73f2aab2c195b841^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c0000000000000000^2156"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm2xen.o 3rdPartyLibs/sndlib/clm2xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm2xen.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm2xen.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/clm2xen.o36"C65C9F1F-8478-4340-9F57-6BBDF2C6ED9A-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/headers.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467634.670243
+e412467635.215451
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/headers.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c184"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/headers.o 3rdPartyLibs/sndlib/headers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compilerf7acabb2c195b841^522837b3c195b841^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c0000000000000000^2156"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/headers.o 3rdPartyLibs/sndlib/headers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/headers.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/headers.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/headers.o36"47020AA6-87DF-4A57-85AB-F3EDE751FC67-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/io.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467634.790912
+e412467635.022351
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/io.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c174"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/io.o 3rdPartyLibs/sndlib/io.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler6092cab2c195b841^aab805b3c195b841^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c0000000000000000^2126"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/io.o 3rdPartyLibs/sndlib/io.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/io.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/io.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/io.o36"67A01E77-2482-46C5-9EAD-90540E8C52F2-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/s7.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467635.216986
+e412467639.323702
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/s7.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c174"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/s7.o 3rdPartyLibs/sndlib/s7.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler94a437b3c195b841^dbde52b7c195b841^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c0000000000000000^2126"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/s7.o 3rdPartyLibs/sndlib/s7.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/s7.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/s7.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/s7.o36"987F35B6-E05E-40C3-8A22-3509CF78E6A1-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib2xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467636.471894
+e412467636.587470
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib2xen.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib-strings.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c190"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib2xen.o 3rdPartyLibs/sndlib/sndlib2xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compilerc1e678b4c195b841^2c6496b4c195b841^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c0000000000000000^2174"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib2xen.o 3rdPartyLibs/sndlib/sndlib2xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib2xen.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib2xen.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib2xen.o36"A49933EB-E503-4AB4-9F03-DFF4EA64B74F-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sound.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467636.590033
+e412467636.726609
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sound.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c180"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sound.o 3rdPartyLibs/sndlib/sound.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler202497b4c195b841^0c03bab4c195b841^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c0000000000000000^2144"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sound.o 3rdPartyLibs/sndlib/sound.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sound.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sound.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sound.o36"4E33A69E-3877-4516-A928-09CD80C337A5-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/vct.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467636.730479
+e412467636.867907
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/vct.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c176"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/vct.o 3rdPartyLibs/sndlib/vct.c normal i386 c com.apple.compilers.llvm.clang.1_0.compilerd11ebbb4c195b841^c32edeb4c195b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c0000000000000000^2132"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/vct.o 3rdPartyLibs/sndlib/vct.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/vct.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/vct.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/vct.o36"C1251FCA-145E-4894-A0AB-DD7A8537D8C9-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467639.326332
+e412467639.404267
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/xen.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c176"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/xen.o 3rdPartyLibs/sndlib/xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compilere3a953b7c195b841^857d67b7c195b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c0000000000000000^2132"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/xen.o 3rdPartyLibs/sndlib/xen.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/xen.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/xen.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/xen.o36"9E41D3F3-8F06-4DE8-8E3F-68E6266D2F7F-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/audio.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467639.405784
+e412467639.748681
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/audio.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c184"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/audio.o 3rdPartyLibs/sndlib/audio.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler19fe67b7c195b841^44ddbfb7c195b841^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c0000000000000000^2158"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/audio.o 3rdPartyLibs/sndlib/audio.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/audio.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/audio.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/audio.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/audio.o36"CC24C0AB-828E-4CAB-8D26-B95DC432A844-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467639.750438
+e412467640.508855
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c180"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm.o 3rdPartyLibs/sndlib/clm.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler7a39c0b7c195b841^1c4582b8c195b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c0000000000000000^2146"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm.o 3rdPartyLibs/sndlib/clm.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm.o36"2108605F-288F-4BF1-B56A-03BAABBA8FCF-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm2xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467640.510217
+e412467640.724191
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm2xen.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c188"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm2xen.o 3rdPartyLibs/sndlib/clm2xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilerd8b882b8c195b841^6f65b9b8c195b841^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c0000000000000000^2170"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm2xen.o 3rdPartyLibs/sndlib/clm2xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm2xen.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm2xen.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/clm2xen.o36"B48E8730-5348-48C2-9243-6BF4B6328893-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/headers.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467640.725709
+e412467641.042820
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/headers.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c188"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/headers.o 3rdPartyLibs/sndlib/headers.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilercedeb9b8c195b841^dcf50ab9c195b841^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c0000000000000000^2170"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/headers.o 3rdPartyLibs/sndlib/headers.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/headers.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/headers.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/headers.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/headers.o36"EDDCB892-E437-4CCA-85AF-910EC651AC64-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/io.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467640.882912
+e412467641.161200
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/io.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c178"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/io.o 3rdPartyLibs/sndlib/io.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler1d1ee2b8c195b841^464429b9c195b841^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c0000000000000000^2140"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/io.o 3rdPartyLibs/sndlib/io.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/io.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/io.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/io.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/io.o36"E29132A8-D320-4866-93D6-06677E25C38B-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/s7.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467641.048980
+e412467645.117386
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/s7.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c178"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/s7.o 3rdPartyLibs/sndlib/s7.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler01a20cb9c195b841^fe0d1ebdc195b841^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c0000000000000000^2140"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/s7.o 3rdPartyLibs/sndlib/s7.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/s7.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/s7.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/s7.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/s7.o36"20CAE0CC-04BD-4CE2-BCF6-9E532F38E9B9-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib2xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467641.162612
+e412467641.284300
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib2xen.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib-strings.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c194"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib2xen.o 3rdPartyLibs/sndlib/sndlib2xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler91ba29b9c195b841^7ec748b9c195b841^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c0000000000000000^2188"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib2xen.o 3rdPartyLibs/sndlib/sndlib2xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib2xen.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib2xen.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib2xen.o36"AF2EFCD0-1433-4613-BC91-35C0349A0B4F-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sound.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467641.329046
+e412467641.488391
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sound.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib-strings.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c184"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sound.o 3rdPartyLibs/sndlib/sound.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilerf75a54b9c195b841^79067db9c195b841^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c0000000000000000^2158"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sound.o 3rdPartyLibs/sndlib/sound.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sound.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sound.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sound.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sound.o36"99B901B7-4A51-4DFB-A2B6-E9A00A94F9A2-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/vct.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467641.827233
+e412467641.913730
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/vct.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/_sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib2xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/clm2xen.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c180"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/vct.o 3rdPartyLibs/sndlib/vct.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilerfce1d3b9c195b841^6003eab9c195b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c0000000000000000^2146"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/vct.o 3rdPartyLibs/sndlib/vct.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/vct.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/vct.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/vct.o36"89649708-74C9-406A-AF7E-87307CF4AEF8-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/xen.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s412467641.959930
+e412467642.011146
+r1
+xCompileC
+xbld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/xen.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/mus-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/unix-config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c180"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/xen.o 3rdPartyLibs/sndlib/xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler38daf5b9c195b841^23da02bac195b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c0000000000000000^2146"CompileC bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/xen.o 3rdPartyLibs/sndlib/xen.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/xen.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/xen.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.c -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/xen.o36"AB2D502E-10BB-4312-BF58-A64ABFD8B6D3-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a normal i386\ x86_64
+s412467645.836660
+e412467646.269167
+r1
+xCreateUniversalBinary
+x/Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a
+xnormal
+xi386 x86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Create universal binary /Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a63"CreateUniversalBinary lib/debug/libsndlib.a normal i386\ x86_64fb40d6bdc195b841^86e844bec195b841^---0#0#1#-19%DVTDocumentLocation2@75"file://localhost/Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a00388c64dcffdf42^450"CreateUniversalBinary lib/debug/libsndlib.a normal i386\ x86_64    cd /Users/alexanderlerch/ProjectTemplate    libtool -static /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/libsndlib.a /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/libsndlib.a -o /Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a36"16B31158-72AA-4F30-AB5F-6689B778EA9F-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CLibtool /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/libsndlib.a normal i386
+s412467645.452977
+e412467645.542581
+r1
+xLibtool
+x/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/libsndlib.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Libtool bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/libsndlib.a normal i386109"Libtool bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/libsndlib.a normal i386030b74bdc195b841^dae68abdc195b841^---0#0#1#--757"Libtool bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/libsndlib.a normal i386    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/lib/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/sndlib.LinkFileList -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/i386/libsndlib.a36"E1AC7743-9BD2-48AA-894B-B891D0818021-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+
+CLibtool /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/libsndlib.a normal x86_64
+s412467645.601671
+e412467645.708482
+r1
+xLibtool
+x/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/libsndlib.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Libtool bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/libsndlib.a normal x86_64113"Libtool bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/libsndlib.a normal x86_64b01b9abdc195b841^4567b5bdc195b841^---0#0#1#--767"Libtool bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/libsndlib.a normal x86_64    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/lib/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/sndlib.LinkFileList -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/sndlib/MyProject.build/Debug/sndlib.build/Objects-normal/x86_64/libsndlib.a36"5E39E965-C980-4552-A04A-9F56462FB3C4-
+b56034E6E-5FB0-495D-AD0F-520B76ECD963
+

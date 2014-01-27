@@ -1,0 +1,802 @@
+TTestCL
+v6
+r1
+cCheck dependencies
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.o /Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.o /Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.o /Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.o /Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL normal i386
+cLd /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL normal x86_64
+cCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/bin/debug/TestCL normal i386\ x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/SDKSettings.plist
+c00000000525C192300000000000004B3
+t1381767459
+s1203
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000525C192300000000000001DE
+t1381767459
+s478
+
+N/Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp
+c0000000052DD54150000000000000183
+t1390236693
+s387
+
+N/Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp
+c0000000052DECB1F000000000000050B
+t1390332703
+s1291
+
+N/Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp
+c0000000052E571DE0000000000002976
+t1390768606
+s10614
+
+N/Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp
+c0000000052DECB1F0000000000001A80
+t1390332703
+s6784
+
+N/Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp
+c0000000052E571DE0000000000001855
+t1390768606
+s6229
+
+N/Users/alexanderlerch/ProjectTemplate/bin/debug/TestCL
+t2
+s0
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.o
+t1390774854
+s27584
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL
+t1390774857
+s646756
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL.LinkFileList
+c0000000052E58A46000000000000024C
+t1390774854
+s588
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.o
+t1390774855
+s196620
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.o
+t1390774855
+s191976
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.o
+t1390774854
+s82672
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.o
+t1390774855
+s210832
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.o
+t1390774856
+s28224
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL
+t1390774858
+s652716
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL.LinkFileList
+c0000000052E58A460000000000000256
+t1390774854
+s598
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.o
+t1390774856
+s201196
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.o
+t1390774857
+s196216
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.o
+t1390774855
+s84448
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.o
+t1390774857
+s216744
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd2c80fc6c195b841^2e8f15c6c195b841^---0#1#1#--18"Check dependencies36"48258AF7-4FAF-47FB-8CC6-AD4154C0133D-
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.o /Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467654.410414
+e412467654.752706
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.o
+x/Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/AudioFileIf.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp171"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.o SharedSources/TestCL/Test.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler522a69c6c195b841^57ccc0c6c195b841^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp0000000000000000^2374"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.o SharedSources/TestCL/Test.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.dia -c /Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.o36"2BD55ABC-0955-40FB-96F0-A43E981BD14E-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467654.603626
+e412467655.240078
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.o
+x/Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/SignalGen.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/AudioFileIf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp172"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.o Tests/Test_AudioIO.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerf5a29ac6c195b841^b0753dc7c195b841^---0#0#1#-19%DVTDocumentLocation2@76"file://localhost/Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp0000000000000000^2392"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.o Tests/Test_AudioIO.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.dia -c /Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.o36"ECD17331-5DDA-43BD-A069-48C0F8DB92E1-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467654.754069
+e412467655.390860
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.o
+x/Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/SignalGen.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/Util.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/Dsp.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/Dsp/Fft.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp164"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.o Tests/Test_Fft.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler2122c1c6c195b841^340f64c7c195b841^---0#0#1#-19%DVTDocumentLocation2@72"file://localhost/Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp0000000000000000^2368"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.o Tests/Test_Fft.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.dia -c /Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.o36"85A48311-ED7F-4E45-96D9-C0089B7AAC7C-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.o /Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467654.085168
+e412467654.601165
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.o
+x/Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/MyProject/incl/MyProject.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp186"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.o MyProject/Tests/Test_MyProject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler25e615c6c195b841^60039ac6c195b841^---0#0#1#-19%DVTDocumentLocation2@88"file://localhost/Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp0000000000000000^2424"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.o MyProject/Tests/Test_MyProject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.dia -c /Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.o36"5D0AC452-282F-43FF-BDB0-BD95D42833C0-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467655.267658
+e412467655.861268
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.o
+x/Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/SignalGen.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/Util.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/RingBuffer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp178"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.o Tests/Test_RingBuffer.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerf99f44c7c195b841^677bdcc7c195b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp0000000000000000^2410"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.o Tests/Test_RingBuffer.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.dia -c /Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.o36"3BF16EBB-0987-4DCF-80C9-D13EAF29DB3F-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.o /Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467655.761304
+e412467656.117811
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.o
+x/Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/AudioFileIf.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp175"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.o SharedSources/TestCL/Test.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler7501c3c7c195b841^89281ec8c195b841^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp0000000000000000^2388"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.o SharedSources/TestCL/Test.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.dia -c /Users/alexanderlerch/ProjectTemplate/SharedSources/TestCL/Test.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.o36"E4A1569B-C10F-45C9-A010-900D81D77AD9-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467656.119251
+e412467656.666864
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.o
+x/Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/SignalGen.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/AudioFileIf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp176"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.o Tests/Test_AudioIO.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerbaa41ec8c195b841^89d2aac8c195b841^---0#0#1#-19%DVTDocumentLocation2@76"file://localhost/Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp0000000000000000^2406"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.o Tests/Test_AudioIO.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.dia -c /Users/alexanderlerch/ProjectTemplate/Tests/Test_AudioIO.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.o36"B4C1D028-8305-4887-A15F-7A3D380745D7-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467656.668232
+e412467657.220059
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.o
+x/Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/SignalGen.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/Util.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/Dsp.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/Dsp/Fft.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp168"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.o Tests/Test_Fft.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerd02aabc8c195b841^975538c9c195b841^---0#0#1#-19%DVTDocumentLocation2@72"file://localhost/Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp0000000000000000^2382"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.o Tests/Test_Fft.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.dia -c /Users/alexanderlerch/ProjectTemplate/Tests/Test_Fft.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.o36"D68B9866-9FF1-42AF-B378-9DC6465FE5DE-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.o /Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467655.393434
+e412467655.759859
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.o
+x/Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/MyProject/incl/MyProject.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp190"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.o MyProject/Tests/Test_MyProject.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler42d164c7c195b841^fd85c2c7c195b841^---0#0#1#-19%DVTDocumentLocation2@88"file://localhost/Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp0000000000000000^2438"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.o MyProject/Tests/Test_MyProject.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.dia -c /Users/alexanderlerch/ProjectTemplate/MyProject/Tests/Test_MyProject.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.o36"98C8E348-B26C-4A60-AA75-0627044925AA-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.o /Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467657.221549
+e412467657.773239
+r1
+xCompileC
+xbld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.o
+x/Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTest++.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/UnitTestPP.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestSuite.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CheckMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/SignalGen.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/Util.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/RingBuffer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp182"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.o Tests/Test_RingBuffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9dd738c9c195b841^5a10c6c9c195b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp0000000000000000^2424"CompileC bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.o Tests/Test_RingBuffer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/bin/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++ -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/bin/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.dia -c /Users/alexanderlerch/ProjectTemplate/Tests/Test_RingBuffer.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.o36"E5DA86CE-FFE0-4607-9F3B-F6059B4C6267-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/bin/debug/TestCL normal i386\ x86_64
+s412467658.060880
+e412467658.093238
+r1
+xCreateUniversalBinary
+x/Users/alexanderlerch/ProjectTemplate/bin/debug/TestCL
+xnormal
+xi386 x86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Create universal binary /Users/alexanderlerch/ProjectTemplate/bin/debug/TestCL58"CreateUniversalBinary bin/debug/TestCL normal i386\ x86_64b0a90fcac195b841^b5de17cac195b841^---0#0#1#-19%DVTDocumentLocation2@70"file://localhost/Users/alexanderlerch/ProjectTemplate/bin/debug/TestCL00388c64dcffdf42^408"CreateUniversalBinary bin/debug/TestCL normal i386\ x86_64    cd /Users/alexanderlerch/ProjectTemplate    lipo -create /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL -output /Users/alexanderlerch/ProjectTemplate/bin/debug/TestCL36"A9C05E43-303B-4776-BD25-F071EFF524E2-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CLd /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL normal i386
+s412467657.781891
+e412467657.929285
+r1
+xLd
+x/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL
+xnormal
+xi386
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL.LinkFileList
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_MyProject.o
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test.o
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_AudioIO.o
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_Fft.o
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/Test_RingBuffer.o
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/WebKit.framework/WebKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Carbon
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreMidi.framework/CoreMidi
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QTKit.framework/QTKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/AGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libDsp.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libstdc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.eprintf.a
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework/Versions/A/WebCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/CarbonSound
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HTMLRendering.framework/Versions/A/HTMLRendering
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/ImageCapture.framework/Versions/A/ImageCapture
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Ink.framework/Versions/A/Ink
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/NavigationServices.framework/Versions/A/NavigationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/OpenScripting.framework/Versions/A/OpenScripting
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libobjc.A.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/CoreImage.framework/Versions/A/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/ScalableUserInterface.framework/Versions/A/ScalableUserInterface
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/vecLib.framework/vecLib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdnsinfo.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Link /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL87"Ld bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL normal i3863541c8c9c195b841^d2e5edc9c195b841^---0#0#1#--1603"Ld bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL normal i386    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/bin/debug -F/Users/alexanderlerch/ProjectTemplate/bin/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a /Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a /Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a /Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a -framework CoreAudio -framework CoreFoundation -framework ApplicationServices -framework AppKit -framework WebKit -framework Carbon -framework Cocoa -framework CoreMidi -framework IOKit -framework QTKit -framework AGL -framework OpenGL -framework AudioToolbox -framework QuartzCore -framework Accelerate /Users/alexanderlerch/ProjectTemplate/lib/debug/libDsp.a -Xlinker -dependency_info -Xlinker /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL_dependency_info.dat -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/i386/TestCL36"3120242E-A408-4B8B-9E63-CC72A63875F1-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+
+CLd /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL normal x86_64
+s412467657.931175
+e412467658.051993
+r1
+xLd
+x/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL
+xnormal
+xx86_64
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL.LinkFileList
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_MyProject.o
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test.o
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_AudioIO.o
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_Fft.o
+d/Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/Test_RingBuffer.o
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/WebKit.framework/WebKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Carbon
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreMidi.framework/CoreMidi
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QTKit.framework/QTKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AGL.framework/AGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+d/Users/alexanderlerch/ProjectTemplate/lib/debug/libDsp.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libstdc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework/Versions/A/WebCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libobjc.A.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/CoreImage.framework/Versions/A/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/ScalableUserInterface.framework/Versions/A/ScalableUserInterface
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/vecLib.framework/vecLib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdnsinfo.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/ImageCapture.framework/Versions/A/ImageCapture
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Ink.framework/Versions/A/Ink
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/OpenScripting.framework/Versions/A/OpenScripting
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Link /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL91"Ld bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL normal x86_640778eec9c195b841^df4f0dcac195b841^---0#0#1#--1615"Ld bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL normal x86_64    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/bin/debug -F/Users/alexanderlerch/ProjectTemplate/bin/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Users/alexanderlerch/ProjectTemplate/lib/debug/libMyProject.a /Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a /Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a /Users/alexanderlerch/ProjectTemplate/lib/debug/libsndlib.a -framework CoreAudio -framework CoreFoundation -framework ApplicationServices -framework AppKit -framework WebKit -framework Carbon -framework Cocoa -framework CoreMidi -framework IOKit -framework QTKit -framework AGL -framework OpenGL -framework AudioToolbox -framework QuartzCore -framework Accelerate /Users/alexanderlerch/ProjectTemplate/lib/debug/libDsp.a -Xlinker -dependency_info -Xlinker /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL_dependency_info.dat -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/MyProject.build/Debug/TestCL.build/Objects-normal/x86_64/TestCL36"D2461DBE-782A-435D-A942-123208624278-
+b147B559E-ED20-4DD6-9BC7-7F1CBD17D417
+

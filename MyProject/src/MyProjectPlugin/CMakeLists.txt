@@ -91,7 +91,7 @@ set(JUCE_PLUGIN_HEADERS ${VST_HEADERS} ${AU_HEADERS} ${UTILITY_HEADERS})
 if (APPLE)
 	set(PluginInfoPlist ${CMAKE_BINARY_DIR}/res/Info.plist)
 	add_library(${CurrLib} MODULE ${${CurrLib}_SOURCES} ${${CurrLib}_HEADERS} ${JUCE_PLUGIN_SOURCES} ${JUCE_PLUGIN_HEADERS})
-    set_target_properties(${ProjectName} PROPERTIES
+    set_target_properties(${CurrLib} PROPERTIES
         BUNDLE 1
         XCODE_ATTRIBUTE_MACH_O_TYPE mh_bundle
         BUNDLE_EXTENSION component
