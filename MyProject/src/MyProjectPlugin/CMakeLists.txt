@@ -8,11 +8,12 @@ file(GLOB ${CurrLib}_HEADERS RELATIVE ${LocalDir} *.h;../../incl/*.h)
 ## add include directories
 add_includes ()
 
-option (PLUGIN_VST "build a VST plugin" ON)
+option (PLUGIN_VST "build a VST plugin" OFF)
 if (APPLE)
-	option (PLUGIN_AU "build an AU plugin" ON)
+	option (PLUGIN_AU "build an AU plugin" OFF)
 endif (APPLE)
 
+if (PLUGIN_VST OR PLUGIN_AU)
 if (PLUGIN_VST)
 	find_package(VST REQUIRED)
 
@@ -122,3 +123,4 @@ if (WITH_CPPCHECKTARGET)
 						TARGET_NAME "CppCheck_${CurrLib}"
 					  INCLUDES ${PROJECT_INCLUDES})
 endif(WITH_CPPCHECKTARGET)
+endif (PLUGIN_VST OR PLUGIN_AU)
