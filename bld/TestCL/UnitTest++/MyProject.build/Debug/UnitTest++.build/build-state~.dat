@@ -1,0 +1,1313 @@
+TUnitTest++
+v6
+r1
+cCheck dependencies
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/AssertException.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Checks.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CompositeTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CurrentTest.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestResult.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/MemoryOutStream.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/SignalTranslator.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeHelpers.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/ReportAssert.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Test.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestDetails.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestList.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporterStdout.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestResults.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestRunner.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeConstraint.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/XmlTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/AssertException.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Checks.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CompositeTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CurrentTest.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestResult.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/MemoryOutStream.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/SignalTranslator.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeHelpers.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/ReportAssert.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Test.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestDetails.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestList.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporterStdout.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestResults.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestRunner.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeConstraint.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/XmlTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/libUnitTest++.a normal i386
+cLibtool /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/libUnitTest++.a normal x86_64
+cCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a normal i386\ x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/SDKSettings.plist
+c00000000525C192300000000000004B3
+t1381767459
+s1203
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000525C192300000000000001DE
+t1381767459
+s478
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp
+c0000000052CAFA2F00000000000000B7
+t1389034031
+s183
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+c0000000052CAFA2F000000000000015F
+t1389034031
+s351
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp
+c0000000052CAFA2F000000000000050A
+t1389034031
+s1290
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+c0000000052CAFA2F000000000000138B
+t1389034031
+s5003
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp
+c0000000052CAFA2F0000000000000680
+t1389034031
+s1664
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.h
+c0000000052CAFA2F00000000000003B7
+t1389034031
+s951
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+c0000000052CAFA2F0000000000000ABE
+t1389034031
+s2750
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp
+c0000000052CAFA2F0000000000000143
+t1389034031
+s323
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+c0000000052CAFA2F0000000000000126
+t1389034031
+s294
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp
+c0000000052CAFA2F0000000000000364
+t1389034031
+s868
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.h
+c0000000052CAFA2F0000000000000312
+t1389034031
+s786
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp
+c0000000052CAFA2F00000000000002FA
+t1389034031
+s762
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.h
+c0000000052CAFA2F000000000000037F
+t1389034031
+s895
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+c0000000052CAFA2F00000000000001EB
+t1389034031
+s491
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+c0000000052CAFA2F00000000000004B6
+t1389034031
+s1206
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+c0000000052CAFA2F00000000000005AC
+t1389034031
+s1452
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp
+c0000000052CAFA2F0000000000000FFD
+t1389034031
+s4093
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+c0000000052CAFA2F0000000000000724
+t1389034031
+s1828
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp
+c0000000052CAFA2F0000000000000442
+t1389034031
+s1090
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+c0000000052CAFA2F00000000000003A7
+t1389034031
+s935
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp
+c0000000052CAFA2F0000000000000225
+t1389034031
+s549
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+c0000000052CAFA2F0000000000000135
+t1389034031
+s309
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp
+c0000000052CAFA2F00000000000005A0
+t1389034031
+s1440
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+c0000000052CAFA2F00000000000000D4
+t1389034031
+s212
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+c0000000052CAFA2F0000000000000446
+t1389034031
+s1094
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp
+c0000000052CAFA2F0000000000000299
+t1389034031
+s665
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+c0000000052CAFA2F000000000000023D
+t1389034031
+s573
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp
+c0000000052CAFA2F000000000000023F
+t1389034031
+s575
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+c0000000052CAFA2F0000000000000291
+t1389034031
+s657
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp
+c0000000052CAFA2F00000000000001F1
+t1389034031
+s497
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+c0000000052CAFA2F0000000000000180
+t1389034031
+s384
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp
+c0000000052CAFA2F0000000000000056
+t1389034031
+s86
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+c0000000052CAFA2F000000000000023B
+t1389034031
+s571
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp
+c0000000052DD5938000000000000051E
+t1390238008
+s1310
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.h
+c0000000052CAFA2F0000000000000224
+t1389034031
+s548
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp
+c0000000052CAFA2F00000000000004A1
+t1389034031
+s1185
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+c0000000052CAFA2F000000000000031D
+t1389034031
+s797
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp
+c0000000052CAFA2F000000000000079A
+t1389034031
+s1946
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+c0000000052CAFA2F0000000000000488
+t1389034031
+s1160
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp
+c0000000052CAFA2F000000000000028F
+t1389034031
+s655
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+c0000000052CAFA2F000000000000030C
+t1389034031
+s780
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+c0000000052CAFA2F0000000000000083
+t1389034031
+s131
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp
+c0000000052CAFA2F0000000000000D02
+t1389034031
+s3330
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.h
+c0000000052CAFA2F000000000000041F
+t1389034031
+s1055
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/AssertException.o
+t1390774841
+s6088
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Checks.o
+t1390774841
+s64580
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CompositeTestReporter.o
+t1390774841
+s12100
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CurrentTest.o
+t1390774842
+s3160
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestReporter.o
+t1390774842
+s124108
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestResult.o
+t1390774842
+s43992
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/MemoryOutStream.o
+t1390774842
+s56476
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/ReportAssert.o
+t1390774842
+s8124
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/SignalTranslator.o
+t1390774842
+s7836
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Test.o
+t1390774843
+s71288
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestDetails.o
+t1390774843
+s4692
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestList.o
+t1390774843
+s5388
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporter.o
+t1390774843
+s5144
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporterStdout.o
+t1390774843
+s9208
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestResults.o
+t1390774843
+s8232
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestRunner.o
+t1390774843
+s75472
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeConstraint.o
+t1390774844
+s64280
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeHelpers.o
+t1390774842
+s5420
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/UnitTest++.LinkFileList
+c0000000052E58A390000000000000A06
+t1390774841
+s2566
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/XmlTestReporter.o
+t1390774844
+s117384
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/libUnitTest++.a
+t1390774850
+s720760
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/AssertException.o
+t1390774844
+s6576
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Checks.o
+t1390774845
+s65604
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CompositeTestReporter.o
+t1390774845
+s12968
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CurrentTest.o
+t1390774845
+s3728
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestReporter.o
+t1390774845
+s129640
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestResult.o
+t1390774845
+s45608
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/MemoryOutStream.o
+t1390774845
+s56936
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/ReportAssert.o
+t1390774845
+s8460
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/SignalTranslator.o
+t1390774845
+s8132
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Test.o
+t1390774846
+s72524
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestDetails.o
+t1390774845
+s5040
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestList.o
+t1390774845
+s5932
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporter.o
+t1390774846
+s5544
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporterStdout.o
+t1390774846
+s9744
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestResults.o
+t1390774846
+s8796
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestRunner.o
+t1390774846
+s76908
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeConstraint.o
+t1390774846
+s65328
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeHelpers.o
+t1390774845
+s5772
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/UnitTest++.LinkFileList
+c0000000052E58A390000000000000A2C
+t1390774841
+s2604
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/XmlTestReporter.o
+t1390774847
+s120276
+
+N/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/libUnitTest++.a
+t1390774850
+s741304
+
+N/Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a
+t2
+s0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp
+r0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies3c2d33b6a996b841^87dc60b6a996b841^---0#1#1#--18"Check dependencies36"B1F2775E-DD52-4350-8B81-CED85997F4EC-
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/AssertException.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467641.285695
+e412467641.327347
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/AssertException.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp211"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/AssertException.o 3rdPartyLibs/UnitTest++/AssertException.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler0b4249b9c195b841^f2d053b9c195b841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp0000000000000000^2475"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/AssertException.o 3rdPartyLibs/UnitTest++/AssertException.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/AssertException.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/AssertException.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/AssertException.o36"C33AAADD-E409-483A-865D-EA8DDFB9246B-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Checks.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467641.489829
+e412467641.825823
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Checks.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp193"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Checks.o 3rdPartyLibs/UnitTest++/Checks.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerdc827db9c195b841^f168d3b9c195b841^---0#0#1#-19%DVTDocumentLocation2@88"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp0000000000000000^2421"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Checks.o 3rdPartyLibs/UnitTest++/Checks.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Checks.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Checks.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Checks.o36"0B7D044E-7BE9-4895-8F42-4879C8F8B9CC-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CompositeTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467641.915065
+e412467641.958502
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CompositeTestReporter.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp223"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CompositeTestReporter.o 3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler2d5ceab9c195b841^0f60f5b9c195b841^---0#0#1#-19%DVTDocumentLocation2@103"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp0000000000000000^2511"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CompositeTestReporter.o 3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CompositeTestReporter.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CompositeTestReporter.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CompositeTestReporter.o36"3DFDA9C5-FF9B-408B-AA53-02014C5182AA-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CurrentTest.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467642.012895
+e412467642.045499
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CurrentTest.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp203"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CurrentTest.o 3rdPartyLibs/UnitTest++/CurrentTest.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler986d03bac195b841^7fa50bbac195b841^---0#0#1#-19%DVTDocumentLocation2@93"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp0000000000000000^2451"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CurrentTest.o 3rdPartyLibs/UnitTest++/CurrentTest.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CurrentTest.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CurrentTest.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/CurrentTest.o36"21422285-6DDC-4A61-A9FF-6924A7298497-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467642.047008
+e412467642.328488
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestReporter.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp221"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestReporter.o 3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler87a60cbac195b841^981754bac195b841^---0#0#1#-19%DVTDocumentLocation2@102"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp0000000000000000^2505"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestReporter.o 3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestReporter.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestReporter.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestReporter.o36"CCD6E00F-FB55-41A2-89CC-35C571BFEC94-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestResult.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467642.329872
+e412467642.559224
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestResult.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp217"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestResult.o 3rdPartyLibs/UnitTest++/DeferredTestResult.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler008f54bac195b841^2c298fbac195b841^---0#0#1#-19%DVTDocumentLocation2@100"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp0000000000000000^2493"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestResult.o 3rdPartyLibs/UnitTest++/DeferredTestResult.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestResult.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestResult.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/DeferredTestResult.o36"8F1C8DE3-29D6-4A5C-ACCA-42009E81CA40-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/MemoryOutStream.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467642.560591
+e412467642.887376
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/MemoryOutStream.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp211"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/MemoryOutStream.o 3rdPartyLibs/UnitTest++/MemoryOutStream.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler779f8fbac195b841^e02ae3bac195b841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp0000000000000000^2475"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/MemoryOutStream.o 3rdPartyLibs/UnitTest++/MemoryOutStream.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/MemoryOutStream.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/MemoryOutStream.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/MemoryOutStream.o36"48EDE8DE-D1F2-4F48-A52C-4E5AFE5C3FD1-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/ReportAssert.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467642.960245
+e412467642.998299
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/ReportAssert.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp205"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/ReportAssert.o 3rdPartyLibs/UnitTest++/ReportAssert.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilera6eff5bac195b841^6490ffbac195b841^---0#0#1#-19%DVTDocumentLocation2@94"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp0000000000000000^2457"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/ReportAssert.o 3rdPartyLibs/UnitTest++/ReportAssert.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/ReportAssert.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/ReportAssert.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/ReportAssert.o36"F1F858FB-CF4D-44A0-9BB1-3DDFC444CF86-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/SignalTranslator.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467642.888752
+e412467642.922319
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/SignalTranslator.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp219"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/SignalTranslator.o 3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilere4a1e3bac195b841^e71cecbac195b841^---0#0#1#-19%DVTDocumentLocation2@104"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp0000000000000000^2493"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/SignalTranslator.o 3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/SignalTranslator.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/SignalTranslator.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/SignalTranslator.o36"2F78B0AD-E270-46CD-BE72-484CBBC0E304-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Test.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467642.999678
+e412467643.354853
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Test.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp189"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Test.o 3rdPartyLibs/UnitTest++/Test.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler200800bbc195b841^73d75abbc195b841^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp0000000000000000^2409"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Test.o 3rdPartyLibs/UnitTest++/Test.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Test.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Test.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/Test.o36"86FC4AC9-3630-4959-A701-57346FBD81A8-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestDetails.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467643.356283
+e412467643.381710
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestDetails.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp203"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestDetails.o 3rdPartyLibs/UnitTest++/TestDetails.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilera8525bbbc195b841^8db761bbc195b841^---0#0#1#-19%DVTDocumentLocation2@93"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp0000000000000000^2451"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestDetails.o 3rdPartyLibs/UnitTest++/TestDetails.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestDetails.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestDetails.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestDetails.o36"C5A78700-15BC-491F-9051-404D7F3D8581-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestList.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467643.383377
+e412467643.423597
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestList.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp197"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestList.o 3rdPartyLibs/UnitTest++/TestList.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler814162bbc195b841^97706cbbc195b841^---0#0#1#-19%DVTDocumentLocation2@90"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp0000000000000000^2433"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestList.o 3rdPartyLibs/UnitTest++/TestList.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestList.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestList.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestList.o36"8EADC6BA-3543-4038-A675-F2A584676625-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467643.425000
+e412467643.450571
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporter.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp205"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporter.o 3rdPartyLibs/UnitTest++/TestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler46eb6cbbc195b841^6d5873bbc195b841^---0#0#1#-19%DVTDocumentLocation2@94"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp0000000000000000^2457"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporter.o 3rdPartyLibs/UnitTest++/TestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporter.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporter.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporter.o36"ED294CCB-F5FA-4ED9-9E44-ECFA75ABE856-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporterStdout.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467643.451952
+e412467643.492380
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporterStdout.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp217"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporterStdout.o 3rdPartyLibs/UnitTest++/TestReporterStdout.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerf6cf73bbc195b841^6b0c7ebbc195b841^---0#0#1#-19%DVTDocumentLocation2@100"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp0000000000000000^2493"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporterStdout.o 3rdPartyLibs/UnitTest++/TestReporterStdout.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporterStdout.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporterStdout.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestReporterStdout.o36"5DD7A66B-123B-431C-A4FD-B8C54F30A157-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestResults.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467643.493740
+e412467643.521459
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestResults.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp203"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestResults.o 3rdPartyLibs/UnitTest++/TestResults.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler06807ebbc195b841^467e85bbc195b841^---0#0#1#-19%DVTDocumentLocation2@93"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp0000000000000000^2451"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestResults.o 3rdPartyLibs/UnitTest++/TestResults.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestResults.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestResults.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestResults.o36"75674FD4-34D7-4754-8871-CE9C3C7EBAB7-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestRunner.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467643.522848
+e412467643.869669
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestRunner.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp201"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestRunner.o 3rdPartyLibs/UnitTest++/TestRunner.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler8cf585bbc195b841^7fa2debbc195b841^---0#0#1#-19%DVTDocumentLocation2@92"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp0000000000000000^2445"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestRunner.o 3rdPartyLibs/UnitTest++/TestRunner.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestRunner.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestRunner.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TestRunner.o36"8A3440E8-5213-4351-B9BD-9C41DAB51204-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeConstraint.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467643.871064
+e412467644.205376
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeConstraint.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp209"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeConstraint.o 3rdPartyLibs/UnitTest++/TimeConstraint.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerd619dfbbc195b841^cdad34bcc195b841^---0#0#1#-19%DVTDocumentLocation2@96"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp0000000000000000^2469"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeConstraint.o 3rdPartyLibs/UnitTest++/TimeConstraint.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeConstraint.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeConstraint.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeConstraint.o36"D2024786-42E4-4CA4-B1B5-8B8A5EAA01FB-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeHelpers.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467642.923688
+e412467642.958831
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeHelpers.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp209"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeHelpers.o 3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler7992ecbac195b841^e275f5bac195b841^---0#0#1#-19%DVTDocumentLocation2@99"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp0000000000000000^2463"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeHelpers.o 3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeHelpers.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeHelpers.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/TimeHelpers.o36"41DCDDDF-BDB3-46C1-9C78-F4D686267653-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/XmlTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467644.206698
+e412467644.637541
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/XmlTestReporter.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp211"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/XmlTestReporter.o 3rdPartyLibs/UnitTest++/XmlTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler920435bcc195b841^a035a3bcc195b841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp0000000000000000^2475"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/XmlTestReporter.o 3rdPartyLibs/UnitTest++/XmlTestReporter.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/XmlTestReporter.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/XmlTestReporter.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/XmlTestReporter.o36"6253FC2F-CFAF-4918-8A14-47D27CBECCE7-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/AssertException.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467644.638929
+e412467644.672504
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/AssertException.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp215"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/AssertException.o 3rdPartyLibs/UnitTest++/AssertException.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler71aca3bcc195b841^0729acbcc195b841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp0000000000000000^2489"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/AssertException.o 3rdPartyLibs/UnitTest++/AssertException.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/AssertException.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/AssertException.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/AssertException.o36"368B0339-3E6E-49E8-BAD4-85614066ECE4-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Checks.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467644.673885
+e412467645.018571
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Checks.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp197"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Checks.o 3rdPartyLibs/UnitTest++/Checks.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler139eacbcc195b841^dfc004bdc195b841^---0#0#1#-19%DVTDocumentLocation2@88"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp0000000000000000^2435"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Checks.o 3rdPartyLibs/UnitTest++/Checks.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Checks.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Checks.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Checks.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Checks.o36"95A2ED81-C7B8-4FA6-B249-1865F12118E8-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CompositeTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.019965
+e412467645.061085
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CompositeTestReporter.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp227"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CompositeTestReporter.o 3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler223905bdc195b841^23a30fbdc195b841^---0#0#1#-19%DVTDocumentLocation2@103"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp0000000000000000^2525"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CompositeTestReporter.o 3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CompositeTestReporter.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CompositeTestReporter.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CompositeTestReporter.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CompositeTestReporter.o36"80E41DCD-15E9-41B8-950F-CE2B5607A21D-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CurrentTest.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.062469
+e412467645.114965
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CurrentTest.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp207"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CurrentTest.o 3rdPartyLibs/UnitTest++/CurrentTest.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilere71810bdc195b841^61aa1dbdc195b841^---0#0#1#-19%DVTDocumentLocation2@93"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp0000000000000000^2465"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CurrentTest.o 3rdPartyLibs/UnitTest++/CurrentTest.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CurrentTest.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CurrentTest.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/CurrentTest.o36"0DDB8706-CDFD-4C60-A52D-B7F3D68D2EC2-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.116553
+e412467645.414549
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestReporter.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp225"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestReporter.o 3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler39f11dbdc195b841^d11f6abdc195b841^---0#0#1#-19%DVTDocumentLocation2@102"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp0000000000000000^2519"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestReporter.o 3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestReporter.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestReporter.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestReporter.o36"A40F45CF-2EC8-450B-907C-02DC6106359F-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestResult.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.119091
+e412467645.337506
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestResult.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp221"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestResult.o 3rdPartyLibs/UnitTest++/DeferredTestResult.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9a941ebdc195b841^996656bdc195b841^---0#0#1#-19%DVTDocumentLocation2@100"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp0000000000000000^2507"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestResult.o 3rdPartyLibs/UnitTest++/DeferredTestResult.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestResult.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestResult.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/DeferredTestResult.o36"A4CE5980-5AFA-4B2D-8BC1-928559F3A646-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/MemoryOutStream.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.339931
+e412467645.708194
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/MemoryOutStream.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp215"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/MemoryOutStream.o 3rdPartyLibs/UnitTest++/MemoryOutStream.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler812557bdc195b841^1a4eb5bdc195b841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp0000000000000000^2489"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/MemoryOutStream.o 3rdPartyLibs/UnitTest++/MemoryOutStream.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/MemoryOutStream.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/MemoryOutStream.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/MemoryOutStream.o36"9DF59F8E-5BFA-4153-814E-3F7A0FB9B8FF-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/ReportAssert.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.709784
+e412467645.753546
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/ReportAssert.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssertImpl.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp209"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/ReportAssert.o 3rdPartyLibs/UnitTest++/ReportAssert.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerefcbb5bdc195b841^75e8c0bdc195b841^---0#0#1#-19%DVTDocumentLocation2@94"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp0000000000000000^2471"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/ReportAssert.o 3rdPartyLibs/UnitTest++/ReportAssert.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/ReportAssert.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/ReportAssert.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ReportAssert.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/ReportAssert.o36"34B6F5D7-308D-41EB-BBC2-9E4F76ED1499-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/SignalTranslator.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.415980
+e412467645.451061
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/SignalTranslator.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp223"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/SignalTranslator.o 3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerd49a6abdc195b841^d59173bdc195b841^---0#0#1#-19%DVTDocumentLocation2@104"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp0000000000000000^2507"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/SignalTranslator.o 3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/SignalTranslator.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/SignalTranslator.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/SignalTranslator.o36"79BFA3F6-8B60-4A59-9159-E5F9C44CD5C8-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Test.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.710334
+e412467646.071939
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Test.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/AssertException.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExecuteTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/ExceptionMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/SignalTranslator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp193"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Test.o 3rdPartyLibs/UnitTest++/Test.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler64ebb5bdc195b841^726b12bec195b841^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp0000000000000000^2423"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Test.o 3rdPartyLibs/UnitTest++/Test.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Test.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Test.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/Test.o36"7E6E9423-0829-46F8-A726-AC1CA98468AB-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestDetails.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.756026
+e412467645.786257
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestDetails.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp207"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestDetails.o 3rdPartyLibs/UnitTest++/TestDetails.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler98a5c1bdc195b841^e561c9bdc195b841^---0#0#1#-19%DVTDocumentLocation2@93"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp0000000000000000^2465"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestDetails.o 3rdPartyLibs/UnitTest++/TestDetails.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestDetails.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestDetails.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestDetails.o36"1BA9416F-E8CA-45E0-A960-8C62AE3DD203-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestList.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.787624
+e412467645.835200
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestList.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp201"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestList.o 3rdPartyLibs/UnitTest++/TestList.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler34bcc9bdc195b841^89cfd5bdc195b841^---0#0#1#-19%DVTDocumentLocation2@90"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp0000000000000000^2447"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestList.o 3rdPartyLibs/UnitTest++/TestList.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestList.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestList.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestList.o36"EADE2070-29FC-44E0-9524-D55A5408EEAD-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467646.073375
+e412467646.101131
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporter.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp209"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporter.o 3rdPartyLibs/UnitTest++/TestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerace512bec195b841^32e719bec195b841^---0#0#1#-19%DVTDocumentLocation2@94"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp0000000000000000^2471"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporter.o 3rdPartyLibs/UnitTest++/TestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporter.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporter.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporter.o36"4A77A8AB-88AA-4C5B-8275-BB85F7CB5C95-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporterStdout.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467646.102708
+e412467646.226016
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporterStdout.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp221"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporterStdout.o 3rdPartyLibs/UnitTest++/TestReporterStdout.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler45661abec195b841^dbdb39bec195b841^---0#0#1#-19%DVTDocumentLocation2@100"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp0000000000000000^2507"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporterStdout.o 3rdPartyLibs/UnitTest++/TestReporterStdout.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporterStdout.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporterStdout.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestReporterStdout.o36"373A653D-6C95-4112-A033-63D5D1829513-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestResults.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467646.228535
+e412467646.267510
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestResults.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp207"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestResults.o 3rdPartyLibs/UnitTest++/TestResults.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler45a03abec195b841^8a8e44bec195b841^---0#0#1#-19%DVTDocumentLocation2@93"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp0000000000000000^2465"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestResults.o 3rdPartyLibs/UnitTest++/TestResults.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestResults.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestResults.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestResults.o36"2E3242F4-A817-4930-982B-CF8B72865B05-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestRunner.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467646.269408
+e412467646.629148
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestRunner.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Test.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestDetails.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestList.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporterStdout.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp205"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestRunner.o 3rdPartyLibs/UnitTest++/TestRunner.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler4d1045bec195b841^2ff8a0bec195b841^---0#0#1#-19%DVTDocumentLocation2@92"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp0000000000000000^2459"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestRunner.o 3rdPartyLibs/UnitTest++/TestRunner.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestRunner.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestRunner.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestRunner.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TestRunner.o36"DED272E5-966D-4BEF-A98E-F8684F96B86F-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeConstraint.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467646.270485
+e412467646.628752
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeConstraint.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestResults.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/MemoryOutStream.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/CurrentTest.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp213"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeConstraint.o 3rdPartyLibs/UnitTest++/TimeConstraint.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler8f5245bec195b841^cefea0bec195b841^---0#0#1#-19%DVTDocumentLocation2@96"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp0000000000000000^2483"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeConstraint.o 3rdPartyLibs/UnitTest++/TimeConstraint.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeConstraint.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeConstraint.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TimeConstraint.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeConstraint.o36"F3835F46-F2FC-4317-877C-AE51A9252F5B-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeHelpers.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467645.543891
+e412467645.600218
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeHelpers.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp213"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeHelpers.o 3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler43568bbdc195b841^54c899bdc195b841^---0#0#1#-19%DVTDocumentLocation2@99"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp0000000000000000^2477"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeHelpers.o 3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeHelpers.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeHelpers.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Posix/TimeHelpers.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/TimeHelpers.o36"64EF8D74-2F39-4D8C-9C7E-8CB6A103308C-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/XmlTestReporter.o /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467646.630587
+e412467647.189553
+r1
+xCompileC
+xbld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/XmlTestReporter.o
+x/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/Config.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/TestReporter.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/HelperMacros.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/DeferredTestResult.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp215"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/XmlTestReporter.o 3rdPartyLibs/UnitTest++/XmlTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera088a1bec195b841^e14430bfc195b841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp0000000000000000^2489"CompileC bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/XmlTestReporter.o 3rdPartyLibs/UnitTest++/XmlTestReporter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -w -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/XmlTestReporter.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/XmlTestReporter.dia -c /Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/UnitTest++/XmlTestReporter.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/XmlTestReporter.o36"ACA52757-ACF6-4245-B7D0-D284AEC9E7DE-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a normal i386\ x86_64
+s412527030.450972
+e412527030.589700
+r1
+xCreateUniversalBinary
+x/Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a
+xnormal
+xi386 x86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Create universal binary /Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a67"CreateUniversalBinary lib/debug/libUnitTest++.a normal i386\ x86_64ba8473b6a996b841^070b97b6a996b841^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a00388c64dcffdf42^472"CreateUniversalBinary lib/debug/libUnitTest++.a normal i386\ x86_64    cd /Users/alexanderlerch/ProjectTemplate    libtool -static /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/libUnitTest++.a /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/libUnitTest++.a -o /Users/alexanderlerch/ProjectTemplate/lib/debug/libUnitTest++.a36"F70E58B0-7769-468F-88F8-8868197BF01D-
+bF5B65FE0-4A8B-43FA-84BA-4CA761158FF9
+
+CLibtool /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/libUnitTest++.a normal i386
+s412467650.758100
+e412467650.777469
+r1
+xLibtool
+x/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/libUnitTest++.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Libtool bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/libUnitTest++.a normal i386116"Libtool bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/libUnitTest++.a normal i3865325c2c2c195b841^ab08c7c2c195b841^---0#0#1#--778"Libtool bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/libUnitTest++.a normal i386    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/lib/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/UnitTest++.LinkFileList -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/i386/libUnitTest++.a36"9BF2C6AB-8996-428F-B78F-C60B032067E0-
+b65551537-7563-4488-805B-7595A1AB21FF
+
+CLibtool /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/libUnitTest++.a normal x86_64
+s412467650.778935
+e412467650.799518
+r1
+xLibtool
+x/Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/libUnitTest++.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Libtool bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/libUnitTest++.a normal x86_64120"Libtool bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/libUnitTest++.a normal x86_64787cc7c2c195b841^deadccc2c195b841^---0#0#1#--788"Libtool bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/libUnitTest++.a normal x86_64    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/lib/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/UnitTest++.LinkFileList -o /Users/alexanderlerch/ProjectTemplate/bld/TestCL/UnitTest++/MyProject.build/Debug/UnitTest++.build/Objects-normal/x86_64/libUnitTest++.a36"A4922E6E-B734-4AF8-9205-5FF76A493346-
+b65551537-7563-4488-805B-7595A1AB21FF
+

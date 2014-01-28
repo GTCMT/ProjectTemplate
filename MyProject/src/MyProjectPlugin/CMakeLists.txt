@@ -28,7 +28,7 @@ if (PLUGIN_VST)
 endif (PLUGIN_VST)
 if (PLUGIN_AU)
 	set(COREAUDIO_SDK_PATH "/Developer/Extras/CoreAudio")
-	file(GLOB AU_SOURCES_MAC RELATIVE ${LocalDir} 
+	file(GLOB AU_SOURCES RELATIVE ${LocalDir} 
 		${JUCE_PLUGIN_WRAPPER_DIR}/AU/*.mm;
 		${COREAUDIO_SDK_PATH}/AudioUnits/AUPublic/OtherBases/AUOutputBase.cpp;
 		${COREAUDIO_SDK_PATH}/AudioUnits/AUPublic/Utility/AUInputFormatConverter.h;
@@ -80,6 +80,12 @@ if (PLUGIN_AU)
 		${COREAUDIO_SDK_PATH}/AudioUnits/AUPublic/OtherBases/AUMIDIBase.cpp;
 		${COREAUDIO_SDK_PATH}/AudioUnits/AUPublic/OtherBases/MusicDeviceBase.cpp;
 		)
+	include_directories(${COREAUDIO_SDK_PATH}/PublicUtility/)
+	include_directories(${COREAUDIO_SDK_PATH}/AudioUnits/AUPublic/Utility/)
+	include_directories(${COREAUDIO_SDK_PATH}/AudioUnits/AUPublic/AUBase/)
+	include_directories(${COREAUDIO_SDK_PATH}/AudioUnits/AUPublic/AUViewBase/)
+	include_directories(${COREAUDIO_SDK_PATH}/AudioUnits/AUPublic/OtherBases/)
+	include_directories(${COREAUDIO_SDK_PATH}/AudioUnits/AUPublic/AUCarbonViewBase/)
 endif (PLUGIN_AU)
 
 file(GLOB UTILITY_SOURCES RELATIVE ${LocalDir} ${JUCE_PLUGIN_WRAPPER_DIR}/utility/*.cpp)

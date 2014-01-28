@@ -1,0 +1,67 @@
+TALL_BUILD
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-F504372F60FC40F180F7FC5B.sh
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-17110F8D50E544D1ACBEDB03.sh
+c0000000052E58A5A00000000000000AC
+t1390774874
+s172
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-C3D7110180694D49A82CAAB6.sh
+c0000000052E66EE700000000000000AC
+t1390833383
+s172
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-F504372F60FC40F180F7FC5B.sh
+c0000000052E6729300000000000000AC
+t1390834323
+s172
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies9b58c813aa96b841^f0fad013aa96b841^---0#1#1#--18"Check dependencies36"CBD8673D-D4BE-41E4-9A44-26AC08709ACB-
+
+CPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-17110F8D50E544D1ACBEDB03.sh
+s412467674.336884
+e412467674.412692
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-17110F8D50E544D1ACBEDB03.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'110"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ALL_BUILD.build/Script-17110F8D50E544D1ACBEDB03.shebac56dac195b841^0bb669dac195b841^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-412467674#0#8#-0#-----2@26"echo Build\ all\ projects-412467674#9#26#-0#-----2@19"Build all projects-412467674#35#19#-0#-----0#0#1#--286"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ALL_BUILD.build/Script-17110F8D50E544D1ACBEDB03.sh    cd /Users/alexanderlerch/ProjectTemplate    /bin/sh -c /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-17110F8D50E544D1ACBEDB03.sh36"BE147844-E355-4DE4-A4B3-85CF92FEFB88-
+b213EFD28-AC89-4D82-8474-0D3C38036C0C
+
+CPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-C3D7110180694D49A82CAAB6.sh
+s412526183.899103
+e412526183.933411
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-C3D7110180694D49A82CAAB6.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'110"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ALL_BUILD.build/Script-C3D7110180694D49A82CAAB6.sh1b9ee667a696b841^06f4ee67a696b841^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-412526183#0#8#-0#-----2@26"echo Build\ all\ projects-412526183#9#26#-0#-----2@19"Build all projects-412526183#35#19#-0#-----0#0#1#--286"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ALL_BUILD.build/Script-C3D7110180694D49A82CAAB6.sh    cd /Users/alexanderlerch/ProjectTemplate    /bin/sh -c /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-C3D7110180694D49A82CAAB6.sh36"26197823-9596-43C0-B972-BF2DF2B2DEAC-
+b27CDAC6B-8439-4D8D-9CF5-F3D2046376C3
+
+CPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-F504372F60FC40F180F7FC5B.sh
+s412527123.819367
+e412527123.916084
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-F504372F60FC40F180F7FC5B.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'110"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ALL_BUILD.build/Script-F504372F60FC40F180F7FC5B.sh054ed213aa96b841^1285ea13aa96b841^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-412527123#0#8#-0#-----2@26"echo Build\ all\ projects-412527123#9#26#-0#-----2@19"Build all projects-412527123#35#19#-0#-----0#0#1#--286"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ALL_BUILD.build/Script-F504372F60FC40F180F7FC5B.sh    cd /Users/alexanderlerch/ProjectTemplate    /bin/sh -c /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ALL_BUILD.build/Script-F504372F60FC40F180F7FC5B.sh36"E8D27BE1-E604-4A5B-BC37-D901E4B5BC4B-
+bA05967FC-E50F-496A-9115-9EB7A95D23D7
+
