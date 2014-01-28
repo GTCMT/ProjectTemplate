@@ -11,12 +11,35 @@
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
-	<string>BNDL</string>
+	<string>TDMw</string>
 	<key>CFBundleSignature</key>
-	<string>????</string>
+	<string>PTul</string>
 	<key>CFBundleShortVersionString</key>
-	<string>${MyProject_VERSION_MAJOR}.${MyProject_VERSION_MINOR}.${MyProject_VERSION_PATCH}</string>
+	<string>${MyProject_VERSION_MAJOR}.${MyProject_VERSION_MINOR}</string>
 	<key>CFBundleVersion</key>
 	<string>${MyProject_VERSION_MAJOR}.${MyProject_VERSION_MINOR}.${MyProject_VERSION_PATCH}</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>GTCMT</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>AudioComponents</key>
+    <array>
+      <dict>
+        <key>name</key>
+        <string>$(PRODUCT_NAME)</string>
+        <key>description</key>
+        <string>$(PRODUCT_NAME) Demo</string>
+        <key>factoryFunction</key>
+        <string>JuceDemoProjectAUFactory</string>
+        <key>manufacturer</key>
+        <string>RawM</string>
+        <key>type</key>
+        <string>aumf</string>
+        <key>subtype</key>
+        <string>Jcdm</string>
+        <key>version</key>
+        <integer>65536</integer>
+      </dict>
+    </array>
 </dict>
 </plist>
