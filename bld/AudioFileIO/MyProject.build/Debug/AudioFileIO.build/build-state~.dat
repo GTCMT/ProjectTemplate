@@ -1,0 +1,179 @@
+TAudioFileIO
+v6
+r1
+cCheck dependencies
+cCompileC bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIf.o /Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIf.o /Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/libAudioFileIO.a normal i386
+cLibtool /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/libAudioFileIO.a normal x86_64
+cCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a normal i386\ x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/SDKSettings.plist
+c00000000525C192300000000000004B3
+t1381767459
+s1203
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000525C192300000000000001DE
+t1381767459
+s478
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+c0000000052CAFA2F0000000000004884
+t1389034031
+s18564
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+c0000000052CAFA2F000000000000051D
+t1389034031
+s1309
+
+N/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+c0000000052CAFA2F000000000001353A
+t1389034031
+s79162
+
+N/Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp
+c0000000052E571DE0000000000004A54
+t1390768606
+s19028
+
+N/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/AudioFileIf.h
+c0000000052CAFA2F0000000000001F58
+t1389034031
+s8024
+
+N/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+c0000000052CAFA2F000000000000011F
+t1389034031
+s287
+
+N/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/Util.h
+c0000000052CAFA2F000000000000071A
+t1389034031
+s1818
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIO.LinkFileList
+c0000000052E58A070000000000000080
+t1390774791
+s128
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIf.o
+t1390774805
+s119312
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/libAudioFileIO.a
+t1390774814
+s123112
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIO.LinkFileList
+c0000000052E58A070000000000000082
+t1390774791
+s130
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIf.o
+t1390774807
+s122424
+
+N/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/libAudioFileIO.a
+t1390774817
+s126224
+
+N/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+c0000000052E5891E000000000000037D
+t1390774558
+s893
+
+N/Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a
+t2
+s0
+
+CBuild AST from /Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies35d147b6a996b841^a75948b6a996b841^---0#1#1#--18"Check dependencies36"380AD07C-2375-4A40-8FF0-BC93CCBAABCB-
+
+CCompileC bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIf.o /Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467605.141626
+e412467605.572027
+r1
+xCompileC
+xbld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIf.o
+x/Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/Util.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/AudioFileIf.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp200"CompileC bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIf.o SharedSources/AudioFileIO/AudioFileIf.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilere15f2495c195b841^2a709295c195b841^---0#0#1#-19%DVTDocumentLocation2@95"file://localhost/Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp0000000000000000^2482"CompileC bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIf.o SharedSources/AudioFileIO/AudioFileIf.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/DerivedSources/i386 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIf.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIf.dia -c /Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIf.o36"9ABD0274-AA67-4B6B-B9AD-823C55C194D3-
+b6032359D-857A-408C-8E18-DB3217AAE65E
+
+CCompileC bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIf.o /Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s412467607.506472
+e412467607.922648
+r1
+xCompileC
+xbld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIf.o
+x/Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp
+d/Users/alexanderlerch/ProjectTemplate/bld/incl/MyProjectConfig.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/sndlib.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/xen.h
+d/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib/vct.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/Util.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/AudioFileIf.h
+d/Users/alexanderlerch/ProjectTemplate/SharedSources/incl/ErrorDef.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp204"CompileC bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIf.o SharedSources/AudioFileIO/AudioFileIf.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler26c78197c195b841^834eec97c195b841^---0#0#1#-19%DVTDocumentLocation2@95"file://localhost/Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp0000000000000000^2496"CompileC bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIf.o SharedSources/AudioFileIO/AudioFileIf.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexanderlerch/ProjectTemplate    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/alexanderlerch/ProjectTemplate/lib/debug/include -I/Users/alexanderlerch/ProjectTemplate/MyProject/incl -I/Users/alexanderlerch/ProjectTemplate/bld/incl -I/Users/alexanderlerch/ProjectTemplate/SharedSources/incl -I/Users/alexanderlerch/ProjectTemplate/3rdPartyLibs/sndlib -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/DerivedSources/x86_64 -I/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/alexanderlerch/ProjectTemplate/lib/debug -Wall -msse -msse2 -msse3 -D DEBUG -MMD -MT dependencies -MF /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIf.d --serialize-diagnostics /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIf.dia -c /Users/alexanderlerch/ProjectTemplate/SharedSources/AudioFileIO/AudioFileIf.cpp -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIf.o36"D869B01B-14C6-4A8E-BD81-341C451E4F7F-
+b6032359D-857A-408C-8E18-DB3217AAE65E
+
+CCreateUniversalBinary /Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a normal i386\ x86_64
+s412527030.287228
+e412527030.307073
+r1
+xCreateUniversalBinary
+x/Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a
+xnormal
+xi386 x86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Create universal binary /Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a68"CreateUniversalBinary lib/debug/libAudioFileIO.a normal i386\ x86_64539649b6a996b841^53b04eb6a996b841^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a00388c64dcffdf42^466"CreateUniversalBinary lib/debug/libAudioFileIO.a normal i386\ x86_64    cd /Users/alexanderlerch/ProjectTemplate    libtool -static /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/libAudioFileIO.a /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/libAudioFileIO.a -o /Users/alexanderlerch/ProjectTemplate/lib/debug/libAudioFileIO.a36"8FFBD3E0-299C-4280-A937-AAF993B3C678-
+bD11DA7A6-105D-4EDF-8136-90EE1F8CFB7F
+
+CLibtool /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/libAudioFileIO.a normal i386
+s412467614.527552
+e412467614.539458
+r1
+xLibtool
+x/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/libAudioFileIO.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Libtool bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/libAudioFileIO.a normal i386112"Libtool bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/libAudioFileIO.a normal i386681f879ec195b841^1e1a8a9ec195b841^---0#0#1#--766"Libtool bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/libAudioFileIO.a normal i386    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/lib/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/AudioFileIO.LinkFileList -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/i386/libAudioFileIO.a36"AC564E91-5385-4DC2-A974-EAA9E5671A28-
+b6032359D-857A-408C-8E18-DB3217AAE65E
+
+CLibtool /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/libAudioFileIO.a normal x86_64
+s412467617.347444
+e412467617.359776
+r1
+xLibtool
+x/Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/libAudioFileIO.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Libtool bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/libAudioFileIO.a normal x86_64116"Libtool bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/libAudioFileIO.a normal x86_64100759a1c195b841^d72f5ca1c195b841^---0#0#1#--776"Libtool bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/libAudioFileIO.a normal x86_64    cd /Users/alexanderlerch/ProjectTemplate    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/alexanderlerch/ProjectTemplate/lib/debug -filelist /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/AudioFileIO.LinkFileList -o /Users/alexanderlerch/ProjectTemplate/bld/AudioFileIO/MyProject.build/Debug/AudioFileIO.build/Objects-normal/x86_64/libAudioFileIO.a36"31B2DB65-D8BF-4FEE-BB7F-473BFBE8A73D-
+b6032359D-857A-408C-8E18-DB3217AAE65E
+

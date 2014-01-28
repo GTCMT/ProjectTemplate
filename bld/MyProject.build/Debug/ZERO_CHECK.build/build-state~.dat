@@ -1,0 +1,67 @@
+TZERO_CHECK
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-A3B77562D0574585BC2E7115.sh
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-A3B77562D0574585BC2E7115.sh
+c0000000052E6723600000000000000AD
+t1390834230
+s173
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-C4C2D904E49649CABF145DE6.sh
+c0000000052E66E8900000000000000AD
+t1390833289
+s173
+
+N/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh
+c0000000052E589F700000000000000AD
+t1390774775
+s173
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesc5769fb5a996b841^9dd714b6a996b841^---0#1#1#--18"Check dependencies36"63D32366-E664-41B2-BD55-FCA697B0465A-
+
+CPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-A3B77562D0574585BC2E7115.sh
+s412527030.070911
+e412527030.178349
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-A3B77562D0574585BC2E7115.sh
+oecho ""
+o
+omake -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.make
+omake[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'111"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ZERO_CHECK.build/Script-A3B77562D0574585BC2E7115.sh219512b6a996b841^82c92db6a996b841^-185"echo ""make -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.makemake[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-412527030#0#8#-0#-----2@79"make -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.make-412527030#9#79#-0#-----2@97"make[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.-412527030#88#97#-0#-----0#0#1#--288"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ZERO_CHECK.build/Script-A3B77562D0574585BC2E7115.sh    cd /Users/alexanderlerch/ProjectTemplate    /bin/sh -c /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-A3B77562D0574585BC2E7115.sh36"5D4B7727-D740-4935-9F53-13001302D073-
+b2B316B2E-F4DF-41DB-A2CF-C9C0C58BB65D
+
+CPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-C4C2D904E49649CABF145DE6.sh
+s412526089.416826
+e412526089.679911
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-C4C2D904E49649CABF145DE6.sh
+oecho ""
+o
+omake -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.make
+omake[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'111"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ZERO_CHECK.build/Script-C4C2D904E49649CABF145DE6.sh681f6b09a696b841^0c3dae09a696b841^-185"echo ""make -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.makemake[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-412526089#0#8#-0#-----2@79"make -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.make-412526089#9#79#-0#-----2@97"make[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.-412526089#88#97#-0#-----0#0#1#--288"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ZERO_CHECK.build/Script-C4C2D904E49649CABF145DE6.sh    cd /Users/alexanderlerch/ProjectTemplate    /bin/sh -c /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-C4C2D904E49649CABF145DE6.sh36"FBE0C9EC-EFE7-4985-93AC-2653C0CF7A55-
+b2297EFE1-7625-4AB6-954A-2E64759B5F0F
+
+CPhaseScriptExecution CMake\ Rules /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh
+s412467575.189452
+e412467575.416669
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh
+oecho ""
+o
+omake -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.make
+omake[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'111"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.shb0013177c195b841^bbd26a77c195b841^-185"echo ""make -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.makemake[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-412467575#0#8#-0#-----2@79"make -f /Users/alexanderlerch/ProjectTemplate/bld/CMakeScripts/ReRunCMake.make-412467575#9#79#-0#-----2@97"make[1]: `/Users/alexanderlerch/ProjectTemplate/bld/CMakeFiles/cmake.check_cache' is up to date.-412467575#88#97#-0#-----0#0#1#--288"PhaseScriptExecution CMake\ Rules bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh    cd /Users/alexanderlerch/ProjectTemplate    /bin/sh -c /Users/alexanderlerch/ProjectTemplate/bld/MyProject.build/Debug/ZERO_CHECK.build/Script-DF00471B9A7E4046BF67CF7F.sh36"384D4B68-5221-4246-80B6-960659F91460-
+b20EE1931-D374-4593-A771-7E09FE679D1D
+
