@@ -114,6 +114,13 @@ public:
         return (m_iWriteIdx - m_iReadIdx + m_iBuffLength)%m_iBuffLength;
     }
 
+    /*! returns the length of the internal buffer
+    \return int
+    */
+    int getLength () const
+    {
+        return m_iBuffLength;
+    }
 private:
     void incIdx (int &iIdx, int iOffset = 1)
     {
