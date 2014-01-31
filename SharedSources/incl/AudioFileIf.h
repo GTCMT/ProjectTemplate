@@ -162,6 +162,13 @@ protected:
     int getNumBytesPerSample () const;
     int getNumBitsPerSample () const {return (m_iNumBytesPerSample<<3);}
 
+    float clip2Range(float fSample2Clip, float fMin, float fMax)
+    {
+        fSample2Clip = std::min (fSample2Clip, fMax);
+        fSample2Clip = std::max (fSample2Clip, fMin);
+        return fSample2Clip;
+    }
+
     static const int    m_kiDefBlockLength;     //!< buffer length for read and write operations
 
 private:

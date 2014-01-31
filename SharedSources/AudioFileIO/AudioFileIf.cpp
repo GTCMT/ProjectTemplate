@@ -398,8 +398,7 @@ float CAudioFileRaw::scaleUp( float fSample2Clip )
     fSample2Clip *= fScale;
     if (isClippingEnabled())
     {
-        fSample2Clip = min (fSample2Clip, fScale-1);
-        fSample2Clip = max (fSample2Clip, -fScale);
+        fSample2Clip = clip2Range(fSample2Clip, -fScale, fScale-1);
     }
     return fSample2Clip;
 }
@@ -736,6 +735,13 @@ int CAudioFileSndLib::writeDataIntern( float **ppfAudioData, int iLength )
 
     // sanity check
     assert (ppfAudioData || ppfAudioData[0]);
+ 
+    float afRange[2] = {std::numeric_limits<float>::min(), std::numeric_limits<float>::max()};
+    if (isClippingEnabled())
+    {
+        afRange[0]  = -1.F;
+        afRange[1]  = 1-1.F/static_cast<float>(1<<(getNumBitsPerSample()));
+    }
 
     // use internal buffer with fixed length
     while (iIdx < iLength)
@@ -747,7 +753,7 @@ int CAudioFileSndLib::writeDataIntern( float **ppfAudioData, int iLength )
         {
             for (int i = 0; i < iNumFrames2Write; i++)
             {
-                m_ppdTmpBuff[iCh][i]    = ppfAudioData[iCh][iIdx+i];
+                m_ppdTmpBuff[iCh][i]    = clip2Range(ppfAudioData[iCh][iIdx+i], afRange[0], afRange[1]);
             }
         }
 
