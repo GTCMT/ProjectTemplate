@@ -31,7 +31,7 @@ using std::endl;
 // local function declarations
 void    showClInfo ();
 
-void    getClArgs (std::string &sInputFilePath, std::string &sOutputFilePath, int argc, char* argv[]);
+void getClArgs (std::string &sInputFilePath, std::string &sOutputFilePath, CMyProject::CombFilterType_t &eFilterType, float &fGain, float &fDelayInS, int argc, char* argv[]);
 
 /////////////////////////////////////////////////////////////////////////////////
 // main function
@@ -43,9 +43,17 @@ int main(int argc, char* argv[])
     float                   **ppfAudioData  = 0;
     static const int        kBlockSize      = 1024;
 
-    CAudioFileIf            *phInputFile    = 0;
-    std::fstream            hOutputFile;
+    float                   fParamGain      = .5F,
+                            fParamDelayInS  = .5F;
+    float                   fMaxDelayLength = 3.F;
+                            
+    CMyProject::CombFilterType_t eFilterType= CMyProject::kCombFIR;
+
+    CAudioFileIf            *phInputFile    = 0,
+                            *phOutputFile   = 0;
     CAudioFileIf::FileSpec_t stFileSpec;
+
+    CMyProject              *phMyProject    = 0;
 
     // detect memory leaks in win32
 #if (defined(WITH_MEMORYCHECK) && !defined(NDEBUG) && defined (GTCMT_WIN32))
@@ -65,30 +73,40 @@ int main(int argc, char* argv[])
     showClInfo ();
 
     // parse command line arguments
-    getClArgs (sInputFilePath, sOutputFilePath, argc, argv);
+    getClArgs (sInputFilePath, sOutputFilePath, eFilterType, fParamGain, fParamDelayInS, argc, argv);
 
     // open the input wave file
     CAudioFileIf::createInstance(phInputFile);
     phInputFile->openFile(sInputFilePath, CAudioFileIf::kFileRead);
     if (!phInputFile->isOpen())
     {
-        cout << "Wave file open error!";
+        cout << "Input wave file open error!" << endl;
         return -1;
     }
     phInputFile->getFileSpec(stFileSpec);
 
-    // open the output text file
-     hOutputFile.open (sOutputFilePath.c_str(), std::ios::out);
-     if (!hOutputFile.is_open())
-     {
-         cout << "Text file open error!";
-         return -1;
-     }
+    // open the output file
+    CAudioFileIf::createInstance(phOutputFile);
+    phOutputFile->openFile(sOutputFilePath, CAudioFileIf::kFileWrite, &stFileSpec);
+    if (!phOutputFile->isOpen())
+    {
+        cout << "Output wave file open error!" << endl;
+        return -1;
+    }
 
     // allocate audio data buffer
-    ppfAudioData            = new float* [stFileSpec.iNumChannels];
+    ppfAudioData        = new float* [stFileSpec.iNumChannels];
     for (int i = 0; i < stFileSpec.iNumChannels; i++)
         ppfAudioData[i] = new float [kBlockSize];
+
+    // create instance of effect and set parameters
+    CMyProject::createInstance(phMyProject);
+    phMyProject->initInstance(eFilterType, fMaxDelayLength, stFileSpec.fSampleRateInHz, stFileSpec.iNumChannels);
+    if (phMyProject->setParam(CMyProject::kParamGain, fParamGain) != kNoError)
+        cout << "illegal gain" << endl;
+    if (phMyProject->setParam(CMyProject::kParamDelay, fParamDelayInS) != kNoError)
+        cout << "illegal delay" << endl;
+
 
     // read wave
     while (!phInputFile->isEof())
@@ -96,20 +114,17 @@ int main(int argc, char* argv[])
         int iNumFrames = kBlockSize;
         phInputFile->readData(ppfAudioData, iNumFrames);
 
-        for (int i = 0; i < iNumFrames; i++)
-        {
-            for (int c = 0; c < stFileSpec.iNumChannels; c++)
-            {
-                hOutputFile << ppfAudioData[c][i] << "\t";
-            }
-            hOutputFile << endl;
-        }
+        phMyProject->process(ppfAudioData, ppfAudioData, iNumFrames);
 
+        phOutputFile->writeData(ppfAudioData, iNumFrames);
     }
+
+    // destroy instance
+    CMyProject::destroyInstance(phMyProject);
 
     // close the files
     CAudioFileIf::destroyInstance(phInputFile);
-    hOutputFile.close();
+    CAudioFileIf::destroyInstance(phOutputFile);
 
     // free memory
     for (int i = 0; i < stFileSpec.iNumChannels; i++)
@@ -136,10 +151,16 @@ void     showClInfo()
     return;
 }
 
-void getClArgs( std::string &sInputFilePath, std::string &sOutputFilePath, int argc, char* argv[] )
+void getClArgs( std::string &sInputFilePath, std::string &sOutputFilePath, CMyProject::CombFilterType_t &eFilterType, float &fGain, float &fDelayInS, int argc, char* argv[] )
 {
     if (argc > 1)
         sInputFilePath.assign (argv[1]);
     if (argc > 2)
         sOutputFilePath.assign (argv[2]);
+    if (argc > 3)
+        eFilterType = static_cast<CMyProject::CombFilterType_t>(atoi(argv[3]));
+    if (argc > 4)
+        fGain       = static_cast<float>(atof(argv[4]));
+    if (argc > 5)
+        fDelayInS   = static_cast<float>(atof(argv[5]));
 }
