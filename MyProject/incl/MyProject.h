@@ -25,7 +25,7 @@ public:
     Error_t initInstance (/*enter parameters here*/);
     Error_t resetInstance ();
     
-    //Error_t Process (float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames) = 0;
+    //virtual Error_t process (float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames) = 0;
 
 protected:
     CMyProject ();
