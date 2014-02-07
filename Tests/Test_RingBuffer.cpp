@@ -21,7 +21,7 @@ SUITE(RingBuff)
 
             m_pCRingBuffer  = new CRingBuffer<float> (m_iRingBuffLength);
             m_pfData        = new float [m_iDataLength];
-            CSignalGen::generateSine(m_pfData, 20.F, fSampleFreq, m_iRingBuffLength, .7F, static_cast<float>(M_PI_2));
+            CSignalGen::generateSine(m_pfData, 20.F, fSampleFreq, m_iDataLength, .7F, static_cast<float>(M_PI_2));
         }
 
         ~RingBuffer() 
@@ -195,6 +195,32 @@ SUITE(RingBuff)
         }
     }
 
+    TEST_FIXTURE(RingBuffer, RbReadBlock)
+    {
+        for (int i = 0; i < 2*m_iRingBuffLength; i++)
+        {
+            m_pCRingBuffer->putPostInc (static_cast<float>(i));
+        }
+        m_pCRingBuffer->setReadIdx(5);
+        m_pCRingBuffer->getPostInc(m_pfData, m_iRingBuffLength);
+
+        for (int i=0;i< m_iRingBuffLength; i++)
+        {
+            CHECK_EQUAL((i+5)%m_iRingBuffLength + m_iRingBuffLength,m_pfData[i]);
+        }
+    }
+
+    TEST_FIXTURE(RingBuffer, RbWriteBlock)
+    {
+        m_pCRingBuffer->putPostInc (m_pfData, 11);
+        m_pCRingBuffer->putPostInc (&m_pfData[11], m_iRingBuffLength);
+        m_pCRingBuffer->setReadIdx(11);
+
+        for (int i = 11; i < 11+m_iRingBuffLength; i++)
+        {
+            CHECK_EQUAL(m_pfData[i], m_pCRingBuffer->getPostInc());
+        }
+    }
 }
 
 #endif //WITH_TESTS
