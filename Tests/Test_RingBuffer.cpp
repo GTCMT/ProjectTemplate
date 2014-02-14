@@ -221,6 +221,20 @@ SUITE(RingBuff)
             CHECK_EQUAL(m_pfData[i], m_pCRingBuffer->getPostInc());
         }
     }
+
+    TEST_FIXTURE(RingBuffer, RbFracDelay)
+    {
+        for (int i = 0; i < m_iRingBuffLength; i++)
+            m_pCRingBuffer->putPostInc (1.F*i);
+
+        float fValue    = m_pCRingBuffer->get(.7F);
+        CHECK_CLOSE(.7F, fValue, 1e-4);
+
+        fValue          = m_pCRingBuffer->get(-1.8F);
+        CHECK_CLOSE(14.2F, fValue, 1e-4);
+
+        m_pCRingBuffer->resetInstance();
+    }
 }
 
 #endif //WITH_TESTS

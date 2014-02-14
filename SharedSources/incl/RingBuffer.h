@@ -90,11 +90,24 @@ public:
     }
 
     /*! return the value at the current read index
+    \param float fOffset: read at offset from read index
     \return float the value from the read index
     */
-    T get () const
+    T get (float fOffset = 0) const
     {
-        return m_ptBuff[m_iReadIdx];
+        if (fOffset == 0)
+            return m_ptBuff[m_iReadIdx];
+        else
+        {
+            assert (fabs(fOffset) < m_iBuffLength);
+
+            // compute fraction for linear interpolation 
+            int     iOffset = static_cast<int>(floorf(fOffset)+.1F);
+            float   fFrac   = fOffset - iOffset;
+
+            return (1-fFrac) * m_ptBuff[(m_iReadIdx+iOffset+m_iBuffLength) % m_iBuffLength] +
+                       fFrac * m_ptBuff[(m_iReadIdx+iOffset+m_iBuffLength+1) % m_iBuffLength];
+        }
     }
     /*! return the values starting at the current read index
     \param T * ptBuffpointer to where the values will be written
