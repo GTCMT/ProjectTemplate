@@ -99,10 +99,10 @@ public:
             return m_ptBuff[m_iReadIdx];
         else
         {
-            assert (fabs(fOffset) < m_iBuffLength);
+            assert (fabs(fOffset) <= m_iBuffLength);
 
             // compute fraction for linear interpolation 
-            int     iOffset = static_cast<int>(floorf(fOffset)+.1F);
+            int     iOffset = static_cast<int>(floorf(fOffset));
             float   fFrac   = fOffset - iOffset;
 
             return (1-fFrac) * m_ptBuff[(m_iReadIdx+iOffset+m_iBuffLength) % m_iBuffLength] +

@@ -233,7 +233,9 @@ SUITE(RingBuff)
         fValue          = m_pCRingBuffer->get(-1.8F);
         CHECK_CLOSE(14.2F, fValue, 1e-4);
 
-        m_pCRingBuffer->resetInstance();
+        m_pCRingBuffer->setReadIdx(1);
+        fValue          = m_pCRingBuffer->get(-m_iRingBuffLength+1.F);
+        CHECK_CLOSE(2.F, fValue, 1e-4);
     }
 }
 
