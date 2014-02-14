@@ -102,7 +102,7 @@
  #define JucePlugin_Name                   "${PROJECT_NAME}Plugin"
 #endif
 #ifndef  JucePlugin_Desc
- #define JucePlugin_Desc                   "{PROJECT_NAME}Plugin"
+ #define JucePlugin_Desc                   "${PROJECT_NAME}Plugin"
 #endif
 #ifndef  JucePlugin_Manufacturer
  #define JucePlugin_Manufacturer           "GTCMT"
