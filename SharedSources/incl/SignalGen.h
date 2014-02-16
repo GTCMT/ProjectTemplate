@@ -5,6 +5,7 @@
 #include <math.h>
 
 #include "ErrorDef.h"
+#include "Util.h"
 class CSignalGen
 {
 public:
@@ -16,6 +17,40 @@ public:
         for (int i = 0; i < iLength; i++)
         {
             pfOutBuf[i] = fAmplitude * static_cast<float>(sin (2*M_PI*fFreqInHz * i/fSampleFreqInHz + fStartPhaseInRad));
+        }
+
+        return kNoError;
+    }
+    static Error_t generateRect (float *pfOutBuf, float fFreqInHz, float fSampleFreqInHz, int iLength, float fAmplitude = 1.F)
+    {
+        if (!pfOutBuf)
+            return kFunctionInvalidArgsError;
+
+        float fPeriodLength = fSampleFreqInHz / fFreqInHz;
+        for (int i = 0; i < iLength; i++)
+        {
+            if (i%CUtil::float2int<int>(fPeriodLength) <= .5*fPeriodLength)
+            {            
+                pfOutBuf[i] = fAmplitude;
+            }
+            else
+            {
+                pfOutBuf[i] = -fAmplitude;
+            }
+        }
+
+        return kNoError;
+    }
+    static Error_t generateSaw (float *pfOutBuf, float fFreqInHz, float fSampleFreqInHz, int iLength, float fAmplitude = 1.F)
+    {
+        if (!pfOutBuf)
+            return kFunctionInvalidArgsError;
+
+        float fIncr = 2*fAmplitude / fSampleFreqInHz * fFreqInHz;
+        pfOutBuf[0] = 0;
+        for (int i = 1; i < iLength; i++)
+        {
+            pfOutBuf[i] = fmodf(pfOutBuf[i-1] + fIncr + fAmplitude, 2*fAmplitude) - fAmplitude;
         }
 
         return kNoError;
