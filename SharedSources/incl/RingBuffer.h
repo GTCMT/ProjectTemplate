@@ -2,6 +2,7 @@
 #define __RingBuffer_hdr__
 
 #include <cassert>
+#include <algorithm>
 
 template <class T> 
 class CRingBuffer

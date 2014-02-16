@@ -5,12 +5,45 @@
 // include project headers
 #include "AudioFileIf.h"
 
+#define WITH_FLOATEXCEPTIONS
+#define WITH_MEMORYCHECK
+
+// include exception header
+#if (defined(WITH_FLOATEXCEPTIONS) && !defined(NDEBUG) && defined (GTCMT_WIN32))
+#include <float.h>
+#endif // #ifndef WITHOUT_EXCEPTIONS
+
+// include memory leak header
+#if (defined(WITH_MEMORYCHECK) && !defined(NDEBUG) && defined (GTCMT_WIN32))
+#define CRTDBG_MAP_ALLOC
+#include <stdlib.h>
+#include <crtdbg.h>
+#else
+#include <stdlib.h>
+#endif
+
 std::string cTestDataDir;
 
 /////////////////////////////////////////////////////////////////////////////////
 // main function
 int main(int argc, char* argv[])
 {
+
+    // detect memory leaks in win32
+#if (defined(WITH_MEMORYCHECK) && !defined(NDEBUG) && defined (GTCMT_WIN32))
+    // set memory checking flags
+    int iDbgFlag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
+    iDbgFlag |= _CRTDBG_CHECK_ALWAYS_DF;
+    iDbgFlag |= _CRTDBG_LEAK_CHECK_DF;
+    _CrtSetDbgFlag( iDbgFlag );
+#endif
+
+    // enable floating point exceptions in win32
+#if (defined(WITH_FLOATEXCEPTIONS) && !defined(NDEBUG) && defined (GTCMT_WIN32))
+    // enable check for exceptions (don't forget to enable stop in MSVC!)
+    _controlfp(~(_EM_INVALID | _EM_ZERODIVIDE | _EM_OVERFLOW | _EM_UNDERFLOW | _EM_DENORMAL), _MCW_EM) ;
+#endif // #ifndef WITHOUT_EXCEPTIONS
+
     // argument 2 contains the working dir
     if (argc > 2)
         cTestDataDir.assign(argv[2]);

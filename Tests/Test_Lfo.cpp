@@ -14,10 +14,10 @@ SUITE(Lfo)
     {
         LfoData() : m_pCLfo(0)
         {
-            m_fSampleFreq  = 44100;
+            m_fSampleFreq   = 44100;
 
             m_pfData        = new float [m_iDataLength];
-            m_pCLfo = new CLfo(m_fSampleFreq);
+            m_pCLfo         = new CLfo(m_fSampleFreq);
         }
 
         ~LfoData() 
