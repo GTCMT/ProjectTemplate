@@ -6,7 +6,7 @@
 
 #include "UnitTest++.h"
 
-#include "InputBuffSrcIf.h"
+#include "InputBuffSrc.h"
 
 SUITE(InputBuffSrc)
 {
