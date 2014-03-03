@@ -61,13 +61,13 @@ public:
     };
 
 private:
-    int     m_iNumChannels;             //!< number of channels in data
-    int     m_iMaxInternalBufferLength;            //!< maximum number of output frames
-    int     m_iNumFramesInternalBuffer;       //!< number of frames currently in internal buffer
-    T       **m_pptInternalBuffer;        //!< internal buffer
-    T       **m_pphtExternalData;             //!< pointer to external data to be managed
-    int     m_iExternalDataReadIdx;
-    int     m_iNumFramesExternalData;
+    int     m_iNumChannels;                 //!< number of channels in data
+    int     m_iMaxInternalBufferLength;     //!< maximum number of output frames
+    int     m_iNumFramesInternalBuffer;     //!< number of frames currently in internal buffer
+    T       **m_pptInternalBuffer;          //!< internal buffer
+    T       **m_pphtExternalData;           //!< pointer to external data to be managed
+    int     m_iExternalDataReadIdx;         //!< current read index in m_pphtExternalData
+    int     m_iNumFramesExternalData;       //!< 
 };
 
 
