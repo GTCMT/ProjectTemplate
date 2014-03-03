@@ -26,10 +26,10 @@ class CInputBuffSrc
 {
 public:
     CInputBuffSrc (int iNumOfChannels, int iMaxOutputLength = 1024, int iInitialLatency = 0) : m_iNumChannels(iNumOfChannels),
-        m_iMaxOutLength(iMaxOutputLength),
-        m_iNumFramesBuffered(iInitialLatency),
-        m_ppfBufferedData(0),
-        m_ppfDataPtr(0)
+        m_iMaxInternalBufferLength(iMaxOutputLength),
+        m_iNumFramesInternalBuffer(iInitialLatency),
+        m_pptInternalBuffer(0),
+        m_pphtExternalData(0)
     {
     };
     virtual ~CInputBuffSrc ()
@@ -45,9 +45,9 @@ public:
         return kNoError;
     };
     
-    Error_t getBlock (T **ppBlock, int iOutputBufferSize, int iIncIdxBy = 0)
+    bool getBlock (T **ppBlock, int iOutputBufferSize, int iIncIdxBy = 0)
     {
-        return kNoError;
+        return false;
     };
 
     Error_t reset ()
@@ -62,10 +62,12 @@ public:
 
 private:
     int     m_iNumChannels;             //!< number of channels in data
-    int     m_iMaxOutLength;            //!< maximum number of output frames
-    int     m_iNumFramesBuffered;       //!< number of frames currently in internal buffer
-    T       **m_ppfBufferedData;        //!< internal buffer
-    T       **m_ppfDataPtr;             //!< pointer to external data to be managed
+    int     m_iMaxInternalBufferLength;            //!< maximum number of output frames
+    int     m_iNumFramesInternalBuffer;       //!< number of frames currently in internal buffer
+    T       **m_pptInternalBuffer;        //!< internal buffer
+    T       **m_pphtExternalData;             //!< pointer to external data to be managed
+    int     m_iExternalDataReadIdx;
+    int     m_iNumFramesExternalData;
 };
 
 
