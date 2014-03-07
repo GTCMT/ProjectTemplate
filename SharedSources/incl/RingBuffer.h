@@ -4,6 +4,8 @@
 #include <cassert>
 #include <algorithm>
 
+#include "Util.h"
+
 template <class T> 
 class CRingBuffer
 {

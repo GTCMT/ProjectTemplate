@@ -25,10 +25,12 @@ class CInputBuffSrc
 {
 public:
     CInputBuffSrc (int iNumChannels, int iMaxOutputLength = 1024, int iInitialLatency = 0) : m_iNumChannels(iNumChannels),
+        m_pptInternalBuffer(0),
         m_iMaxInternalBufferLength(iMaxOutputLength-1),
         m_iNumFramesInternalBuffer(iInitialLatency),
-        m_pptInternalBuffer(0),
-        m_pphtExternalData(0)
+        m_pphtExternalData(0),
+        m_iExternalDataReadIdx(0),
+        m_iNumFramesExternalData(0)
     {
         assert(iInitialLatency >= 0);
 
