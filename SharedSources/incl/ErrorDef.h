@@ -11,6 +11,7 @@ enum Error_t
     kFunctionInvalidArgsError,
 
     kNotInitializedError,
+    kFunctionIllegalCallError,
 
     kMemError,
 

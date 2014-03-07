@@ -1,7 +1,6 @@
 #if !defined(__InputBuffSrcIf_HEADER_INCLUDED__)
 #define __InputBuffSrcIf_HEADER_INCLUDED__
 
-
 #include "ErrorDef.h"
 
 /*! buffer class for faster implementation of variable input block size vs. constant processing block size
@@ -25,23 +24,52 @@ template <class T>
 class CInputBuffSrc
 {
 public:
-    CInputBuffSrc (int iNumOfChannels, int iMaxOutputLength = 1024, int iInitialLatency = 0) : m_iNumChannels(iNumOfChannels),
-        m_iMaxInternalBufferLength(iMaxOutputLength),
+    CInputBuffSrc (int iNumChannels, int iMaxOutputLength = 1024, int iInitialLatency = 0) : m_iNumChannels(iNumChannels),
+        m_iMaxInternalBufferLength(iMaxOutputLength-1),
         m_iNumFramesInternalBuffer(iInitialLatency),
         m_pptInternalBuffer(0),
         m_pphtExternalData(0)
     {
+        assert(iInitialLatency >= 0);
+
+        m_pphtExternalData  = new T *[m_iNumChannels];
+        m_pptInternalBuffer = new T *[m_iNumChannels];
+        for (int i = 0; i < m_iNumChannels; i++)
+        {
+            m_pptInternalBuffer[i] = new T [m_iMaxInternalBufferLength];
+            CUtil::setZero(m_pptInternalBuffer[i], m_iMaxInternalBufferLength);
+        }
     };
     virtual ~CInputBuffSrc ()
-    {};
+    {
+        if (m_pptInternalBuffer)
+        {
+            for (int i = 0; i < m_iNumChannels; i++)
+                delete [] m_pptInternalBuffer[i];
+        }
+        delete [] m_pptInternalBuffer;
+        delete [] m_pphtExternalData;
+    };
 
     /*! set new external data pointer
     \param T * * ppNewData
     \param int iNumOfElements
     \return Error_t
     */
-    Error_t setDataPtr2Hold (T **ppNewData, int iNumOfElements)
+    Error_t setDataPtr2Hold (T **pptNewData, int iNumFrames)
     {
+        if (!pptNewData || iNumFrames <= 0)
+            return kFunctionInvalidArgsError;
+
+        for (int i = 0; i < m_iNumChannels; i++)
+        {
+            assert(pptNewData[i]);
+            m_pphtExternalData[i]   = pptNewData[i];
+        }
+
+        m_iExternalDataReadIdx      = 0;
+        m_iNumFramesExternalData    = iNumFrames;
+
         return kNoError;
     };
     
@@ -50,18 +78,73 @@ public:
     */
     Error_t releaseDataPtr ()
     {
+        //number of frames to store vs space available
+        if (m_iNumFramesExternalData - m_iExternalDataReadIdx > m_iMaxInternalBufferLength - m_iNumFramesInternalBuffer)
+            return kFunctionIllegalCallError;
+
+        for (int i = 0; i < m_iNumChannels; i++)
+        {
+            CUtil::copyBuff(&m_pptInternalBuffer[i][m_iNumFramesInternalBuffer], 
+                &m_pphtExternalData[i][m_iExternalDataReadIdx], 
+                (m_iNumFramesExternalData - m_iExternalDataReadIdx));
+        }
+
+        m_iNumFramesInternalBuffer += m_iNumFramesExternalData - m_iExternalDataReadIdx;
+        m_iNumFramesExternalData    = 0;
+        m_iExternalDataReadIdx      = 0;
+
+        for (int i = 0; i < m_iNumChannels; i++)
+        {
+            m_pphtExternalData[i]   = 0;
+        }
         return kNoError;
     };
     
     /*! return current block of frames if available
-    \param T * * ppBlock
+    \param T * * pptBuff
     \param int iOutputBufferSize
     \param int iIncIdxBy
     \return bool
     */
-    bool getBlock (T **ppBlock, int iOutputBufferSize, int iIncIdxBy = 0)
+    bool getBlock (T **pptBuff, int iNumFrames2Get, int iIncReadIdxBy = 0)
     {
-        return false;
+        int iFramesInExternalBuffer = m_iNumFramesExternalData - m_iExternalDataReadIdx;
+
+        if (iFramesInExternalBuffer + m_iNumFramesInternalBuffer < iNumFrames2Get)
+            return false;
+
+        if (!pptBuff || iNumFrames2Get < 0 || iIncReadIdxBy < 0)
+            return false;
+
+        // first get the samples from the internal buffer
+        int iNumFrames2CopyInt     = std::min(iNumFrames2Get, m_iNumFramesInternalBuffer);
+        int iNumFrames2ShiftInt    = std::min(iIncReadIdxBy, iNumFrames2CopyInt);
+        for (int i = 0; i < m_iNumChannels; i++)
+        {
+            assert(pptBuff[i]);
+            CUtil::copyBuff(pptBuff[i], m_pptInternalBuffer[i], iNumFrames2CopyInt);
+            CUtil::moveBuff(m_pptInternalBuffer[i], 
+                0, 
+                iNumFrames2ShiftInt, 
+                (m_iNumFramesInternalBuffer - iNumFrames2ShiftInt));
+        }
+        m_iNumFramesInternalBuffer -= iNumFrames2ShiftInt;
+
+        assert(m_iNumFramesInternalBuffer >= 0);
+        
+        // now get the external data
+        int iNumFrames2CopyExt     = std::min(iNumFrames2Get-iNumFrames2CopyInt, iFramesInExternalBuffer);
+        int iNumFrames2ShiftExt    = iIncReadIdxBy - iNumFrames2ShiftInt;
+        for (int i = 0; i < m_iNumChannels; i++)
+        {
+             CUtil::copyBuff(&pptBuff[i][iNumFrames2CopyInt], &m_pphtExternalData[i][m_iExternalDataReadIdx], iNumFrames2CopyExt);
+        }
+        m_iExternalDataReadIdx += iNumFrames2ShiftExt;
+
+        assert(m_iExternalDataReadIdx < m_iNumFramesExternalData);
+        assert(m_iExternalDataReadIdx >= 0);
+
+        return true;
     };
 
     /*! clear all internal buffer and reset member variables
@@ -69,16 +152,41 @@ public:
     */
     Error_t reset ()
     {
+        m_iNumFramesInternalBuffer  = 0;
+        m_iNumFramesExternalData    = 0;
+        m_iExternalDataReadIdx      = 0;
+
+        for (int i = 0; i < m_iNumChannels; i++)
+        {
+            m_pphtExternalData[i]   = 0;
+            CUtil::setZero(m_pptInternalBuffer[i], m_iMaxInternalBufferLength);
+        }
+
         return kNoError;
     };
 
     /*! return the remaining frames from internal buffers
-    \param T * * ppBlock
+    \param T * * pptBuff
     \return int
     */
-    int  flush (T **ppBlock)
+    int  flush (T **pptBuff)
     {
-        return 0;
+        int iReturn = m_iNumFramesInternalBuffer;
+
+        if (m_iNumFramesInternalBuffer > 0)
+        {
+            if (!pptBuff)
+                return -1;
+
+            for (int i = 0; i < m_iNumChannels; i++)
+            {
+                assert(pptBuff[i]);
+                CUtil::copyBuff(pptBuff[i], m_pptInternalBuffer[i], m_iNumFramesInternalBuffer);
+            }
+            m_iNumFramesInternalBuffer  = 0;
+        }
+
+        return iReturn;
     };
 
 private:

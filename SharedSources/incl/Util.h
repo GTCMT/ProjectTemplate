@@ -43,10 +43,22 @@ public:
     static void copyBuff (T *pDest, const T *pSource, int iLength)
     {
         assert (iLength >= 0);
-        assert (pDest);
-        assert (pSource);
 
-        memcpy (pDest, pSource, sizeof(T)*iLength);
+        if (iLength > 0)
+        {
+            assert (pDest);
+            assert (pSource);
+            memcpy (pDest, pSource, sizeof(T)*iLength);
+        }
+    }
+    template<typename T>
+    static void moveBuff (T *pSrcDest, int iDestIdx, int iSrcIdx, int iLength)
+    {
+        assert (iLength >= 0);
+        assert (pSrcDest);
+
+        if (iLength > 0)
+            memmove (&pSrcDest[iDestIdx], &pSrcDest[iSrcIdx], sizeof(T)*iLength);
     }
 
     static void multBuffC (float *pSrcDest, float fScale, int iLength)
