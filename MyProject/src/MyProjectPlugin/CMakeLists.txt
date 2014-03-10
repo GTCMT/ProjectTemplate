@@ -119,7 +119,6 @@ set_target_properties(${CurrLib} PROPERTIES OUTPUT_NAME "${CurrLib}")
 
 target_link_libraries(${CurrLib} MyProject JuceLibraryCode ${OS_LIBS})
 
-option (WITH_CPPCHECKTARGET "Add target for cppcheck testing" ON)
 if (WITH_CPPCHECKTARGET)
 	# cppcheck target in the IDE
 	file(GLOB to_remove RELATIVE ${CMAKE_SOURCE_DIR}/${CurrLib}/src/${CurrLib} *.txt)
