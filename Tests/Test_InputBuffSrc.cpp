@@ -34,7 +34,12 @@ SUITE(InputBuffSrc)
         ~InputBuffSrcData() 
         {
             delete m_pCInputBuffSrc;
-        }
+            for (int i = 0; i < m_iNumChannels; i++)
+            {
+                delete [] m_ppfAudioData[i];
+            }
+            delete [] m_ppfAudioData;
+}
 
 
         float **m_ppfAudioData;

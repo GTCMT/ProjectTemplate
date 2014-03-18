@@ -1,7 +1,11 @@
 #if !defined(__InputBuffSrcIf_HEADER_INCLUDED__)
 #define __InputBuffSrcIf_HEADER_INCLUDED__
 
+#include <algorithm>
+
 #include "ErrorDef.h"
+
+#include "Util.h"
 
 /*! buffer class for faster implementation of variable input block size vs. constant processing block size
 
