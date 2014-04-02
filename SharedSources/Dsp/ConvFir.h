@@ -8,7 +8,7 @@ template<class T> class CRingBuffer;
 class CConvFir
 {
 public:
-    CConvFir(int iMaxFilterLength);
+    CConvFir();
     virtual ~CConvFir();
 
     Error_t setImpulseResponse(float *pfImpulseResponse, int iLengthOfIr);

@@ -9,7 +9,7 @@
 
 #include "ConvFir.h"
 
-CConvFir::CConvFir( int iMaxFilterLength )
+CConvFir::CConvFir(  )
 {
 
 }
