@@ -20,7 +20,7 @@ SUITE(ConvFir)
             m_pCConvFir   = new CConvFir();
 
             for (int i = 0; i < m_iIrLength; i++)
-                m_pfImpulseResponse[i]  = static_cast<float>(2*rand()/(RAND_MAX) - 1.);
+                m_pfImpulseResponse[i]  = static_cast<float>((2.*rand())/(RAND_MAX) - 1.);
         }
 
         ~ConvFirData() 
@@ -43,9 +43,9 @@ SUITE(ConvFir)
         m_pCConvFir->setImpulseResponse(m_pfImpulseResponse, m_iIrLength);
 
         m_pCConvFir->process(&fIn, m_pfOutputData, 1);
-        CHECK_EQUAL(m_iIrLength, m_pCConvFir->getTailLength ());
+        CHECK_EQUAL(m_iIrLength-1, m_pCConvFir->getTailLength ());
 
-        m_pCConvFir->flush (m_pfOutputData);
+        m_pCConvFir->flush (&m_pfOutputData[1]);
 
         CHECK_ARRAY_CLOSE(m_pfImpulseResponse, m_pfOutputData, m_iIrLength, 1e-3F);
     }
