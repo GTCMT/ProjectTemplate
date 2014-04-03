@@ -21,7 +21,9 @@ public:
     Error_t flush (float *pfOut);
 
 private:
-    //float *m_pfImpulseResponse;
-    //CRingBuffer<float> *m_pCRingBuff;
+    float *m_pfImpulseResponse;
+    CRingBuffer<float> *m_pCRingBuff;
+
+    int m_iLengthOfIr;
 };
 #endif // __ConvFir_hdr__
