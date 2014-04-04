@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <ctime>
 
 #include "MyProjectConfig.h"
 
@@ -31,21 +32,13 @@ using std::endl;
 // local function declarations
 void    showClInfo ();
 
-void    getClArgs (std::string &sInputFilePath, std::string &sOutputFilePath, int argc, char* argv[]);
-
 /////////////////////////////////////////////////////////////////////////////////
 // main function
-int main(int argc, char* argv[])
+int main(int /*argc*/, char* /*argv[]*/)
 {
-    std::string             sInputFilePath,
-                            sOutputFilePath;
+    CMyProject  *pCMyProject = 0;
 
-    float                   **ppfAudioData  = 0;
-    static const int        kBlockSize      = 1024;
-
-    CAudioFileIf            *phInputFile    = 0;
-    std::fstream            hOutputFile;
-    CAudioFileIf::FileSpec_t stFileSpec;
+    clock_t time  = 0;
 
     // detect memory leaks in win32
 #if (defined(WITH_MEMORYCHECK) && !defined(NDEBUG) && defined (GTCMT_WIN32))
@@ -64,58 +57,19 @@ int main(int argc, char* argv[])
 
     showClInfo ();
 
-    // parse command line arguments
-    getClArgs (sInputFilePath, sOutputFilePath, argc, argv);
+    CMyProject::createInstance(pCMyProject);
 
-    // open the input wave file
-    CAudioFileIf::createInstance(phInputFile);
-    phInputFile->openFile(sInputFilePath, CAudioFileIf::kFileRead);
-    if (!phInputFile->isOpen())
-    {
-        cout << "Wave file open error!";
-        return -1;
-    }
-    phInputFile->getFileSpec(stFileSpec);
+    cout << "running native code..." << endl;
+    time = clock();
+    pCMyProject->benchmark(CMyProject::kUnoptimized);
+    cout << "native time:\t" << double(clock() - time) / CLOCKS_PER_SEC << endl << endl;
 
-    // open the output text file
-     hOutputFile.open (sOutputFilePath.c_str(), std::ios::out);
-     if (!hOutputFile.is_open())
-     {
-         cout << "Text file open error!";
-         return -1;
-     }
+    cout << "running intrinsics code..." << endl;
+    time = clock();
+    pCMyProject->benchmark(CMyProject::kIntrinsics);
+    cout << "sse time:\t" << double(clock() - time) / CLOCKS_PER_SEC << endl;
 
-    // allocate audio data buffer
-    ppfAudioData            = new float* [stFileSpec.iNumChannels];
-    for (int i = 0; i < stFileSpec.iNumChannels; i++)
-        ppfAudioData[i] = new float [kBlockSize];
-
-    // read wave
-    while (!phInputFile->isEof())
-    {
-        int iNumFrames = kBlockSize;
-        phInputFile->readData(ppfAudioData, iNumFrames);
-
-        for (int i = 0; i < iNumFrames; i++)
-        {
-            for (int c = 0; c < stFileSpec.iNumChannels; c++)
-            {
-                hOutputFile << ppfAudioData[c][i] << "\t";
-            }
-            hOutputFile << endl;
-        }
-
-    }
-
-    // close the files
-    CAudioFileIf::destroyInstance(phInputFile);
-    hOutputFile.close();
-
-    // free memory
-    for (int i = 0; i < stFileSpec.iNumChannels; i++)
-        delete [] ppfAudioData[i];
-    delete [] ppfAudioData;
-    ppfAudioData = 0;
+    CMyProject::destroyInstance(pCMyProject);
 
     return 0;
     
@@ -134,12 +88,4 @@ void     showClInfo()
     cout  << endl;
 
     return;
-}
-
-void getClArgs( std::string &sInputFilePath, std::string &sOutputFilePath, int argc, char* argv[] )
-{
-    if (argc > 1)
-        sInputFilePath.assign (argv[1]);
-    if (argc > 2)
-        sOutputFilePath.assign (argv[2]);
 }

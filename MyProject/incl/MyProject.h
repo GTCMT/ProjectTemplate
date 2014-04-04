@@ -16,20 +16,30 @@ public:
         kNumVersionInts
     };
 
+    enum BenchMarkMode_t
+    {
+        kUnoptimized,
+        kIntrinsics,
+
+        kNumBenchMarkModes
+    };
+
     static const int  getVersion (const Version_t eVersionIdx);
     static const char* getBuildDate ();
 
-    static Error_t createInstance (CMyProject*& pCKortIf);
-    static Error_t destroyInstance (CMyProject*& pCKortIf);
+    static Error_t createInstance (CMyProject*& pCMyProject, int iVectorLength = 65536);
+    static Error_t destroyInstance (CMyProject*& pCMyProject);
     
-    Error_t initInstance (/*enter parameters here*/);
-    Error_t resetInstance ();
-    
-    //virtual Error_t process (float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames) = 0;
+    void benchmark (BenchMarkMode_t eMode, int iNumOfIterations = 10000);
 
 protected:
-    CMyProject ();
+    CMyProject (int iVectorLength);
     virtual ~CMyProject ();
+
+    float *m_pfTestBuffer;
+    float *m_pfAdd;
+    float *m_pfResult;
+    int m_iLength;
 };
 
 #endif // #if !defined(__MyProject_hdr__)
