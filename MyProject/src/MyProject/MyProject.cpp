@@ -3,6 +3,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
+#include <immintrin.h>
 
 // project headers
 #include "MyProjectConfig.h"
@@ -11,7 +12,13 @@
 
 #include "MyProject.h"
 
-#include <intrin.h>
+#ifdef GTCMT_MACOSX
+#define ALIGNED_ALLOC(size,alignment)   malloc(size)
+#define ALIGNED_FREE(pointer)           free(pointer)
+#else
+#define ALIGNED_ALLOC(size,alignment)   _aligned_malloc(size,alignment)
+#define ALIGNED_FREE(pointer)           _aligned_free(pointer)
+#endif
 
 static const char*  kCMyProjectBuildDate             = __DATE__;
 
@@ -23,9 +30,9 @@ CMyProject::CMyProject( int iVectorLength ):
     m_iLength(iVectorLength)
 {
     // we have to allocate ALIGNED memory!
-    m_pfTestBuffer  = (float*) _aligned_malloc(m_iLength * sizeof(float), 16);
-    m_pfAdd         = (float*) _aligned_malloc(4 * sizeof(float), 16);
-    m_pfResult      = (float*) _aligned_malloc(4 * sizeof(float), 16);
+    m_pfTestBuffer  = (float*) ALIGNED_ALLOC(m_iLength * sizeof(float), 16);
+    m_pfAdd         = (float*) ALIGNED_ALLOC(4 * sizeof(float), 16);
+    m_pfResult      = (float*) ALIGNED_ALLOC(4 * sizeof(float), 16);
 
     //init 
     for (int i = 0; i < m_iLength; i++)
@@ -40,9 +47,9 @@ CMyProject::CMyProject( int iVectorLength ):
 
 CMyProject::~CMyProject ()
 {
-    _aligned_free (m_pfTestBuffer);
-    _aligned_free (m_pfAdd);
-    _aligned_free (m_pfResult);
+    ALIGNED_FREE (m_pfTestBuffer);
+    ALIGNED_FREE (m_pfAdd);
+    ALIGNED_FREE (m_pfResult);
 }
 
 const int  CMyProject::getVersion (const Version_t eVersionIdx)

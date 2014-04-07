@@ -34,7 +34,7 @@ void    showClInfo ();
 
 /////////////////////////////////////////////////////////////////////////////////
 // main function
-int main(int /*argc*/, char* /*argv[]*/)
+int main(int /*argc*/, char** /*argv[]*/)
 {
     CMyProject  *pCMyProject = 0;
 
