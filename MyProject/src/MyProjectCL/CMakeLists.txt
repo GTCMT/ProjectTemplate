@@ -13,6 +13,10 @@ file(GLOB ${APP}_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/${LIB}/src/${APP} *.h;../i
 ## add include directories
 add_includes ()
 
+if (WITH_PTHREADS)
+    include_directories(${PTHREAD_INCLUDE_DIR})
+endif (WITH_PTHREADS)
+
 add_executable(${APP} ${${APP}_SOURCES} ${${APP}_HEADERS})
 
 # link the libraries

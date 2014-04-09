@@ -1,6 +1,8 @@
 
 #include <iostream>
 
+#include "pthread.h"
+
 #include "MyProjectConfig.h"
 
 // include project headers
@@ -33,6 +35,16 @@ void    showClInfo ();
 
 void    getClArgs (std::string &sInputFilePath, std::string &sOutputFilePath, int argc, char* argv[]);
 
+void *TaskCode(void *argument)
+{
+    int tid = *((int *) argument);
+    cout << "Hello World! It's me, thread " << tid << endl;
+
+    /* optionally: insert more useful stuff here */
+
+    return NULL;
+}
+
 /////////////////////////////////////////////////////////////////////////////////
 // main function
 int main(int argc, char* argv[])
@@ -46,6 +58,11 @@ int main(int argc, char* argv[])
     CAudioFileIf            *phInputFile    = 0;
     std::fstream            hOutputFile;
     CAudioFileIf::FileSpec_t stFileSpec;
+
+    pthread_t threads[5];
+    int thread_args[5];
+    int rc = 0;
+
 
     // detect memory leaks in win32
 #if (defined(WITH_MEMORYCHECK) && !defined(NDEBUG) && defined (GTCMT_WIN32))
@@ -63,6 +80,20 @@ int main(int argc, char* argv[])
 #endif // #ifndef WITHOUT_EXCEPTIONS
 
     showClInfo ();
+
+    // create all threads one by one
+    for (int i=0; i<5; ++i) {
+        thread_args[i] = i;
+        cout << "In main: creating thread" << i << endl;
+        rc = pthread_create(&threads[i], NULL, TaskCode, (void *) &thread_args[i]);
+    }
+
+    // wait for each thread to complete
+    for (int i=0; i<5; ++i) {
+        // block until thread i completes
+        rc = pthread_join(threads[i], NULL);
+        cout << "In main: thread %d is complete" << i << endl;
+    }
 
     // parse command line arguments
     getClArgs (sInputFilePath, sOutputFilePath, argc, argv);
