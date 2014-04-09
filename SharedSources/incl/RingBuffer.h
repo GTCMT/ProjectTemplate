@@ -3,6 +3,7 @@
 
 #include <cassert>
 #include <algorithm>
+#include <cmath>
 
 #include "Util.h"
 
@@ -102,10 +103,10 @@ public:
             return m_ptBuff[m_iReadIdx];
         else
         {
-            assert (fabs(fOffset) <= m_iBuffLength);
+            assert (std::abs(fOffset) <= m_iBuffLength);
 
             // compute fraction for linear interpolation 
-            int     iOffset = static_cast<int>(floorf(fOffset));
+            int     iOffset = static_cast<int>(std::floor(fOffset));
             float   fFrac   = fOffset - iOffset;
 
             return (1-fFrac) * m_ptBuff[(m_iReadIdx+iOffset+m_iBuffLength) % m_iBuffLength] +
