@@ -92,7 +92,7 @@ int main(int argc, char* argv[])
     for (int i=0; i<5; ++i) {
         // block until thread i completes
         rc = pthread_join(threads[i], NULL);
-        cout << "In main: thread %d is complete" << i << endl;
+        cout << "In main: thread " << i << " is complete" << endl;
     }
 
     // parse command line arguments
