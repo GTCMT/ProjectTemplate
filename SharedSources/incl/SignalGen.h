@@ -7,6 +7,7 @@
 
 #include "ErrorDef.h"
 #include "Util.h"
+
 class CSignalGen
 {
 public:
@@ -30,7 +31,9 @@ public:
         float fPeriodLength = fSampleFreqInHz / fFreqInHz;
         for (int i = 0; i < iLength; i++)
         {
-            if (i%CUtil::float2int<int>(fPeriodLength) <= .5*fPeriodLength)
+            // note that this can, depending on the period length, lead to error accumulation
+            // FIXME when there is time
+            if (i%CUtil::float2int<int>(fPeriodLength) < .5*fPeriodLength)
             {            
                 pfOutBuf[i] = fAmplitude;
             }
