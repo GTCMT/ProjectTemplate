@@ -8,7 +8,8 @@
 // include project headers
 #include "AudioFileIf.h"
 
-#include "MyProject.h"
+#include "ConvBlock.h"
+
 
 #define WITH_FLOATEXCEPTIONS
 #define WITH_MEMORYCHECK
@@ -33,14 +34,14 @@ using std::endl;
 // local function declarations
 void    showClInfo ();
 
-void    getClArgs (std::string &sInputFilePath, std::string &sOutputFilePath, int argc, char* argv[]);
+void    getClArgs (std::string &sInputFilePath, std::string &sIrFilePath, std::string &sOutputFilePath, int &iNumThreads, int argc, char* argv[]);
 
 void *TaskCode(void *argument)
 {
-    int tid = *((int *) argument);
-    cout << "Hello World! It's me, thread " << tid << endl;
+    cout << "Hello World! It's me, thread for address" << argument << endl;
 
-    /* optionally: insert more useful stuff here */
+    //////////////////////////////////////
+    // cast and do the processing here
 
     return NULL;
 }
@@ -49,19 +50,30 @@ void *TaskCode(void *argument)
 // main function
 int main(int argc, char* argv[])
 {
-    std::string             sInputFilePath,
+    std::string             sInputFilePath,             //!< file paths
+                            sIrFilePath,
                             sOutputFilePath;
 
-    float                   **ppfAudioData  = 0;
-    static const int        kBlockSize      = 1024;
+    CAudioFileIf            *phOutputFile       = 0;        //!< output audio file
+    CAudioFileIf            *phIrFile           = 0;        //!< impulse response file
 
-    CAudioFileIf            *phInputFile    = 0;
-    std::fstream            hOutputFile;
-    CAudioFileIf::FileSpec_t stFileSpec;
+    CAudioFileIf::FileSpec_t stFileSpec;                    //!< input/output file spec
 
-    pthread_t threads[5];
-    int thread_args[5];
-    int rc = 0;
+    float                   **ppfIrData         = 0;        //!< buffer for IR data
+
+    pthread_t               *phThreads          = 0;        //!< thread handles
+    CConvBlock              **ppConvInstances   = 0;
+
+    int                     iLengthOfBlock      = 0;        //!< length of one input block to process
+    int                     iNumThreads         = 0;        //!< number of threads to start
+
+    long long               iLengthOfIr         = 0;        //!< length of IR
+    long long               iInFileLength       = 0;        //!< length of input file
+
+
+    int                     iSampleCount        = 0;
+    int                     iRc                 = 0;
+    int                     iTmp                = 0;
 
 
     // detect memory leaks in win32
@@ -81,72 +93,107 @@ int main(int argc, char* argv[])
 
     showClInfo ();
 
-    // create all threads one by one
-    for (int i=0; i<5; ++i) {
-        thread_args[i] = i;
-        cout << "In main: creating thread" << i << endl;
-        rc = pthread_create(&threads[i], NULL, TaskCode, (void *) &thread_args[i]);
-    }
-
-    // wait for each thread to complete
-    for (int i=0; i<5; ++i) {
-        // block until thread i completes
-        rc = pthread_join(threads[i], NULL);
-        cout << "In main: thread " << i << " is complete" << endl;
-    }
-
     // parse command line arguments
-    getClArgs (sInputFilePath, sOutputFilePath, argc, argv);
+    getClArgs (sInputFilePath, sIrFilePath, sOutputFilePath, iNumThreads, argc, argv);
 
-    // open the input wave file
-    CAudioFileIf::createInstance(phInputFile);
-    phInputFile->openFile(sInputFilePath, CAudioFileIf::kFileRead);
-    if (!phInputFile->isOpen())
+    //////////////////////////////////////////////////////////////////////////////
+    // open files
     {
-        cout << "Wave file open error!";
-        return -1;
-    }
-    phInputFile->getFileSpec(stFileSpec);
+        CAudioFileIf    *phInputFile    = 0;        //!< input audio file
 
-    // open the output text file
-     hOutputFile.open (sOutputFilePath.c_str(), std::ios::out);
-     if (!hOutputFile.is_open())
-     {
-         cout << "Text file open error!";
-         return -1;
-     }
-
-    // allocate audio data buffer
-    ppfAudioData            = new float* [stFileSpec.iNumChannels];
-    for (int i = 0; i < stFileSpec.iNumChannels; i++)
-        ppfAudioData[i] = new float [kBlockSize];
-
-    // read wave
-    while (!phInputFile->isEof())
-    {
-        int iNumFrames = kBlockSize;
-        phInputFile->readData(ppfAudioData, iNumFrames);
-
-        for (int i = 0; i < iNumFrames; i++)
+        // open the input wave file
+        CAudioFileIf::createInstance(phInputFile);
+        phInputFile->openFile(sInputFilePath, CAudioFileIf::kFileRead);
+        if (!phInputFile->isOpen())
         {
-            for (int c = 0; c < stFileSpec.iNumChannels; c++)
-            {
-                hOutputFile << ppfAudioData[c][i] << "\t";
-            }
-            hOutputFile << endl;
+            cout << "Input wave file open error!";
+            return -1;
         }
+        phInputFile->getFileSpec(stFileSpec);
+        phInputFile->getLength(iInFileLength);
+        CAudioFileIf::destroyInstance(phInputFile);
 
+        // open the IR wave file
+        CAudioFileIf::createInstance(phIrFile);
+        phIrFile->openFile(sIrFilePath, CAudioFileIf::kFileRead);
+        if (!phIrFile->isOpen())
+        {
+            cout << "IR wave file open error!";
+            return -1;
+        }
+        phIrFile->getLength(iLengthOfIr);
+
+        // open the output wave file
+        CAudioFileIf::createInstance(phOutputFile);
+        phOutputFile->openFile(sInputFilePath, CAudioFileIf::kFileWrite, &stFileSpec);
+        if (!phOutputFile->isOpen())
+        {
+            cout << "Input wave file open error!";
+            return -1;
+        }
     }
 
+    //////////////////////////////////////
+    // allocate IR data buffer and read IR
+    ppfIrData   = new float* [stFileSpec.iNumChannels];
+    for (int i = 0; i < stFileSpec.iNumChannels; i++)
+        ppfIrData[i] = new float [iLengthOfIr];
+    iTmp        = static_cast<int>(iLengthOfIr);
+    phIrFile->readData(ppfIrData, iTmp);
+
+    //////////////////////////////////////
+    // allocate thread and convolution instances
+    phThreads       = new pthread_t [iNumThreads];
+    ppConvInstances = new CConvBlock*[iNumThreads];
+
+    //////////////////////////////////////
+    // compute the standard block length for each instance
+    iLengthOfBlock  = static_cast<int>(ceilf(iInFileLength*1.F/iNumThreads)+.001F);
+
+    //////////////////////////////////////
+    // start the threads
+    for (int i = 0; i < iNumThreads; i++)
+    {
+        iLengthOfBlock      = std::min(iLengthOfBlock, static_cast<int>(iInFileLength-iSampleCount));
+
+        // create new instance
+        ppConvInstances[i]  = new CConvBlock(sInputFilePath, iSampleCount, iLengthOfBlock);
+        ppConvInstances[i]->setIr(ppfIrData, static_cast<int>(iLengthOfIr));
+
+        // create new thread
+        iRc = pthread_create(&phThreads[i], NULL, TaskCode, (void *) &ppConvInstances[i]);
+
+        iSampleCount       += iLengthOfBlock;
+    }
+
+    //////////////////////////////////////
+    //// wait for each thread to complete
+    //for (int i=0; i<5; ++i) {
+    //    // block until thread i completes
+    //    rc = pthread_join(threads[i], NULL);
+    //    cout << "In main: thread " << i << " is complete" << endl;
+    //}
+
+    //////////////////////////////////////
+    // overlap and add the output data and write the output file
+
+    //////////////////////////////////////
+    // clean-up
     // close the files
-    CAudioFileIf::destroyInstance(phInputFile);
-    hOutputFile.close();
+    CAudioFileIf::destroyInstance(phIrFile);
+    CAudioFileIf::destroyInstance(phOutputFile);
+
+    // free instances
+    delete [] phThreads;
+    for (int i = 0; i < iNumThreads; i++)
+        delete ppConvInstances[i];
+    delete [] ppConvInstances;
 
     // free memory
     for (int i = 0; i < stFileSpec.iNumChannels; i++)
-        delete [] ppfAudioData[i];
-    delete [] ppfAudioData;
-    ppfAudioData = 0;
+        delete [] ppfIrData[i];
+    delete [] ppfIrData;
+    ppfIrData = 0;
 
     return 0;
     
@@ -157,20 +204,25 @@ void     showClInfo()
 {
     cout << "GTCMT template app" << endl;
     cout << "(c) 2013 by Alexander Lerch" << endl;
-    cout    << "V" 
-        << CMyProject::getVersion (CMyProject::kMajor) << "." 
-        << CMyProject::getVersion (CMyProject::kMinor) << "." 
-        << CMyProject::getVersion (CMyProject::kPatch) << ", date: " 
-        << CMyProject::getBuildDate () << endl;
+    cout    << "Thread Example" << endl;
     cout  << endl;
 
     return;
 }
 
-void getClArgs( std::string &sInputFilePath, std::string &sOutputFilePath, int argc, char* argv[] )
+void getClArgs( std::string &sInputFilePath, std::string &sIrFilePath, std::string &sOutputFilePath, int &iNumThreads, int argc, char* argv[] )
 {
     if (argc > 1)
         sInputFilePath.assign (argv[1]);
     if (argc > 2)
-        sOutputFilePath.assign (argv[2]);
+        sIrFilePath.assign (argv[2]);
+    if (argc > 3)
+        sOutputFilePath.assign (argv[3]);
+
+    if (argc > 4)
+        iNumThreads = atoi(argv[4]);
+    else
+    {
+        iNumThreads = 5;
+    }
 }

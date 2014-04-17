@@ -67,7 +67,7 @@ Error_t CConvFir::process( const float *pfIn, float *pfOut, int iNumSamples )
         pfOut[i] = 0;
         for (int j = 0; j < m_iLengthOfIr; j++)
         {
-            pfOut[i]    += m_pCRingBuff->get(-j) * m_pfImpulseResponse[j];
+            pfOut[i]    += m_pCRingBuff->get(static_cast<float>(-j)) * m_pfImpulseResponse[j];
         }
         m_pCRingBuff->setReadIdx(m_pCRingBuff->getReadIdx() + 1);
     }
