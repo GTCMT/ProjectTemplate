@@ -231,6 +231,29 @@ Error_t CFft::mergeRealImag( complex_t *pfSpectrum, const float *pfReal, const f
     return kNoError;
 }
 
+Error_t CFft::mergeMagPhase(complex_t *pfSpectrum, const float *pfMag, const float *pfPhase) const
+{
+    if (!m_bIsInitialized)
+        return kNotInitializedError;
+
+    int iNyq            = m_iFftLength >> 1;
+
+    pfSpectrum[0]       = pfMag[0];
+    pfSpectrum[iNyq]    = pfMag[iNyq];
+
+    for (int i = 1; i < iNyq; i++)
+    {
+        int iImagIdx            = m_iFftLength - i;
+
+        pfSpectrum[i]           = pfMag[i] * cosf(pfPhase[i]);
+        pfSpectrum[iImagIdx]    = pfMag[i] * sinf(pfPhase[i]);
+    }
+
+
+    return kNoError;
+}
+
+
 float CFft::freq2bin( float fFreqInHz, float fSampleRateInHz ) const
 {
     return fFreqInHz / fSampleRateInHz * m_iFftLength;

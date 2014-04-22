@@ -68,6 +68,7 @@ public:
     \return Error_t
     */
     Error_t doFft (complex_t *pfSpectrum, const float *pfInput);
+  
     /*! perform IFFT
     \param float * pfOutput: time domain output signal of length iBlockLength * iZeroPadFactor (\sa initInstance)
     \param const complex_t * pfSpectrum: input spectrum of length iBlockLength * iZeroPadFactor (\sa initInstance)
@@ -81,12 +82,14 @@ public:
     \return Error_t
     */
     Error_t getMagnitude (float *pfMag, const complex_t *pfSpectrum) const;
+ 
     /*! extract phase spectrum from complex values
     \param float * pfPhase: resulting phase spectrum of length (iBlockLength * iZeroPadFactor)/2+1 (\sa initInstance)
     \param const complex_t * pfSpectrum: input spectrum of length iBlockLength * iZeroPadFactor (\sa initInstance)
     \return Error_t
     */
     Error_t getPhase(float *pfPhase, const complex_t *pfSpectrum) const;
+   
     /*! get real and imaginary part from complex spectrum
     \param float * pfReal: resulting real part of length (iBlockLength * iZeroPadFactor)/2+1 (\sa initInstance) 
     \param float * pfImag: resulting imaginary part of length (iBlockLength * iZeroPadFactor)/2 (\sa initInstance)
@@ -94,6 +97,7 @@ public:
     \return Error_t
     */
     Error_t splitRealImag(float *pfReal, float *pfImag, const complex_t *pfSpectrum) const;
+
     /*! merge real and imaginary parts into complex spectrum
     \param complex_t * pfSpectrum: resulting spectrum of length iBlockLength * iZeroPadFactor (\sa initInstance)
     \param const float * pfReal: input real part of length (iBlockLength * iZeroPadFactor)/2+1 (\sa initInstance) 
@@ -101,6 +105,14 @@ public:
     \return Error_t
     */
     Error_t mergeRealImag(complex_t *pfSpectrum, const float *pfReal, const float *pfImag) const;
+
+    /*! merge magnitude and phase parts into complex spectrum
+    \param complex_t * pfSpectrum: resulting spectrum of length iBlockLength * iZeroPadFactor (\sa initInstance)
+    \param const float * pfMag: input magnitude of length (iBlockLength * iZeroPadFactor)/2+1 (\sa initInstance) 
+    \param const float * pfPhase: input phase of length (iBlockLength * iZeroPadFactor)/2 (\sa initInstance)
+    \return Error_t
+    */
+    Error_t mergeMagPhase(complex_t *pfSpectrum, const float *pfMag, const float *pfPhase) const;
 
     enum Length_t
     {
