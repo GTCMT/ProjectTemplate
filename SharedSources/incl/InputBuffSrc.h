@@ -147,7 +147,7 @@ public:
         }
         m_iExternalDataReadIdx += iNumFrames2ShiftExt;
 
-        assert(m_iExternalDataReadIdx < m_iNumFramesExternalData);
+        assert(m_iExternalDataReadIdx <= m_iNumFramesExternalData);
         assert(m_iExternalDataReadIdx >= 0);
 
         return true;
