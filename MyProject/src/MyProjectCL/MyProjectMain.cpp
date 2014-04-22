@@ -5,6 +5,7 @@
 
 #include "MyProjectConfig.h"
 
+#include "Util.h"
 // include project headers
 #include "AudioFileIf.h"
 
@@ -38,10 +39,9 @@ void    getClArgs (std::string &sInputFilePath, std::string &sIrFilePath, std::s
 
 void *TaskCode(void *argument)
 {
-    cout << "Hello World! It's me, thread for address" << argument << endl;
+    CConvBlock *pCurrInstance = static_cast<CConvBlock*> (argument);
 
-    //////////////////////////////////////
-    // cast and do the processing here
+    pCurrInstance->process();
 
     return NULL;
 }
@@ -125,7 +125,7 @@ int main(int argc, char* argv[])
 
         // open the output wave file
         CAudioFileIf::createInstance(phOutputFile);
-        phOutputFile->openFile(sInputFilePath, CAudioFileIf::kFileWrite, &stFileSpec);
+        phOutputFile->openFile(sOutputFilePath, CAudioFileIf::kFileWrite, &stFileSpec);
         if (!phOutputFile->isOpen())
         {
             cout << "Input wave file open error!";
@@ -136,10 +136,12 @@ int main(int argc, char* argv[])
     //////////////////////////////////////
     // allocate IR data buffer and read IR
     ppfIrData   = new float* [stFileSpec.iNumChannels];
-    for (int i = 0; i < stFileSpec.iNumChannels; i++)
-        ppfIrData[i] = new float [iLengthOfIr];
     iTmp        = static_cast<int>(iLengthOfIr);
+    for (int i = 0; i < stFileSpec.iNumChannels; i++)
+        ppfIrData[i] = new float [iTmp];
     phIrFile->readData(ppfIrData, iTmp);
+    CAudioFileIf::destroyInstance(phIrFile);
+
 
     //////////////////////////////////////
     // allocate thread and convolution instances
@@ -161,26 +163,58 @@ int main(int argc, char* argv[])
         ppConvInstances[i]->setIr(ppfIrData, static_cast<int>(iLengthOfIr));
 
         // create new thread
-        iRc = pthread_create(&phThreads[i], NULL, TaskCode, (void *) &ppConvInstances[i]);
+        iRc = pthread_create(&phThreads[i], NULL, TaskCode, (void *) ppConvInstances[i]);
 
         iSampleCount       += iLengthOfBlock;
     }
 
-    //////////////////////////////////////
-    //// wait for each thread to complete
-    //for (int i=0; i<5; ++i) {
-    //    // block until thread i completes
-    //    rc = pthread_join(threads[i], NULL);
-    //    cout << "In main: thread " << i << " is complete" << endl;
-    //}
+    ////////////////////////////////////
+    // wait for each thread to complete
+    for (int i=0; i<iNumThreads; ++i) 
+    {
+        // block until thread i completes
+        iRc = pthread_join(phThreads[i], NULL);
+        cout << "In main: thread " << i << " is complete" << endl;
+    }
 
     //////////////////////////////////////
     // overlap and add the output data and write the output file
 
+    // reuse pIrData for tail overlap and add
+    for (int c=0; c<stFileSpec.iNumChannels; c++)
+        CUtil::setZero(ppfIrData[c], iLengthOfIr);
+
+    for (int i=0; i<iNumThreads; ++i) 
+    {
+        float **ppfOutput   = 0;
+        int     iNumChannels = 0,
+            iLength = 0;
+
+        //get result and write it to file until blocklength
+        ppConvInstances[i]->getResult(ppfOutput, iNumChannels, iLength);
+
+        // add tail to next result
+        for (int c=0; c<stFileSpec.iNumChannels; c++)
+        {
+            for (int k = 0; k < iLengthOfIr-1; k++)
+                ppfOutput[c][k] += ppfIrData[c][k];
+        }
+
+        phOutputFile->writeData(ppfOutput, iLength - iLengthOfIr + 1);
+
+        // store tail
+        for (int c=0; c<stFileSpec.iNumChannels; c++)
+        {
+            CUtil::copyBuff(ppfIrData[c], &ppfOutput[c][iLength - iLengthOfIr + 1], iLengthOfIr-1);
+        }
+    }
+
+    // write remaining samples to file
+    phOutputFile->writeData(ppfIrData, iLengthOfIr-1);
+
     //////////////////////////////////////
     // clean-up
     // close the files
-    CAudioFileIf::destroyInstance(phIrFile);
     CAudioFileIf::destroyInstance(phOutputFile);
 
     // free instances
