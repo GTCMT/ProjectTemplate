@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <ctime>
 
 #include "pthread.h"
 
@@ -41,6 +42,8 @@ void *TaskCode(void *argument)
 {
     CConvBlock *pCurrInstance = static_cast<CConvBlock*> (argument);
 
+    cout << "starting instance: " << pCurrInstance->getIdentifier() << endl;
+
     pCurrInstance->process();
 
     return NULL;
@@ -75,6 +78,7 @@ int main(int argc, char* argv[])
     int                     iRc                 = 0;
     int                     iTmp                = 0;
 
+    clock_t                 time                = 0;
 
     // detect memory leaks in win32
 #if (defined(WITH_MEMORYCHECK) && !defined(NDEBUG) && defined (GTCMT_WIN32))
@@ -159,10 +163,11 @@ int main(int argc, char* argv[])
         iLengthOfBlock      = std::min(iLengthOfBlock, static_cast<int>(iInFileLength-iSampleCount));
 
         // create new instance
-        ppConvInstances[i]  = new CConvBlock(sInputFilePath, iSampleCount, iLengthOfBlock);
+        ppConvInstances[i]  = new CConvBlock(sInputFilePath, iSampleCount, iLengthOfBlock, std::to_string(i));
         ppConvInstances[i]->setIr(ppfIrData, static_cast<int>(iLengthOfIr));
 
         // create new thread
+        time = clock();
         iRc = pthread_create(&phThreads[i], NULL, TaskCode, (void *) ppConvInstances[i]);
 
         iSampleCount       += iLengthOfBlock;
@@ -170,19 +175,22 @@ int main(int argc, char* argv[])
 
     ////////////////////////////////////
     // wait for each thread to complete
+    float fMax = 0;
     for (int i=0; i<iNumThreads; ++i) 
     {
         // block until thread i completes
         iRc = pthread_join(phThreads[i], NULL);
-        cout << "In main: thread " << i << " is complete" << endl;
+        cout << "thread " << i << " is complete" << endl;
+        fMax    = std::max(fMax, ppConvInstances[i]->getAbsMax());
     }
+    cout << "overall time:\t" << double(clock() - time) / CLOCKS_PER_SEC << endl;
 
     //////////////////////////////////////
     // overlap and add the output data and write the output file
 
     // reuse pIrData for tail overlap and add
     for (int c=0; c<stFileSpec.iNumChannels; c++)
-        CUtil::setZero(ppfIrData[c], iLengthOfIr);
+        CUtil::setZero(ppfIrData[c], static_cast<int>(iLengthOfIr));
 
     for (int i=0; i<iNumThreads; ++i) 
     {
@@ -198,19 +206,21 @@ int main(int argc, char* argv[])
         {
             for (int k = 0; k < iLengthOfIr-1; k++)
                 ppfOutput[c][k] += ppfIrData[c][k];
+
+            CUtil::multBuffC(ppfOutput[c], 1/fMax, iLength);
         }
 
-        phOutputFile->writeData(ppfOutput, iLength - iLengthOfIr + 1);
+        phOutputFile->writeData(ppfOutput, iLength - static_cast<int>(iLengthOfIr) + 1);
 
         // store tail
         for (int c=0; c<stFileSpec.iNumChannels; c++)
         {
-            CUtil::copyBuff(ppfIrData[c], &ppfOutput[c][iLength - iLengthOfIr + 1], iLengthOfIr-1);
+            CUtil::copyBuff(ppfIrData[c], &ppfOutput[c][iLength - static_cast<int>(iLengthOfIr) + 1], static_cast<int>(iLengthOfIr)-1);
         }
     }
 
     // write remaining samples to file
-    phOutputFile->writeData(ppfIrData, iLengthOfIr-1);
+    phOutputFile->writeData(ppfIrData, static_cast<int>(iLengthOfIr)-1);
 
     //////////////////////////////////////
     // clean-up
