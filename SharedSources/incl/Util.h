@@ -90,5 +90,35 @@ public:
             pSrcDest[i] += pSrc[i];
     }
 
+    template<typename T>
+    static float getMax (T *pSrc, int iLength, bool bAbs = false)
+    {
+        T fMax;
+        long long iMax;
+
+        findMax<T>(pSrc, fMax, iMax, iLength, bAbs);
+
+        return fMax;
+    }
+    template<typename T>
+    static void findMax (T *pSrc, T &fMax, long long &iMax, int iLength, bool bAbs = false)
+    {
+        assert (iLength >= 0);
+        assert (pSrc);
+
+        fMax    = std::numeric_limits<T>::min();
+        iMax    = -1;
+
+        for (int i = 0; i < iLength; i++)
+        {
+            T fCurr   = (bAbs)? std::abs(pSrc[i]) : pSrc[i];
+
+            if (fCurr > fMax)
+            {
+                fMax = fCurr;
+                iMax = i;
+            }
+        }
+    }
 };
 #endif // __Util_hdr__
