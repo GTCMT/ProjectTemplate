@@ -8,6 +8,8 @@ template<class T> class CRingBuffer;
 class CConvFir
 {
 public:
+//#define WITH_RINGBUFFER 1
+
     CConvFir();
     virtual ~CConvFir();
 
@@ -23,6 +25,8 @@ public:
 private:
     float *m_pfImpulseResponse;
     CRingBuffer<float> *m_pCRingBuff;
+
+    float *m_pfFilterBuff;
 
     int m_iLengthOfIr;
 };
