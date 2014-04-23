@@ -15,7 +15,7 @@ SUITE(ConvFir)
         ConvFirData() : m_pCConvFir(0)
         {
             m_pfImpulseResponse   = new float [m_iIrLength];
-            m_pfOutputData  = new float [m_iIrLength];
+            m_pfOutputData  = new float [m_iIrLength<<1];
 
             m_pCConvFir   = new CConvFir();
 
@@ -48,6 +48,24 @@ SUITE(ConvFir)
         m_pCConvFir->flush (&m_pfOutputData[1]);
 
         CHECK_ARRAY_CLOSE(m_pfImpulseResponse, m_pfOutputData, m_iIrLength, 1e-3F);
+    }
+
+    TEST_FIXTURE(ConvFirData, IrRectangle)
+    {
+        float fMax = .5F;
+        for (int i = 0; i < m_iIrLength; i++)
+            m_pfImpulseResponse[i]  = fMax;
+        m_pCConvFir->setImpulseResponse(m_pfImpulseResponse, m_iIrLength);
+
+        m_pCConvFir->process(m_pfImpulseResponse, m_pfOutputData, m_iIrLength);
+        CHECK_EQUAL(m_iIrLength-1, m_pCConvFir->getTailLength ());
+
+        m_pCConvFir->flush (&m_pfOutputData[m_iIrLength]);
+
+        for (int i = 0; i < m_iIrLength; i++)
+            CHECK_CLOSE(0, fMax*fMax*(i+1)-m_pfOutputData[i], 1e-3F);
+        for (int i = m_iIrLength; i < 2*m_iIrLength-1; i++)
+            CHECK_CLOSE(0, fMax*fMax*(2*m_iIrLength-1-i)-m_pfOutputData[i], 1e-3F);
     }
 }
 
