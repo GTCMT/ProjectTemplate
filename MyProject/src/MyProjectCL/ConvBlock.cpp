@@ -13,7 +13,7 @@
 
 static const int kBlockLength = 1024;
 
-CConvBlock::CConvBlock (std::string cFilePath, int iStartIdx, int iLengthOfBlock) :
+CConvBlock::CConvBlock (std::string cFilePath, int iStartIdx, int iLengthOfBlock, std::string cIdentifier /*= "ConvBlock Instance"*/) :
     m_ppfOutputData(0),
     m_ppfProcessData(0),
     m_ppFir(0),
@@ -21,8 +21,8 @@ CConvBlock::CConvBlock (std::string cFilePath, int iStartIdx, int iLengthOfBlock
     m_iStartIdx(iStartIdx), 
     m_iLengthOfBlock(iLengthOfBlock),
     m_iLengthOfIr(0),
-    m_iNumChannels(0)
-
+    m_iNumChannels(0),
+    m_cIdentifier(cIdentifier)
 {
     CAudioFileIf::FileSpec_t stFileSpec;
 
@@ -112,11 +112,24 @@ Error_t CConvBlock::process()
     return kNoError;
 }
 
-Error_t CConvBlock::getResult( float **&ppfOutputData, int &iNumChannels, int &iLength )
+Error_t CConvBlock::getResult( float **&ppfOutputData, int &iNumChannels, int &iLength ) const
 {
     ppfOutputData   = m_ppfOutputData;
     iNumChannels    = m_iNumChannels;
     iLength         = m_iLengthOfIr-1 + m_iLengthOfBlock;
 
     return kNoError;
+}
+
+std::string CConvBlock::getIdentifier() const
+{
+    return m_cIdentifier;
+}
+
+float CConvBlock::getAbsMax() const
+{
+    float fMax = CUtil::getMax<float>(m_ppfOutputData[0], m_iLengthOfIr-1 + m_iLengthOfBlock,true);
+    for (int c = 1; c < m_iNumChannels; c++)
+        fMax = std::max(fMax, CUtil::getMax<float>(m_ppfOutputData[c], m_iLengthOfIr-1 + m_iLengthOfBlock,true));
+    return fMax;
 }
