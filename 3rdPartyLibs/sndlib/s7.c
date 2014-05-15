@@ -237,7 +237,7 @@
 #endif
 
 #ifndef WITH_C_LOADER
-  #define WITH_C_LOADER WITH_GCC
+  #define WITH_C_LOADER (WITH_GCC )&& !(defined(_WIN32) && ! defined(_MSC_VER))
   /* (load file.so [e]) looks for (e 'init_func) and if found, calls it
    *   as the shared object init function.  If WITH_SYSTEM_EXTRAS is 0, the caller
    *   needs to supply system and delete-file so that cload.scm works.
@@ -21131,7 +21131,7 @@ static int string_read_white_space(s7_scheme *sc, s7_pointer pt)
    *   is slower.
    */
   orig_str = str;
-  while (white_space[c1 = (unsigned char)(*str++)]) /* (let ((ÿa 1)) ÿa) -- 255 is not -1 = EOF */
+  while (white_space[c1 = (unsigned char)(*str++)]) /* (let ((?a 1)) ?a) -- 255 is not -1 = EOF */
     if (c1 == '\n')
       port_line_number(pt)++;
 

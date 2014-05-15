@@ -1,7 +1,7 @@
 
 #include <UnitTest++.h>
 #include "TestReporterStdout.h"
-
+#include <cstring>
 // include project headers
 #include "AudioFileIf.h"
 
@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
         UnitTest::TestList selectedTests;
         UnitTest::Test* p = allTests.GetHead();
         while( p )
-        {
+        { 
             if( strcmp( p->m_details.suiteName, argv[ 1 ] ) == 0 )
             {
                 selectedTests.Add( p );
